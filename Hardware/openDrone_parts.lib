@@ -1,0 +1,15 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# test_part_1
+#
+DEF test_part_1 U 0 40 Y Y 1 F N
+F0 "U" 50 150 50 H V C CNN
+F1 "test_part_1" 350 150 50 H V C CNN
+F2 "" 50 150 50 H I C CNN
+F3 "" 50 150 50 H I C CNN
+DRAW
+ENDDRAW
+ENDDEF
+#
+#End Library
