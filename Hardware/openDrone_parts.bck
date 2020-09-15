@@ -12,10 +12,6 @@ $CMP LIS3MDLTR
 F https://www.st.com/content/ccc/resource/technical/document/datasheet/54/2a/85/76/e3/97/42/18/DM00075867.pdf/files/DM00075867.pdf/jcr:content/translations/en.DM00075867.pdf
 $ENDCMP
 #
-$CMP MIC5332-SSYMT-TR
-F https://www.mouser.com/datasheet/2/268/mic5332-1891313.pdf
-$ENDCMP
-#
 $CMP NUF2042XV6T1G
 F https://www.onsemi.com/pub/Collateral/NUF2030XV6-D.PDF
 $ENDCMP
