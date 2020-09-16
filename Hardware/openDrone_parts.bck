@@ -1,19 +1,100 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 1N62xxA
+D 1500W unidirectional TRANSZORB® Transient Voltage Suppressor, DO-201AE
+K diode TVS voltage suppressor
+F https://www.vishay.com/docs/88301/15ke.pdf
+$ENDCMP
+#
+$CMP 1N630xA
+D 1500W unidirectional TRANSZORB® Transient Voltage Suppressor, DO-201AE
+K diode TVS voltage suppressor
+F https://www.vishay.com/docs/88301/15ke.pdf
+$ENDCMP
+#
 $CMP 2908-05WB-MG
 F https://multimedia.3m.com/mws/media/416257O/3mtm-card-connector-microsdtm-2900-series-ts2197.pdf
+$ENDCMP
+#
+$CMP C_0u1
+D 0.1µF -20%, +80% 16V Ceramic Capacitor Y5V
+F https://www.digikey.com/product-detail/en/kemet/C0805C104Z4VACTU/399-9159-1-ND/3522677
+$ENDCMP
+#
+$CMP C_0u22
+D 0.22µF ±10% 25V Ceramic Capacitor X7R 0805 (2012 Metric)
+$ENDCMP
+#
+$CMP C_100u
+D 100µF ±20% 4V Ceramic Capacitor X5R 0805 (2012 Metric)
+$ENDCMP
+#
+$CMP C_10n
+D 10000pF ±10% 25V Ceramic Capacitor X7R 0805 (2012 Metric)
+$ENDCMP
+#
+$CMP C_10u
+D 10µF ±10% 25V Ceramic Capacitor X5R 0805 (2012 Metric)
+$ENDCMP
+#
+$CMP C_1u
+D 1µF -20%, +80% 16V Ceramic Capacitor Y5V (F) 0805 (2012 Metric)
+$ENDCMP
+#
+$CMP C_22u
+D 22µF ±20% 25V Ceramic Capacitor X5R 0805 (2012 Metric)
+$ENDCMP
+#
+$CMP C_2u2
+D 2.2µF ±10% 16V Ceramic Capacitor X6S 0805 (2012 Metric)
+$ENDCMP
+#
+$CMP C_4u7
+D 4.7µF ±10% 16V Ceramic Capacitor X7R 0805 (2012 Metric)
+$ENDCMP
+#
+$CMP C_8p
+D 8pF ±0.5pF 50V Ceramic Capacitor C0G, NP0
+F https://www.digikey.com/product-detail/en/yageo/CC0805DRNPO9BN8R0/311-1097-1-ND/303007
 $ENDCMP
 #
 $CMP DF40C2.0-20DS-0.4V51
 F https://www.hirose.com/product/document?clcode=CL0684-4003-3-51&productname=DF40C-60DP-0.4V(51)&series=DF40&documenttype=Catalog&lang=en&documentid=D31649_en
 $ENDCMP
 #
+$CMP D_Schottky_30V
+D Diode Schottky 30V 30mA (DC) Surface Mount SOD-323
+K diode Schottky
+F ~
+$ENDCMP
+#
+$CMP IC_BUFFER_INVERT_5.5V
+D Buffer, Inverting 2 Element 1 Bit per Element 3-State Output 8-TSSOP
+$ENDCMP
+#
 $CMP LIS3MDLTR
 F https://www.st.com/content/ccc/resource/technical/document/datasheet/54/2a/85/76/e3/97/42/18/DM00075867.pdf/files/DM00075867.pdf/jcr:content/translations/en.DM00075867.pdf
 $ENDCMP
 #
+$CMP MIC5332-SSYMT-TR
+F https://www.mouser.com/datasheet/2/268/mic5332-1891313.pdf
+$ENDCMP
+#
 $CMP NUF2042XV6T1G
 F https://www.onsemi.com/pub/Collateral/NUF2030XV6-D.PDF
+$ENDCMP
+#
+$CMP R_220
+D 220 Ohms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric)  Thick Film
+$ENDCMP
+#
+$CMP R_470
+D 470 Ohms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film
+$ENDCMP
+#
+$CMP TVS_DIODE_14V
+D 40V Clamp  Ipp Tvs Diode Surface Mount 0402
+K diode TVS voltage suppressor
 $ENDCMP
 #
 $CMP TXS0108ERGYR

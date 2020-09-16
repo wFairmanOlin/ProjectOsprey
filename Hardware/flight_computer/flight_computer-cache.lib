@@ -186,11 +186,11 @@ X SCLK 8 -400 -100 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# openDrone_parts_2908-05WB-MG
+# flight_computer-rescue_2908-05WB-MG-openDrone_parts
 #
-DEF openDrone_parts_2908-05WB-MG J 0 10 Y N 1 F N
+DEF flight_computer-rescue_2908-05WB-MG-openDrone_parts J 0 10 Y N 1 F N
 F0 "J" 350 250 60 H V C CNN
-F1 "openDrone_parts_2908-05WB-MG" 500 350 60 H V C CNN
+F1 "flight_computer-rescue_2908-05WB-MG-openDrone_parts" 500 350 60 H V C CNN
 F2 "drone_footprints:2908-05WB-MG" 500 290 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 F4 "3M5607CT-ND" 650 200 50 H I C CNN "DPN"
@@ -214,11 +214,11 @@ X 9 9 650 -50 200 L 59 59 1 1 U
 ENDDRAW
 ENDDEF
 #
-# openDrone_parts_DF40C2.0-20DS-0.4V51
+# flight_computer-rescue_DF40C2.0-20DS-0.4V51-openDrone_parts
 #
-DEF openDrone_parts_DF40C2.0-20DS-0.4V51 J 0 10 Y N 1 F N
+DEF flight_computer-rescue_DF40C2.0-20DS-0.4V51-openDrone_parts J 0 10 Y N 1 F N
 F0 "J" 350 350 60 H V C CNN
-F1 "openDrone_parts_DF40C2.0-20DS-0.4V51" 400 250 60 H V C CNN
+F1 "flight_computer-rescue_DF40C2.0-20DS-0.4V51-openDrone_parts" 400 250 60 H V C CNN
 F2 "drone_footprints:DF40C2.0-20DS-0.4V51" 450 150 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 F4 "H11905CT-ND " 0 0 50 H I C CNN "DPN"
@@ -252,11 +252,11 @@ X 9 9 0 -400 200 R 59 59 1 1 U
 ENDDRAW
 ENDDEF
 #
-# openDrone_parts_LIS3MDLTR
+# flight_computer-rescue_LIS3MDLTR-openDrone_parts
 #
-DEF openDrone_parts_LIS3MDLTR U 0 10 Y Y 1 F N
+DEF flight_computer-rescue_LIS3MDLTR-openDrone_parts U 0 10 Y Y 1 F N
 F0 "U" 1200 400 60 H V C CNN
-F1 "openDrone_parts_LIS3MDLTR" 1200 300 60 H V C CNN
+F1 "flight_computer-rescue_LIS3MDLTR-openDrone_parts" 1200 300 60 H V C CNN
 F2 "drone_footprints:LIS3MDLTR" 1200 240 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 F4 "497-13892-1-ND" 0 0 50 H I C CNN "DPN"
@@ -281,11 +281,11 @@ X SDO/SA1 9 2400 -300 300 L 59 59 1 1 B
 ENDDRAW
 ENDDEF
 #
-# openDrone_parts_MIC5332-SSYMT-TR
+# flight_computer-rescue_MIC5332-SSYMT-TR-openDrone_parts
 #
-DEF openDrone_parts_MIC5332-SSYMT-TR U 0 10 Y Y 1 F N
+DEF flight_computer-rescue_MIC5332-SSYMT-TR-openDrone_parts U 0 10 Y Y 1 F N
 F0 "U" 1300 400 60 H V C CNN
-F1 "openDrone_parts_MIC5332-SSYMT-TR" 1300 300 60 H V C CNN
+F1 "flight_computer-rescue_MIC5332-SSYMT-TR-openDrone_parts" 1300 300 60 H V C CNN
 F2 "drone_footprints:MIC5332-SSYMT-TR" 1300 240 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 F4 "576-4110-1-ND" 0 0 50 H I C CNN "DPN"
@@ -308,11 +308,11 @@ X 9 9 2150 -400 300 L 59 59 1 1 U
 ENDDRAW
 ENDDEF
 #
-# openDrone_parts_NUF2042XV6T1G
+# flight_computer-rescue_NUF2042XV6T1G-openDrone_parts
 #
-DEF openDrone_parts_NUF2042XV6T1G U 0 10 Y Y 1 F N
+DEF flight_computer-rescue_NUF2042XV6T1G-openDrone_parts U 0 10 Y Y 1 F N
 F0 "U" 450 300 60 H V C CNN
-F1 "openDrone_parts_NUF2042XV6T1G" 1150 300 60 H V C CNN
+F1 "flight_computer-rescue_NUF2042XV6T1G-openDrone_parts" 1150 300 60 H V C CNN
 F2 "drone_footprints:NUF2042XV6T1G" 1550 500 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 F4 " NUF2042XV6T1GOSDKR-ND " 1300 400 50 H I C CNN "DPN"
@@ -332,11 +332,11 @@ X 6 6 150 -300 300 R 59 59 1 1 U
 ENDDRAW
 ENDDEF
 #
-# openDrone_parts_TXS0108ERGYR
+# flight_computer-rescue_TXS0108ERGYR-openDrone_parts
 #
-DEF openDrone_parts_TXS0108ERGYR U 0 10 Y Y 1 F N
+DEF flight_computer-rescue_TXS0108ERGYR-openDrone_parts U 0 10 Y Y 1 F N
 F0 "U" 750 350 60 H V C CNN
-F1 "openDrone_parts_TXS0108ERGYR" 750 250 60 H V C CNN
+F1 "flight_computer-rescue_TXS0108ERGYR-openDrone_parts" 750 250 60 H V C CNN
 F2 "RGY20_3P05X2P05" 750 190 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 F4 "296-24806-1-ND" 0 0 50 H I C CNN "DPN"

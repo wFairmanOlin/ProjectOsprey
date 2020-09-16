@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L openDrone_parts:NUF2042XV6T1G U2001
+L flight_computer-rescue:NUF2042XV6T1G-openDrone_parts U2001
 U 1 1 5F628055
 P 1950 2500
 F 0 "U2001" H 2450 2800 60  0000 C CNN
@@ -40,7 +40,7 @@ Wire Wire Line
 Wire Wire Line
 	2700 1700 2300 1700
 $Comp
-L openDrone_parts:2908-05WB-MG J2002
+L flight_computer-rescue:2908-05WB-MG-openDrone_parts J2002
 U 1 1 5F62DFF7
 P 2900 4350
 F 0 "J2002" H 3150 4500 60  0000 L CNN

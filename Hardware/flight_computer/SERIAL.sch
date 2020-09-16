@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L openDrone_parts:TXS0108ERGYR U3002
+L flight_computer-rescue:TXS0108ERGYR-openDrone_parts U3002
 U 1 1 5F61A29E
 P 1700 1650
 F 0 "U3002" H 2425 1987 60  0000 C CNN
@@ -55,7 +55,7 @@ Wire Wire Line
 Wire Wire Line
 	1700 1850 1450 1850
 $Comp
-L openDrone_parts:TXS0108ERGYR U3001
+L flight_computer-rescue:TXS0108ERGYR-openDrone_parts U3001
 U 1 1 5F61C67F
 P 1700 3900
 F 0 "U3001" H 2425 4237 60  0000 C CNN

@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name openDrone_parts)(type Legacy)(uri C:/Users/dconnolly/Documents/openDrone/Hardware/openDrone_parts.lib)(options "")(descr ""))
+  (lib (name openDrone_parts)(type Legacy)(uri ${DRONE_DIR}/Hardware/openDrone_parts.lib)(options "")(descr ""))
+  (lib (name flight_computer-rescue)(type Legacy)(uri ${KIPRJMOD}/flight_computer-rescue.lib)(options "")(descr ""))
 )
