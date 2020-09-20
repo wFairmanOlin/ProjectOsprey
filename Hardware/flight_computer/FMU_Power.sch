@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L flight_computer-rescue:MIC5332-SSYMT-TR-openDrone_parts U?
+L flight_computer-rescue:MIC5332-SSYMT-TR-openDrone_parts-flight_computer-rescue U?
 U 1 1 5F64A1F5
 P 1650 1750
 F 0 "U?" H 3025 2087 60  0000 C CNN

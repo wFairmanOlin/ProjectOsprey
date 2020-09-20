@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name drone_footprints)(type KiCad)(uri C:/Users/dconnolly/Documents/openDrone/Hardware/footprints.pretty)(options "")(descr ""))
+  (lib (name drone_footprints)(type KiCad)(uri ${LOCAL_DIR}/openDrone/Hardware/footprints.pretty)(options "")(descr ""))
 )

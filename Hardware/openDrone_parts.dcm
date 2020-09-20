@@ -12,12 +12,66 @@ K diode TVS voltage suppressor
 F https://www.vishay.com/docs/88301/15ke.pdf
 $ENDCMP
 #
-$CMP 2908-05WB-MG
-F https://multimedia.3m.com/mws/media/416257O/3mtm-card-connector-microsdtm-2900-series-ts2197.pdf
+$CMP 2N7002
+D 0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23
+K N-Channel Switching MOSFET
+F https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf
+$ENDCMP
+#
+$CMP 2N7002E
+D 0.24A Id, 60V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ds30376.pdf
+$ENDCMP
+#
+$CMP 2N7002H
+D 0.21A Id, 60V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/2N7002H.pdf
+$ENDCMP
+#
+$CMP 2N7002K
+D 0.38A Id, 60V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F https://www.diodes.com/assets/Datasheets/ds30896.pdf
+$ENDCMP
+#
+$CMP BMI088
+F https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMI088-DS001.pdf
+$ENDCMP
+#
+$CMP BS170F
+D 0.15A Id, 60V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/BS170F.pdf
+$ENDCMP
+#
+$CMP BS870
+D 0.25A Id, 60V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ds11302.pdf
+$ENDCMP
+#
+$CMP BSN20
+D 0.5A Id, 50V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ds31898.pdf
+$ENDCMP
+#
+$CMP BSS123
+D 0.17A Id, 100V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ds30366.pdf
+$ENDCMP
+#
+$CMP BSS127S
+D 0.07A Id, 600V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/BSS127.pdf
 $ENDCMP
 #
 $CMP C_0u1
-D 0.1µF -20%, +80% 16V Ceramic Capacitor Y5V 
+D 0.1µF -20%, +80% 16V Ceramic Capacitor Y5V
 F https://www.digikey.com/product-detail/en/kemet/C0805C104Z4VACTU/399-9159-1-ND/3522677
 $ENDCMP
 #
@@ -54,12 +108,186 @@ D 4.7µF ±10% 16V Ceramic Capacitor X7R 0805 (2012 Metric)
 $ENDCMP
 #
 $CMP C_8p
-D 8pF ±0.5pF 50V Ceramic Capacitor C0G, NP0 
+D 8pF ±0.5pF 50V Ceramic Capacitor C0G, NP0
 F https://www.digikey.com/product-detail/en/yageo/CC0805DRNPO9BN8R0/311-1097-1-ND/303007
 $ENDCMP
 #
 $CMP DF40C2.0-20DS-0.4V51
 F https://www.hirose.com/product/document?clcode=CL0684-4003-3-51&productname=DF40C-60DP-0.4V(51)&series=DF40&documenttype=Catalog&lang=en&documentid=D31649_en
+$ENDCMP
+#
+$CMP DMG2302U
+D 4.2A Id, 20V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/DMG2302U.pdf
+$ENDCMP
+#
+$CMP DMG3402L
+D 4A Id, 30V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/DMG3402L.pdf
+$ENDCMP
+#
+$CMP DMG3404L
+D 5.8A Id, 30V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/DMG3404L.pdf
+$ENDCMP
+#
+$CMP DMG3406L
+D 3.6A Id, 30V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/DMG3406L.pdf
+$ENDCMP
+#
+$CMP DMG3414U
+D 4.2A Id, 20V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ds31739.pdf
+$ENDCMP
+#
+$CMP DMG3418L
+D 4A Id, 30V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/DMG3418L.pdf
+$ENDCMP
+#
+$CMP DMN10H220L
+D 1.6A Id, 100V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/DMN10H220L.pdf
+$ENDCMP
+#
+$CMP DMN10H700S
+D 0.7A Id, 100V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/DMN10H700S.pdf
+$ENDCMP
+#
+$CMP DMN13H750S
+D 1A Id, 130V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/DMN13H750S.pdf
+$ENDCMP
+#
+$CMP DMN2041L
+D 6.4A Id, 20V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F https://www.diodes.com/assets/Datasheets/products_inactive_data/DMN2041L.pdf
+$ENDCMP
+#
+$CMP DMN2050L
+D 5.9A Id, 20V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ds31502.pdf
+$ENDCMP
+#
+$CMP DMN2056U
+D 4A Id, 20V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/DMN2056U.pdf
+$ENDCMP
+#
+$CMP DMN2058U
+D 4.6A Id, 20V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/DMN2058U.pdf
+$ENDCMP
+#
+$CMP DMN2075U
+D 4.2A Id, 20V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/DMN2075U.pdf
+$ENDCMP
+#
+$CMP DMN2230U
+D 2A Id, 20V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ds31180.pdf
+$ENDCMP
+#
+$CMP DMN24H11DS
+D 0.27A Id, 240V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/DMN24H11DS.pdf
+$ENDCMP
+#
+$CMP DMN24H3D5L
+D 0.48A Id, 240V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/DMN24H3D5L.pdf
+$ENDCMP
+#
+$CMP DMN3042L
+D 5.8A Id, 30V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/DMN3042L.pdf
+$ENDCMP
+#
+$CMP DMN3051L
+D 5.8A Id, 30V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ds31347.pdf
+$ENDCMP
+#
+$CMP DMN30H4D0L
+D 0.25A Id, 300V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/DMN30H4D0L.pdf
+$ENDCMP
+#
+$CMP DMN3110S
+D 3.3A Id, 30V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/DMN3110S.pdf
+$ENDCMP
+#
+$CMP DMN3150L
+D 3.8A Id, 30V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ds31126.pdf
+$ENDCMP
+#
+$CMP DMN3300U
+D 2A Id, 30V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ds31181.pdf
+$ENDCMP
+#
+$CMP DMN3404L
+D 5.8A Id, 30V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ds31787.pdf
+$ENDCMP
+#
+$CMP DMN6075S
+D 2.5A Id, 60V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/DMN6075S.pdf
+$ENDCMP
+#
+$CMP DMN6140L
+D 2.3A Id, 60V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/DMN6140L.pdf
+$ENDCMP
+#
+$CMP DMN67D7L
+D 0.21A Id, 60V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/DMN67D7L.pdf
+$ENDCMP
+#
+$CMP DMN67D8L
+D 0.21A Id, 60V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/DMN67D8L.pdf
+$ENDCMP
+#
+$CMP D_Schottky_20V
+D Diode Array 1 Pair Common Cathode Schottky 20V 500mA
+K diode Schottky
+F https://www.digikey.com/product-detail/en/nexperia-usa-inc/PMEG2005CT-215/1727-5188-1-ND/2531787
 $ENDCMP
 #
 $CMP D_Schottky_30V
@@ -68,8 +296,36 @@ K diode Schottky
 F ~
 $ENDCMP
 #
+$CMP FRAM_128K
+D FRAM (Ferroelectric RAM) Memory IC 128Kb (16K x 8) SPI 40MHz  8-SOIC
+$ENDCMP
+#
 $CMP IC_BUFFER_INVERT_5.5V
 D Buffer, Inverting 2 Element 1 Bit per Element 3-State Output 8-TSSOP
+$ENDCMP
+#
+$CMP IRLML0030
+D 5.3A Id, 30V Vds, N-Channel HEXFET Power MOSFET, 27mOhm Rds, SOT-23
+K N-Channel HEXFET Power MOSFET
+F https://www.infineon.com/dgdl/irlml0030pbf.pdf?fileId=5546d462533600a401535664773825df
+$ENDCMP
+#
+$CMP IRLML2060
+D 1.2A Id, 60V Vds, N-Channel MOSFET, 480mOhm Rds, SOT-23
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535664b7fb25ee
+$ENDCMP
+#
+$CMP LED_AMBER
+D Light emitting diode
+K LED diode
+F https://www.digikey.com/product-detail/en/kingbright/APTD1608SECK-J4-PF/754-1802-1-ND/4753645
+$ENDCMP
+#
+$CMP LED_GREEN
+D Light emitting diode
+K LED diode
+F https://www.digikey.com/product-detail/en/kingbright/APTD1608CGCK/754-1545-1-ND/2514673
 $ENDCMP
 #
 $CMP LIS3MDLTR
@@ -80,8 +336,82 @@ $CMP MIC5332-SSYMT-TR
 F https://www.mouser.com/datasheet/2/268/mic5332-1891313.pdf
 $ENDCMP
 #
-$CMP NUF2042XV6T1G
-F https://www.onsemi.com/pub/Collateral/NUF2030XV6-D.PDF
+$CMP MMBF170
+D 0.5A Id, 60V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F https://www.diodes.com/assets/Datasheets/ds30104.pdf
+$ENDCMP
+#
+$CMP MicroSD_molex
+F https://multimedia.3m.com/mws/media/416257O/3mtm-card-connector-microsdtm-2900-series-ts2197.pdf
+$ENDCMP
+#
+$CMP Micro_USB
+D USB Micro Type B connector
+K connector USB micro
+F https://www.digikey.com/products/en?keywords=WM17141CT-ND
+$ENDCMP
+#
+$CMP NMOS_BSS12375
+D MOSFET N-CH 100V 170MA SOT23-3
+K N-Channel MOSFET
+F https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf
+$ENDCMP
+#
+$CMP PNP_40V_.2A
+D PNP transistor, base/emitter/collector
+K transistor PNP
+F https://www.digikey.com/product-detail/en/on-semiconductor/MMBT3906LT1G/MMBT3906LT1GOSCT-ND/1139817
+$ENDCMP
+#
+$CMP PTC_16V_350MA
+D PTC RESET FUSE 16V 350MA 0805
+K resettable fuse PTC PPTC polyfuse polyswitch
+F https://www.digikey.com/products/en?keywords=118-MF-PSHT035KX-2CT-ND
+$ENDCMP
+#
+$CMP RES_ARRAY_100K
+D 100k Ohm ±5% 62.5mW Power Per Element Isolated  Resistor Network/Array ±200ppm/°C 1506, Convex, Long Side Terminals
+$ENDCMP
+#
+$CMP RES_ARRAY_10K
+D 10k Ohm ±5% 62.5mW Power Per Element Isolated  Resistor Network/Array ±200ppm/°C 1506, Convex, Long Side Terminals
+$ENDCMP
+#
+$CMP RES_ARRAY_120
+D 120 Ohm ±5% 62.5mW Power Per Element Isolated  Resistor Network/Array ±200ppm/°C 1506, Convex, Long Side Terminals
+$ENDCMP
+#
+$CMP R_10
+D 10 Ohms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric)  Thick Film
+$ENDCMP
+#
+$CMP R_100K
+D 68 Ohms ±5% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film
+$ENDCMP
+#
+$CMP R_10K
+D 10 kOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric)  Thick Film
+$ENDCMP
+#
+$CMP R_120
+D 120 Ohms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film
+$ENDCMP
+#
+$CMP R_1K
+D 1 kOhms ±5% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric)  Thick Film
+$ENDCMP
+#
+$CMP R_1K5
+D 1.5 kOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric)  Thick Film
+$ENDCMP
+#
+$CMP R_1K8
+D 1.8 kOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric)  Thick Film
+$ENDCMP
+#
+$CMP R_1M
+D 1 MOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric)  Thick Film
 $ENDCMP
 #
 $CMP R_220
@@ -92,6 +422,10 @@ $CMP R_470
 D 470 Ohms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film
 $ENDCMP
 #
+$CMP R_68
+D 68 Ohms ±5% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film
+$ENDCMP
+#
 $CMP TVS_DIODE_14V
 D 40V Clamp  Ipp Tvs Diode Surface Mount 0402
 K diode TVS voltage suppressor
@@ -99,6 +433,136 @@ $ENDCMP
 #
 $CMP TXS0108ERGYR
 F https://www.ti.com/lit/ds/symlink/txs0108e.pdf?ts=1600185314181&ref_url=https%253A%252F%252Fwww.digikey.com%252Fproducts%252Fen%253Fkeywords%253D296-24806-1-ND
+$ENDCMP
+#
+$CMP USB_B_Mini
+D USB Mini Type B connector
+K connector USB mini
+F ~
+$ENDCMP
+#
+$CMP USB_Filter
+F https://www.onsemi.com/pub/Collateral/NUF2030XV6-D.PDF
+$ENDCMP
+#
+$CMP VN10LF
+D 0.15A Id, 60V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/VN10LF.pdf
+$ENDCMP
+#
+$CMP ZVN3306F
+D 0.15A Id, 60V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ZVN3306F.pdf
+$ENDCMP
+#
+$CMP ZVN3310F
+D 0.1A Id, 100V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ZVN3310F.pdf
+$ENDCMP
+#
+$CMP ZVN3320F
+D 0.06A Id, 200V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ZVN3320F.pdf
+$ENDCMP
+#
+$CMP ZVN4106F
+D 0.2A Id, 60V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ZVN4106F.pdf
+$ENDCMP
+#
+$CMP ZXM61N02F
+D 1.7A Id, 20V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ZXM61N02F.pdf
+$ENDCMP
+#
+$CMP ZXM61N03F
+D 1.4A Id, 30V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ZXM61N03F.pdf
+$ENDCMP
+#
+$CMP ZXMN10A07F
+D 0.76A Id, 100V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ZXMN10A07F.pdf
+$ENDCMP
+#
+$CMP ZXMN2A01F
+D 2.2A Id, 20V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ZXMN2A01F.pdf
+$ENDCMP
+#
+$CMP ZXMN2A14F
+D 4.1A Id, 20V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ZXMN2A14F.pdf
+$ENDCMP
+#
+$CMP ZXMN2B01F
+D 2.4A Id, 20V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ZXMN2B01F.pdf
+$ENDCMP
+#
+$CMP ZXMN2B14FH
+D 4.3A Id, 20V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ZXMN2B14FH.pdf
+$ENDCMP
+#
+$CMP ZXMN2F30FH
+D 4.9A Id, 20V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ZXMN2F30FH.pdf
+$ENDCMP
+#
+$CMP ZXMN2F34FH
+D 4A Id, 20V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ZXMN2F34FH.pdf
+$ENDCMP
+#
+$CMP ZXMN3A01F
+D 2A Id, 30V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ZXMN3A01F.pdf
+$ENDCMP
+#
+$CMP ZXMN3A14F
+D 3.2A Id, 30V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ZXMN3A14F.pdf
+$ENDCMP
+#
+$CMP ZXMN3B01F
+D 2A Id, 30V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ZXMN3B01F.pdf
+$ENDCMP
+#
+$CMP ZXMN3B14F
+D 3.5A Id, 30V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ZXMN3B14F.pdf
+$ENDCMP
+#
+$CMP ZXMN3F30FH
+D 4.6A Id, 30V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ZXMN3F30FH.pdf
+$ENDCMP
+#
+$CMP ZXMN6A07F
+D 1.4A Id, 60V Vds, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+F http://www.diodes.com/assets/Datasheets/ZXMN6A07F.pdf
 $ENDCMP
 #
 #End Doc Library

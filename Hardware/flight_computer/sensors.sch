@@ -113,7 +113,7 @@ Wire Wire Line
 	7700 5000 7800 5000
 Connection ~ 7800 5000
 $Comp
-L flight_computer-rescue:DF40C2.0-20DS-0.4V51-openDrone_parts J?
+L flight_computer-rescue:DF40C2.0-20DS-0.4V51-openDrone_parts-flight_computer-rescue J?
 U 1 1 5F6366CC
 P 2800 5150
 F 0 "J?" H 3150 5437 60  0000 C CNN
@@ -274,7 +274,7 @@ Wire Wire Line
 Wire Wire Line
 	4500 6050 3500 6050
 $Comp
-L flight_computer-rescue:LIS3MDLTR-openDrone_parts U?
+L flight_computer-rescue:LIS3MDLTR-openDrone_parts-flight_computer-rescue U?
 U 1 1 5F647DF8
 P 7300 2500
 F 0 "U?" H 8500 2837 60  0000 C CNN
