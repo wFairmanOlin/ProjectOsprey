@@ -70,6 +70,10 @@ K N-Channel MOSFET
 F http://www.diodes.com/assets/Datasheets/BSS127.pdf
 $ENDCMP
 #
+$CMP CAN_Transceiver
+D 1/1 Transceiver Half CANbus SOT-23-8
+$ENDCMP
+#
 $CMP C_0u1
 D 0.1µF -20%, +80% 16V Ceramic Capacitor Y5V
 F https://www.digikey.com/product-detail/en/kemet/C0805C104Z4VACTU/399-9159-1-ND/3522677
@@ -330,6 +334,11 @@ $ENDCMP
 #
 $CMP LIS3MDLTR
 F https://www.st.com/content/ccc/resource/technical/document/datasheet/54/2a/85/76/e3/97/42/18/DM00075867.pdf/files/DM00075867.pdf/jcr:content/translations/en.DM00075867.pdf
+$ENDCMP
+#
+$CMP Level_Shifter
+D Voltage Level Translator Bidirectional 1 Circuit 8 Channel 60Mbps 20-VQFN (3.5x4.5)
+F https://www.ti.com/lit/ds/symlink/txs0108e.pdf?ts=1600185314181&ref_url=https%253A%252F%252Fwww.digikey.com%252Fproducts%252Fen%253Fkeywords%253D296-24806-1-ND
 $ENDCMP
 #
 $CMP MIC5332-SSYMT-TR
