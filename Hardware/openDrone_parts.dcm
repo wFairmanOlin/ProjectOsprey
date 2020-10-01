@@ -90,6 +90,22 @@ $CMP IC_BUFFER_INVERT_5.5V
 D Buffer, Inverting 2 Element 1 Bit per Element 3-State Output 8-TSSOP
 $ENDCMP
 #
+$CMP JST_8_RA
+D Connector Header Surface Mount, Right Angle 8 position 0.039" (1.00mm)
+$ENDCMP
+#
+$CMP JST_GH_4_RA
+D Connector Header Surface Mount, Right Angle 4 position 0.049" (1.25mm)
+$ENDCMP
+#
+$CMP JST_GH_5_RA
+D Connector Header Surface Mount, Right Angle 5 position 0.049" (1.25mm)
+$ENDCMP
+#
+$CMP JST_GH_6_RA
+D Connector Header Surface Mount, Right Angle 6 position 0.049" (1.25mm)
+$ENDCMP
+#
 $CMP LED_AMBER
 D Light emitting diode
 K LED diode
