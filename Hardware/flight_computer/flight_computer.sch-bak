@@ -180,12 +180,6 @@ F0 "PWM_PPM" 50
 F1 "PWM_PPM.sch" 50
 $EndSheet
 $Sheet
-S 5350 5850 800  350 
-U 5F614982
-F0 "80PIN" 50
-F1 "80PIN.sch" 50
-$EndSheet
-$Sheet
 S 5300 6550 750  350 
 U 5F614BBC
 F0 "IO_PWR" 50
@@ -327,4 +321,51 @@ Wire Wire Line
 Connection ~ 10300 5050
 Wire Wire Line
 	10300 5050 10500 5050
+$Sheet
+S 9550 800  1200 2250
+U 5F7684E9
+F0 "CONNECTORS" 50
+F1 "connectors.sch" 50
+F2 "dshot_4" I L 9550 900 50 
+F3 "dshot_3" I L 9550 1000 50 
+F4 "dshot_2" I L 9550 1100 50 
+F5 "dshot_1" I L 9550 1200 50 
+F6 "batt_current_sense" I L 9550 1300 50 
+F7 "TLM" I L 9550 1400 50 
+F8 "VBAT" I L 9550 1500 50 
+F9 "console_tx" I L 9550 1600 50 
+F10 "console_rx" I L 9550 1700 50 
+F11 "SWCLK" I L 9550 1800 50 
+F12 "SWDIO" I L 9550 1900 50 
+$EndSheet
+$Comp
+L power:VCC #PWR?
+U 1 1 5F774F8C
+P 3450 7050
+F 0 "#PWR?" H 3450 6900 50  0001 C CNN
+F 1 "VCC" H 3467 7223 50  0000 C CNN
+F 2 "" H 3450 7050 50  0001 C CNN
+F 3 "" H 3450 7050 50  0001 C CNN
+	1    3450 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 7050 3300 7050
+Text Label 3300 7050 2    50   ~ 0
+5V
+$Comp
+L power:GND #PWR?
+U 1 1 5F77612E
+P 3300 7200
+F 0 "#PWR?" H 3300 6950 50  0001 C CNN
+F 1 "GND" H 3305 7027 50  0000 C CNN
+F 2 "" H 3300 7200 50  0001 C CNN
+F 3 "" H 3300 7200 50  0001 C CNN
+	1    3300 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 7200 3450 7200
+Text Label 3450 7200 0    50   ~ 0
+GND
 $EndSCHEMATC

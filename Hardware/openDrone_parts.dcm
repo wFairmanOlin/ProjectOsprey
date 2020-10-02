@@ -20,6 +20,11 @@ $CMP Barometer
 D Pressure Sensor 0.15PSI ~ 17.4PSI (1kPa ~ 120kPa) Absolute  24 b 8-SMD
 $ENDCMP
 #
+$CMP CAM-M8Q-0
+D CAM-M8 RF Receiver BeiDou, GLONASS, GNSS, GPS 1.575GHz -167dBm  On-Board, Chip Module
+F UBlox
+$ENDCMP
+#
 $CMP CAN_Transceiver
 D 1/1 Transceiver Half CANbus SOT-23-8
 $ENDCMP
