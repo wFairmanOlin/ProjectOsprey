@@ -42,17 +42,6 @@ F 3 "" H 1800 1400 50  0001 C CNN
 $EndComp
 Text Notes 850  1650 0    50   ~ 0
 ESC Connection
-$Comp
-L Connector_Generic:Conn_02x03_Counter_Clockwise J?
-U 1 1 5F76BFE5
-P 3850 1250
-F 0 "J?" H 4150 1550 50  0000 C CNN
-F 1 "Conn_02x03_Counter_Clockwise" H 4300 1500 50  0001 C CNN
-F 2 "" H 3850 1250 50  0001 C CNN
-F 3 "~" H 3850 1250 50  0001 C CNN
-	1    3850 1250
-	1    0    0    -1  
-$EndComp
 Text Notes 3700 1550 0    50   ~ 0
 Debug Port
 Wire Wire Line
@@ -281,4 +270,15 @@ Text GLabel 4150 1250 2    50   Input ~ 0
 SWCLK
 Text GLabel 4150 1350 2    50   Input ~ 0
 SWDIO
+$Comp
+L openDrone_parts:Conn_02x03 J?
+U 1 1 5F7B4CC5
+P 3850 1250
+F 0 "J?" H 3900 1567 50  0000 C CNN
+F 1 "Conn_02x03" H 3900 1476 50  0000 C CNN
+F 2 "drone_footprints:TSW-103-07-F-D" H 4650 1450 50  0001 C CNN
+F 3 "~" H 3850 1250 50  0001 C CNN
+	1    3850 1250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

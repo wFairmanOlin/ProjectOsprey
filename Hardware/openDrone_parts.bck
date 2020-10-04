@@ -20,6 +20,11 @@ $CMP Barometer
 D Pressure Sensor 0.15PSI ~ 17.4PSI (1kPa ~ 120kPa) Absolute  24 b 8-SMD
 $ENDCMP
 #
+$CMP CAM-M8Q-0
+D CAM-M8 RF Receiver BeiDou, GLONASS, GNSS, GPS 1.575GHz -167dBm  On-Board, Chip Module
+F UBlox
+$ENDCMP
+#
 $CMP CAN_Transceiver
 D 1/1 Transceiver Half CANbus SOT-23-8
 $ENDCMP
@@ -49,6 +54,12 @@ $CMP C_1u
 D 1µF -20%, +80% 16V Ceramic Capacitor Y5V (F) 0805 (2012 Metric)
 $ENDCMP
 #
+$CMP C_220u
+D Aluminum Electrolytic Capacitors Radial, Can - SMD - 1000 Hrs @ 105°C
+K cap capacitor
+F ~
+$ENDCMP
+#
 $CMP C_22u
 D 22µF ±20% 25V Ceramic Capacitor X5R 0805 (2012 Metric)
 $ENDCMP
@@ -66,6 +77,18 @@ D 8pF ±0.5pF 50V Ceramic Capacitor C0G, NP0
 F https://www.digikey.com/product-detail/en/yageo/CC0805DRNPO9BN8R0/311-1097-1-ND/303007
 $ENDCMP
 #
+$CMP Conn_02x03
+D Connector Header Through Hole 6 position 0.100" (2.54mm)
+K connector
+F ~
+$ENDCMP
+#
+$CMP Crystal_24MHZ
+D CRYSTAL 24.0000MHZ 8PF SMD
+K quartz ceramic resonator oscillator
+F ~
+$ENDCMP
+#
 $CMP DF40C2.0-20DS-0.4V51
 F https://www.hirose.com/product/document?clcode=CL0684-4003-3-51&productname=DF40C-60DP-0.4V(51)&series=DF40&documenttype=Catalog&lang=en&documentid=D31649_en
 $ENDCMP
@@ -80,6 +103,23 @@ $CMP D_Schottky_30V
 D Diode Schottky 30V 30mA (DC) Surface Mount SOD-323
 K diode Schottky
 F ~
+$ENDCMP
+#
+$CMP D_Schottky_70V
+D DIODE SCHOTTKY 70V 100MA SOD523
+K diode Schottky
+F ~
+$ENDCMP
+#
+$CMP EMI_Filter_CLC
+D EMI T-filter (CLC)
+K EMI T-filter
+F http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb
+$ENDCMP
+#
+$CMP EMI_Filter_CLC_100MHZ
+D FILTER LC(PI) 135NH/44PF SMD
+K EMI T-filter
 $ENDCMP
 #
 $CMP FRAM_128K
@@ -122,9 +162,21 @@ $CMP LIS3MDLTR
 F https://www.st.com/content/ccc/resource/technical/document/datasheet/54/2a/85/76/e3/97/42/18/DM00075867.pdf/files/DM00075867.pdf/jcr:content/translations/en.DM00075867.pdf
 $ENDCMP
 #
+$CMP LP5907QMFX-3.3
+D Linear Voltage Regulator IC Output 250mA SOT-23-5
+K Single Output LDO Low-Noise
+F http://www.ti.com/lit/ds/symlink/lp5907.pdf
+$ENDCMP
+#
 $CMP Level_Shifter
 D Voltage Level Translator Bidirectional 1 Circuit 8 Channel 60Mbps 20-VQFN (3.5x4.5)
 F https://www.ti.com/lit/ds/symlink/txs0108e.pdf?ts=1600185314181&ref_url=https%253A%252F%252Fwww.digikey.com%252Fproducts%252Fen%253Fkeywords%253D296-24806-1-ND
+$ENDCMP
+#
+$CMP MCP131T-300E_TT
+D Microcontroller supervisory circuit, SOT-23
+K supervisory circuit
+F http://ww1.microchip.com/downloads/en/DeviceDoc/11184d.pdf
 $ENDCMP
 #
 $CMP MIC5332-SSYMT-TR

@@ -89,12 +89,8 @@ Wire Wire Line
 	4450 2300 4300 2300
 Wire Wire Line
 	4000 2300 3550 2300
-Text GLabel 3750 2600 2    50   Input ~ 0
-FMU-SWDIO
 Wire Wire Line
 	3750 2600 3550 2600
-Text GLabel 3750 2700 2    50   Input ~ 0
-FMU-SWCLK
 Wire Wire Line
 	3750 2700 3550 2700
 Text GLabel 3750 2800 2    50   Input ~ 0
@@ -333,10 +329,7 @@ F5 "dshot_1" I L 9550 1200 50
 F6 "batt_current_sense" I L 9550 1300 50 
 F7 "TLM" I L 9550 1400 50 
 F8 "VBAT" I L 9550 1500 50 
-F9 "console_tx" I L 9550 1600 50 
-F10 "console_rx" I L 9550 1700 50 
-F11 "SWCLK" I L 9550 1800 50 
-F12 "SWDIO" I L 9550 1900 50 
+F9 "tx_telem_1" I R 10750 1750 50 
 $EndSheet
 $Comp
 L power:VCC #PWR?
@@ -368,4 +361,8 @@ Wire Wire Line
 	3300 7200 3450 7200
 Text Label 3450 7200 0    50   ~ 0
 GND
+Text GLabel 3750 2600 2    50   Input ~ 0
+SWDIO
+Text GLabel 3750 2700 2    50   Input ~ 0
+SWCLK
 $EndSCHEMATC
