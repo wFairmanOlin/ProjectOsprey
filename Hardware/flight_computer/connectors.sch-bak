@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 10
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -42,17 +42,6 @@ F 3 "" H 1800 1400 50  0001 C CNN
 $EndComp
 Text Notes 850  1650 0    50   ~ 0
 ESC Connection
-$Comp
-L Connector_Generic:Conn_02x03_Counter_Clockwise J?
-U 1 1 5F76BFE5
-P 3850 1250
-F 0 "J?" H 4150 1550 50  0000 C CNN
-F 1 "Conn_02x03_Counter_Clockwise" H 4300 1500 50  0001 C CNN
-F 2 "" H 3850 1250 50  0001 C CNN
-F 3 "~" H 3850 1250 50  0001 C CNN
-	1    3850 1250
-	1    0    0    -1  
-$EndComp
 Text Notes 3700 1550 0    50   ~ 0
 Debug Port
 Wire Wire Line
@@ -99,17 +88,6 @@ F 5 "SM06B-GHS-TB(LF)(SN)" H 1200 2750 50  0001 C CNN "MPN"
 $EndComp
 Text Notes 1000 2950 0    50   ~ 0
 TELEM1
-$Comp
-L power:VCC #PWR?
-U 1 1 5F77B61C
-P 1550 2000
-F 0 "#PWR?" H 1550 1850 50  0001 C CNN
-F 1 "VCC" H 1567 2173 50  0000 C CNN
-F 2 "" H 1550 2000 50  0001 C CNN
-F 3 "" H 1550 2000 50  0001 C CNN
-	1    1550 2000
-	1    0    0    -1  
-$EndComp
 Text HLabel 1400 2400 2    50   Input ~ 0
 tx_telem_1
 Text HLabel 1400 2500 2    50   Input ~ 0
@@ -143,7 +121,7 @@ F 5 "SM04B-GHS-TB(LF)(SN)-" H 1250 4050 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 Text Notes 650  4250 0    50   ~ 0
-FrySky Telemetry/Serial 4\n
+FrSky Telemetry/Serial 4\n
 Wire Wire Line
 	1400 4100 1750 4100
 Wire Wire Line
@@ -159,10 +137,6 @@ F 3 "" H 1750 4200 50  0001 C CNN
 	1    1750 4200
 	1    0    0    -1  
 $EndComp
-Text HLabel 1400 3900 2    50   Input ~ 0
-tx_frysky
-Text HLabel 1400 4000 2    50   Input ~ 0
-rx_frysky
 $Comp
 L openDrone_parts:JST_GH_5_RA J?
 U 1 1 5F77DE6E
@@ -197,23 +171,10 @@ F 3 "" H 1650 5500 50  0001 C CNN
 	1    1650 5500
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5F77F49C
-P 1650 4950
-F 0 "#PWR?" H 1650 4800 50  0001 C CNN
-F 1 "VCC" H 1667 5123 50  0000 C CNN
-F 2 "" H 1650 4950 50  0001 C CNN
-F 3 "" H 1650 4950 50  0001 C CNN
-	1    1650 4950
-	1    0    0    -1  
-$EndComp
 Text HLabel 1450 5150 2    50   Input ~ 0
 rc_in
 Text HLabel 2000 5250 2    50   Input ~ 0
 rssi_in
-Text GLabel 1450 5350 2    50   Input ~ 0
-3V3
 Wire Wire Line
 	1400 2300 1550 2300
 $Comp
@@ -227,17 +188,6 @@ F 3 "" H 1575 2250 50  0001 C CNN
 F 4 "445-13254-1-ND" H 1550 2150 60  0001 C CNN "DPN"
 	1    1550 2150
 	-1   0    0    1   
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5F785954
-P 1550 3500
-F 0 "#PWR?" H 1550 3350 50  0001 C CNN
-F 1 "VCC" H 1700 3550 50  0000 C CNN
-F 2 "" H 1550 3500 50  0001 C CNN
-F 3 "" H 1550 3500 50  0001 C CNN
-	1    1550 3500
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1400 3800 1550 3800
@@ -271,14 +221,68 @@ F 4 "311-10.0KCRCT-ND" H 1200 5500 60  0001 C CNN "DPN"
 $EndComp
 Wire Wire Line
 	1450 5250 1700 5250
-Text GLabel 3650 1250 0    50   Input ~ 0
-FMU_UART7_TX
-Text GLabel 3650 1350 0    50   Input ~ 0
+$Comp
+L openDrone_parts:Conn_02x03 J?
+U 1 1 5F7B4CC5
+P 3850 1250
+F 0 "J?" H 3900 1567 50  0000 C CNN
+F 1 "Conn_02x03" H 3900 1476 50  0000 C CNN
+F 2 "drone_footprints:TSW-103-07-F-D" H 4650 1450 50  0001 C CNN
+F 3 "~" H 3850 1250 50  0001 C CNN
+	1    3850 1250
+	1    0    0    -1  
+$EndComp
+Text HLabel 3650 1350 0    50   Input ~ 0
 FMU_UART7_RX
-Text GLabel 3650 1150 0    50   Input ~ 0
-3V3
-Text GLabel 4150 1250 2    50   Input ~ 0
+Text HLabel 3650 1250 0    50   Input ~ 0
+FMU_UART7_TX
+Text HLabel 4150 1250 2    50   Input ~ 0
 SWCLK
-Text GLabel 4150 1350 2    50   Input ~ 0
+Text HLabel 4150 1350 2    50   Input ~ 0
 SWDIO
+Text HLabel 3650 1150 0    50   Input ~ 0
+3V3
+Text HLabel 1450 5350 2    50   Input ~ 0
+3V3
+Text Label 1400 3900 0    50   ~ 0
+tx_frsky
+Text Label 1400 4000 0    50   ~ 0
+rx_frsky
+Text HLabel 3650 3750 0    50   Input ~ 0
+FMU_USART8_TX
+Text HLabel 3650 3850 0    50   Input ~ 0
+FMU_USART8_RX
+$Comp
+L power:GND #PWR?
+U 1 1 5F8EE166
+P 1650 4950
+F 0 "#PWR?" H 1650 4700 50  0001 C CNN
+F 1 "GND" H 1655 4777 50  0000 C CNN
+F 2 "" H 1650 4950 50  0001 C CNN
+F 3 "" H 1650 4950 50  0001 C CNN
+	1    1650 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F8EE646
+P 1550 3500
+F 0 "#PWR?" H 1550 3250 50  0001 C CNN
+F 1 "GND" H 1555 3327 50  0000 C CNN
+F 2 "" H 1550 3500 50  0001 C CNN
+F 3 "" H 1550 3500 50  0001 C CNN
+	1    1550 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F8EE993
+P 1550 2000
+F 0 "#PWR?" H 1550 1750 50  0001 C CNN
+F 1 "GND" H 1555 1827 50  0000 C CNN
+F 2 "" H 1550 2000 50  0001 C CNN
+F 3 "" H 1550 2000 50  0001 C CNN
+	1    1550 2000
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
