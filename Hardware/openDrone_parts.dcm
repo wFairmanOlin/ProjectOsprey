@@ -20,6 +20,12 @@ $CMP Barometer
 D Pressure Sensor 0.15PSI ~ 17.4PSI (1kPa ~ 120kPa) Absolute  24 b 8-SMD
 $ENDCMP
 #
+$CMP Buzzer
+D Buzzers Transducer, Externally Driven Piezo 1.5mA 4kHz 90dB @ 5V, 10cm Through Hole PC Pins
+K quartz resonator ceramic
+F ~
+$ENDCMP
+#
 $CMP CAM-M8Q-0
 D CAM-M8 RF Receiver BeiDou, GLONASS, GNSS, GPS 1.575GHz -167dBm  On-Board, Chip Module
 F UBlox
@@ -39,7 +45,9 @@ D 0.22µF ±10% 25V Ceramic Capacitor X7R 0805 (2012 Metric)
 $ENDCMP
 #
 $CMP C_100u
-D 100µF ±20% 4V Ceramic Capacitor X5R 0805 (2012 Metric)
+D Aluminum Electrolytic Capacitors Radial, Can - SMD - 2000 Hrs @ 105°C
+K cap capacitor
+F ~
 $ENDCMP
 #
 $CMP C_10n
@@ -93,6 +101,12 @@ $CMP DF40C2.0-20DS-0.4V51
 F https://www.hirose.com/product/document?clcode=CL0684-4003-3-51&productname=DF40C-60DP-0.4V(51)&series=DF40&documenttype=Catalog&lang=en&documentid=D31649_en
 $ENDCMP
 #
+$CMP D_Schottky_10V_3A
+D Diode Schottky 3A (DC) Surface Mount SOD-323F
+K diode Schottky
+F ~
+$ENDCMP
+#
 $CMP D_Schottky_20V
 D Diode Array 1 Pair Common Cathode Schottky 20V 500mA
 K diode Schottky
@@ -108,6 +122,12 @@ $ENDCMP
 $CMP D_Schottky_70V
 D DIODE SCHOTTKY 70V 100MA SOD523
 K diode Schottky
+F ~
+$ENDCMP
+#
+$CMP D_Schottky_x2_20V
+D DIODE ARRAY SCHOTTKY 20V 3HUSON
+K diode
 F ~
 $ENDCMP
 #
@@ -138,6 +158,16 @@ $ENDCMP
 #
 $CMP JST_GH_6_RA
 D Connector Header Surface Mount, Right Angle 6 position 0.049" (1.25mm)
+$ENDCMP
+#
+$CMP LDO_600MA
+D IC REG LINEAR 3.3V 600MA SOT25
+K REGULATOR LDO 3.3V
+$ENDCMP
+#
+$CMP LED_0805_Green
+D LED, Green, 2.2V, 20mA, 0805
+F http://www.osram-os.com/Graphics/XPic9/00078860_0.pdf
 $ENDCMP
 #
 $CMP LED_AMBER
@@ -203,6 +233,16 @@ $CMP PTC_16V_350MA
 D PTC RESET FUSE 16V 350MA 0805
 K resettable fuse PTC PPTC polyfuse polyswitch
 F https://www.digikey.com/products/en?keywords=118-MF-PSHT035KX-2CT-ND
+$ENDCMP
+#
+$CMP PTC_6V_1A
+D Polymeric PTC Resettable Fuse 6V Ih Surface Mount 0805 (2012 Metric), Concave
+K resettable fuse PTC PPTC polyfuse polyswitch
+$ENDCMP
+#
+$CMP PTC_6V_2A
+D Polymeric PTC Resettable Fuse 6V Ih Surface Mount 1206 (3216 Metric), Concave
+K resettable fuse PTC PPTC polyfuse polyswitch
 $ENDCMP
 #
 $CMP RES_ARRAY_100K
