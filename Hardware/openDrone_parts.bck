@@ -131,6 +131,10 @@ K diode
 F ~
 $ENDCMP
 #
+$CMP Dual_XOR_GATE
+D IC GATE XOR 2CH 2-INP 8TSSOP
+$ENDCMP
+#
 $CMP EMI_Filter_CLC_100MHZ
 D FILTER LC(PI) 135NH/44PF SMD
 K EMI T-filter
@@ -217,10 +221,20 @@ K connector USB micro
 F https://www.digikey.com/products/en?keywords=WM17141CT-ND
 $ENDCMP
 #
+$CMP NMOS_20V_1A
+D MOSFET N-CH 20V 1A SOT323
+K N-Channel MOSFET
+$ENDCMP
+#
 $CMP NMOS_BSS12375
 D MOSFET N-CH 100V 170MA SOT23-3
 K N-Channel MOSFET
 F https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf
+$ENDCMP
+#
+$CMP PNP_20V_.4A
+D P-Channel 390mA (Ta) 250mW (Ta) Surface Mount PG-SOT323-3
+K transistor PNP
 $ENDCMP
 #
 $CMP PNP_40V_.2A
@@ -289,8 +303,16 @@ $CMP R_1M
 D 1 MOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric)  Thick Film
 $ENDCMP
 #
+$CMP R_22
+D 22 ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Moisture Resistant Thick Film
+$ENDCMP
+#
 $CMP R_220
 D 220 Ohms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric)  Thick Film
+$ENDCMP
+#
+$CMP R_2K2
+D 2.2 ±5% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film
 $ENDCMP
 #
 $CMP R_470

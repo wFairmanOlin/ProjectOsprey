@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -438,4 +438,180 @@ Text Label 8200 2850 2    50   ~ 0
 VDD_3V3_SENSORS
 Text Label 10400 4150 0    50   ~ 0
 VDD_3V3_SENSORS
+$Comp
+L openDrone_parts:Buzzer BZ?
+U 1 1 5F827564
+P 4700 3500
+F 0 "BZ?" H 4852 3529 50  0000 L CNN
+F 1 "Buzzer" H 4852 3438 50  0000 L CNN
+F 2 "drone_footprints:PT-2040PQ" H 5050 3950 50  0001 C CNN
+F 3 "~" V 4675 3600 50  0001 C CNN
+F 4 "458-1078-ND" H 5000 3750 50  0001 C CNN "DPN"
+F 5 "PT-2040PQ" H 4950 3850 50  0001 C CNN "MPN"
+	1    4700 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L openDrone_parts:CAM-M8Q-0 U?
+U 1 1 5F827FBC
+P 3100 4600
+F 0 "U?" H 3100 4915 50  0000 C CNN
+F 1 "CAM-M8Q-0" H 3100 4824 50  0000 C CNN
+F 2 "drone_footprints:CAM_M8Q_0" H 2650 4950 50  0001 L BNN
+F 3 "UBlox" H 3000 4850 50  0001 L BNN
+F 4 "672-CAM-M8Q-0CT-ND" H 3150 4850 50  0001 C CNN "DPN"
+	1    3100 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L openDrone_parts:R_220 R?
+U 1 1 5F82A212
+P 4450 5000
+F 0 "R?" H 4450 5207 50  0000 C CNN
+F 1 "R_220" H 4450 5116 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" H 3650 5150 50  0001 C CNN
+F 3 "" H 4150 5500 50  0001 C CNN
+F 4 "311-220CRCT-ND" H 3800 5250 60  0001 C CNN "DPN"
+	1    4450 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L openDrone_parts:R_220 R?
+U 1 1 5F82B7EB
+P 1750 4850
+F 0 "R?" H 1750 5057 50  0000 C CNN
+F 1 "R_220" H 1750 4966 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" H 950 5000 50  0001 C CNN
+F 3 "" H 1450 5350 50  0001 C CNN
+F 4 "311-220CRCT-ND" H 1100 5100 60  0001 C CNN "DPN"
+	1    1750 4850
+	1    0    0    -1  
+$EndComp
+Text HLabel 4600 5000 2    50   Input ~ 0
+GPS_UART_TX
+Text HLabel 1600 4850 0    50   Input ~ 0
+GPS_UART_RX
+$Comp
+L power:GND #PWR?
+U 1 1 5F857A76
+P 3050 5900
+F 0 "#PWR?" H 3050 5650 50  0001 C CNN
+F 1 "GND" H 3055 5727 50  0000 C CNN
+F 2 "" H 3050 5900 50  0001 C CNN
+F 3 "" H 3050 5900 50  0001 C CNN
+	1    3050 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 5750 2700 5900
+Wire Wire Line
+	2700 5900 2750 5900
+Wire Wire Line
+	3350 5750 3350 5900
+Wire Wire Line
+	3350 5900 3300 5900
+Connection ~ 3050 5900
+Wire Wire Line
+	3300 5750 3300 5900
+Connection ~ 3300 5900
+Wire Wire Line
+	3300 5900 3250 5900
+Wire Wire Line
+	3250 5750 3250 5900
+Connection ~ 3250 5900
+Wire Wire Line
+	3250 5900 3200 5900
+Wire Wire Line
+	3200 5750 3200 5900
+Connection ~ 3200 5900
+Wire Wire Line
+	3200 5900 3150 5900
+Wire Wire Line
+	3150 5750 3150 5900
+Connection ~ 3150 5900
+Wire Wire Line
+	3150 5900 3100 5900
+Wire Wire Line
+	3100 5750 3100 5900
+Connection ~ 3100 5900
+Wire Wire Line
+	3100 5900 3050 5900
+Wire Wire Line
+	3050 5750 3050 5900
+Wire Wire Line
+	3000 5750 3000 5900
+Connection ~ 3000 5900
+Wire Wire Line
+	3000 5900 3050 5900
+Wire Wire Line
+	2950 5750 2950 5900
+Connection ~ 2950 5900
+Wire Wire Line
+	2950 5900 3000 5900
+Wire Wire Line
+	2900 5750 2900 5900
+Connection ~ 2900 5900
+Wire Wire Line
+	2900 5900 2950 5900
+Wire Wire Line
+	2850 5750 2850 5900
+Connection ~ 2850 5900
+Wire Wire Line
+	2850 5900 2900 5900
+Wire Wire Line
+	2800 5750 2800 5900
+Connection ~ 2800 5900
+Wire Wire Line
+	2800 5900 2850 5900
+Wire Wire Line
+	2750 5750 2750 5900
+Connection ~ 2750 5900
+Wire Wire Line
+	2750 5900 2800 5900
+Text Label 2350 4750 2    50   ~ 0
+RF_SIGNALS
+Wire Wire Line
+	1900 4850 2350 4850
+Text Label 3850 4900 0    50   ~ 0
+RF_SIGNALS
+Wire Wire Line
+	3850 5000 4300 5000
+Text Label 4400 4400 0    50   ~ 0
+VDD_3V3_SENSORS
+Wire Wire Line
+	3850 4500 4400 4500
+Wire Wire Line
+	4400 4500 4400 4400
+Wire Wire Line
+	3850 4600 4400 4600
+Wire Wire Line
+	4400 4600 4400 4500
+Connection ~ 4400 4500
+Wire Wire Line
+	3850 4700 4400 4700
+Wire Wire Line
+	4400 4700 4400 4600
+Connection ~ 4400 4600
+$Comp
+L openDrone_parts:C_4u7 C?
+U 1 1 5F87B412
+P 3800 5900
+F 0 "C?" V 3548 5900 50  0000 C CNN
+F 1 "C_4u7" V 3639 5900 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 3838 5750 50  0001 C CNN
+F 3 "" H 3825 6000 50  0001 C CNN
+F 4 "490-14466-1-ND" H 3800 5900 60  0001 C CNN "DPN"
+	1    3800 5900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 5900 3650 5900
+Connection ~ 3350 5900
+Wire Wire Line
+	3950 5900 5300 5900
+Wire Wire Line
+	5300 5900 5300 4700
+Wire Wire Line
+	5300 4700 4400 4700
+Connection ~ 4400 4700
 $EndSCHEMATC
