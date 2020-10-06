@@ -184,9 +184,9 @@ Connection ~ 7250 2250
 Wire Wire Line
 	7250 2250 8650 2250
 Text HLabel 3750 1750 0    50   Input ~ 0
-OTG_FS_N
+OTG_FS_DM
 Text HLabel 3750 1850 0    50   Input ~ 0
-OTG_FS_P
+OTG_FS_DP
 $Comp
 L openDrone_parts:Micro_USB J?
 U 1 1 5F6D2CFC
