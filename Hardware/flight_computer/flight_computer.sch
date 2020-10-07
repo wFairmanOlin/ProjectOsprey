@@ -831,4 +831,23 @@ Text Label 9700 3850 2    50   ~ 0
 RC_INPUT_USART1_RX
 Text Label 9700 3750 2    50   ~ 0
 RC_OUTPUT_USART1_TX
+Text Label 3750 4150 0    50   ~ 0
+RASPI_I2C1_SCL
+Text Label 3750 4250 0    50   ~ 0
+RASPI_I2C1_SDA
+Text Label 5350 900  2    50   ~ 0
+RASPI_I2C1_SCL
+Text Label 5350 1000 2    50   ~ 0
+RASPI_I2C1_SDA
+$Comp
+L openDrone_parts:rpi_zero_w J?
+U 1 1 5F812ED0
+P 5700 1800
+F 0 "J?" H 5750 2917 50  0000 C CNN
+F 1 "rpi_zero_w" H 5750 2826 50  0000 C CNN
+F 2 "drone_footprints:rpi_zero_w" H 5700 1800 50  0001 C CNN
+F 3 "~" H 5700 1800 50  0001 C CNN
+	1    5700 1800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

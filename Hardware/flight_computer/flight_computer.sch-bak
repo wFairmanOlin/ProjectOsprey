@@ -823,8 +823,16 @@ Text Label 3750 2650 0    50   ~ 0
 FrSky_INV
 Text Label 9700 3450 2    50   ~ 0
 FrSky_INV
-Text Label 4150 4000 0    50   ~ 0
-RC_INPUT
+Text Label 3750 4050 0    50   ~ 0
+RC_INPUT_USART1_RX
+Text Label 3750 3950 0    50   ~ 0
+RC_OUTPUT_USART1_TX
 Text Label 9700 3850 2    50   ~ 0
-RC_INPUT
+RC_INPUT_USART1_RX
+Text Label 9700 3750 2    50   ~ 0
+RC_OUTPUT_USART1_TX
+Text Label 3750 4150 0    50   ~ 0
+RASPI_I2C1_SCL
+Text Label 3750 4250 0    50   ~ 0
+RASPI_I2C1_SDA
 $EndSCHEMATC
