@@ -196,6 +196,12 @@ K Single Output LDO Low-Noise
 F http://www.ti.com/lit/ds/symlink/lp5907.pdf
 $ENDCMP
 #
+$CMP L_55m
+D FIXED IND 56MH 50MA 135 OHM TH
+K inductor choke coil reactor magnetic
+F ~
+$ENDCMP
+#
 $CMP Level_Shifter
 D Voltage Level Translator Bidirectional 1 Circuit 8 Channel 60Mbps 20-VQFN (3.5x4.5)
 F https://www.ti.com/lit/ds/symlink/txs0108e.pdf?ts=1600185314181&ref_url=https%253A%252F%252Fwww.digikey.com%252Fproducts%252Fen%253Fkeywords%253D296-24806-1-ND
@@ -336,6 +342,12 @@ $ENDCMP
 #
 $CMP USB_Filter
 F https://www.onsemi.com/pub/Collateral/NUF2030XV6-D.PDF
+$ENDCMP
+#
+$CMP rpi_zero_w
+D Raspberry Pi Zero with Wifi ;)
+K connector
+F ~
 $ENDCMP
 #
 #End Doc Library
