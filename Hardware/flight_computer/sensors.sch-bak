@@ -77,12 +77,8 @@ Wire Wire Line
 	2350 1450 2350 1550
 Text HLabel 3850 1000 2    50   Input ~ 0
 IMU_INT1_ACCEL
-Text HLabel 3850 1100 2    50   Input ~ 0
-IMU_INT2_ACCEL
 Text HLabel 3850 1200 2    50   Input ~ 0
 INT3_GYRO
-Text HLabel 3850 1300 2    50   Input ~ 0
-INT4_GYRO
 Wire Wire Line
 	3850 1500 3950 1500
 Wire Wire Line
@@ -150,18 +146,6 @@ Connection ~ 3000 2200
 Wire Wire Line
 	2700 2450 2900 2450
 Connection ~ 2900 2450
-$Comp
-L openDrone_parts:LIS3MDLTR U?
-U 1 1 5F9477A8
-P 6450 1150
-F 0 "U?" H 7400 1437 60  0000 C CNN
-F 1 "LIS3MDLTR" H 7400 1331 60  0000 C CNN
-F 2 "drone_footprints:LIS3MDLTR" H 7650 1390 60  0001 C CNN
-F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/54/2a/85/76/e3/97/42/18/DM00075867.pdf/files/DM00075867.pdf/jcr:content/translations/en.DM00075867.pdf" H 6450 1150 60  0001 C CNN
-F 4 "497-13892-1-ND" H 8400 1500 50  0001 C CNN "DPN"
-	1    6450 1150
-	1    0    0    -1  
-$EndComp
 Text HLabel 6450 1650 0    50   Input ~ 0
 VDDIO
 $Comp
@@ -179,8 +163,6 @@ Text HLabel 8350 1450 2    50   Input ~ 0
 MAG_SDO_SA1
 Text HLabel 8350 1550 2    50   Input ~ 0
 MAG_DRDY
-Text HLabel 8350 1650 2    50   Input ~ 0
-MAG_INT
 Text HLabel 8350 1350 2    50   Input ~ 0
 MAG_CS
 Text HLabel 8350 1250 2    50   Input ~ 0
@@ -614,4 +596,16 @@ Wire Wire Line
 Wire Wire Line
 	5300 4700 4400 4700
 Connection ~ 4400 4700
+$Comp
+L openDrone_parts:LIS3MDLTR U?
+U 1 1 5F9477A8
+P 6450 1150
+F 0 "U?" H 7400 1437 60  0000 C CNN
+F 1 "LIS3MDLTR" H 7400 1331 60  0000 C CNN
+F 2 "drone_footprints:LIS3MDLTR" H 7650 1390 60  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/54/2a/85/76/e3/97/42/18/DM00075867.pdf/files/DM00075867.pdf/jcr:content/translations/en.DM00075867.pdf" H 6450 1150 60  0001 C CNN
+F 4 "497-13892-1-ND" H 8400 1500 50  0001 C CNN "DPN"
+	1    6450 1150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

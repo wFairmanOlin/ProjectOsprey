@@ -155,7 +155,7 @@ RC Input
 Wire Wire Line
 	1450 5050 1650 5050
 Wire Wire Line
-	1650 5050 1650 4950
+	1650 5050 1650 5000
 Wire Wire Line
 	1450 5450 1650 5450
 Wire Wire Line
@@ -171,8 +171,6 @@ F 3 "" H 1650 5500 50  0001 C CNN
 	1    1650 5500
 	1    0    0    -1  
 $EndComp
-Text HLabel 1450 5150 2    50   Input ~ 0
-rc_in
 Text HLabel 2000 5250 2    50   Input ~ 0
 rssi_in
 Wire Wire Line
@@ -248,9 +246,9 @@ Text Label 1400 3900 0    50   ~ 0
 tx_frsky
 Text Label 1400 4000 0    50   ~ 0
 rx_frsky
-Text HLabel 3650 3750 0    50   Input ~ 0
+Text HLabel 4100 3800 0    50   Input ~ 0
 FMU_USART8_TX
-Text HLabel 3650 3850 0    50   Input ~ 0
+Text HLabel 4100 3900 0    50   Input ~ 0
 FMU_USART8_RX
 $Comp
 L power:GND #PWR?
@@ -285,4 +283,172 @@ F 3 "" H 1550 2000 50  0001 C CNN
 	1    1550 2000
 	-1   0    0    1   
 $EndComp
+$Comp
+L openDrone_parts:Dual_XOR_GATE U?
+U 1 1 5F7FAE6E
+P 4300 3700
+F 0 "U?" H 4525 3965 50  0000 C CNN
+F 1 "Dual_XOR_GATE" H 4525 3874 50  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-8_3x3mm_Pitch0.65mm" H 5100 4150 50  0001 C CNN
+F 3 "" H 4300 3700 50  0001 C CNN
+F 4 "1727-5995-1-ND" H 4550 4050 50  0001 C CNN "DPN"
+F 5 "74LVC2G86DP,125" H 4500 3950 50  0001 C CNN "MPN"
+	1    4300 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L openDrone_parts:R_1K R?
+U 1 1 5F7FC1DD
+P 5400 3800
+F 0 "R?" H 5400 4007 50  0000 C CNN
+F 1 "R_1K" H 5400 3916 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" H 4600 3950 50  0001 C CNN
+F 3 "" H 5100 4300 50  0001 C CNN
+F 4 "311-1.0KARCT-ND" H 4750 4050 60  0001 C CNN "DPN"
+	1    5400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L openDrone_parts:R_1K R?
+U 1 1 5F7FCD82
+P 5400 3900
+F 0 "R?" H 5400 4107 50  0000 C CNN
+F 1 "R_1K" H 5400 4016 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" H 4600 4050 50  0001 C CNN
+F 3 "" H 5100 4400 50  0001 C CNN
+F 4 "311-1.0KARCT-ND" H 4750 4150 60  0001 C CNN "DPN"
+	1    5400 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3800 4950 3800
+Wire Wire Line
+	4950 3900 5250 3900
+Text Label 5550 3900 0    50   ~ 0
+rx_frsky
+Text Label 5550 3800 0    50   ~ 0
+tx_frsky
+$Comp
+L power:GND #PWR?
+U 1 1 5F7FD63E
+P 4000 4100
+F 0 "#PWR?" H 4000 3850 50  0001 C CNN
+F 1 "GND" H 4005 3927 50  0000 C CNN
+F 2 "" H 4000 4100 50  0001 C CNN
+F 3 "" H 4000 4100 50  0001 C CNN
+	1    4000 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4000 4000 4000
+Wire Wire Line
+	4000 4000 4000 4100
+Text HLabel 4950 3700 2    50   Input ~ 0
+3V3
+Text HLabel 3900 3700 0    50   Input ~ 0
+FrSky_INV
+Wire Wire Line
+	3900 3700 4000 3700
+Wire Wire Line
+	4000 3700 4000 3400
+Wire Wire Line
+	4000 3400 5900 3400
+Wire Wire Line
+	5900 3400 5900 4000
+Wire Wire Line
+	5900 4000 4950 4000
+Connection ~ 4000 3700
+Wire Wire Line
+	4000 3700 4100 3700
+$Comp
+L openDrone_parts:Dual_XOR_GATE U?
+U 1 1 5F7FEBF9
+P 4250 5050
+F 0 "U?" H 4475 5315 50  0000 C CNN
+F 1 "Dual_XOR_GATE" H 4475 5224 50  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-8_3x3mm_Pitch0.65mm" H 5050 5500 50  0001 C CNN
+F 3 "" H 4250 5050 50  0001 C CNN
+F 4 "1727-5995-1-ND" H 4500 5400 50  0001 C CNN "DPN"
+F 5 "74LVC2G86DP,125" H 4450 5300 50  0001 C CNN "MPN"
+	1    4250 5050
+	1    0    0    -1  
+$EndComp
+Text HLabel 1950 3800 2    50   Input ~ 0
+VDD_5V_PERIPH
+Wire Wire Line
+	1950 3800 1550 3800
+Connection ~ 1550 3800
+Text HLabel 1950 2300 2    50   Input ~ 0
+VDD_5V_PERIPH
+Wire Wire Line
+	1950 2300 1550 2300
+Connection ~ 1550 2300
+Text HLabel 2000 5000 2    50   Input ~ 0
+VDD_5V_RECEIVER
+Wire Wire Line
+	2000 5000 1650 5000
+Connection ~ 1650 5000
+Wire Wire Line
+	1650 5000 1650 4950
+$Comp
+L power:GND #PWR?
+U 1 1 5F801583
+P 3950 5400
+F 0 "#PWR?" H 3950 5150 50  0001 C CNN
+F 1 "GND" H 3955 5227 50  0000 C CNN
+F 2 "" H 3950 5400 50  0001 C CNN
+F 3 "" H 3950 5400 50  0001 C CNN
+	1    3950 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 5350 3950 5350
+Wire Wire Line
+	3950 5350 3950 5400
+Text HLabel 4900 5050 2    50   Input ~ 0
+3V3
+Text HLabel 4900 5250 2    50   Input ~ 0
+FMU_RC_OUTPUT
+Text HLabel 4900 5150 2    50   Input ~ 0
+FMU_RC_INPUT
+Text HLabel 3850 5050 0    50   Input ~ 0
+SBUS_INV
+Wire Wire Line
+	3850 5050 3950 5050
+Wire Wire Line
+	3950 5050 3950 4750
+Wire Wire Line
+	3950 4750 5650 4750
+Wire Wire Line
+	5650 4750 5650 5350
+Wire Wire Line
+	5650 5350 4900 5350
+Connection ~ 3950 5050
+Wire Wire Line
+	3950 5050 4050 5050
+$Comp
+L openDrone_parts:R_470 R?
+U 1 1 5F8039A4
+P 3900 5250
+F 0 "R?" H 3750 5050 50  0000 C CNN
+F 1 "R_470" H 3800 5150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" H 3100 5400 50  0001 C CNN
+F 3 "" H 3600 5750 50  0001 C CNN
+F 4 "A129745CT-ND" H 3250 5500 60  0001 C CNN "DPN"
+	1    3900 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 5150 3650 5150
+Wire Wire Line
+	3750 5250 3650 5250
+Wire Wire Line
+	3650 5250 3650 5150
+Connection ~ 3650 5150
+Wire Wire Line
+	3650 5150 4050 5150
+Text Label 1450 5150 0    50   ~ 0
+rc_in
+Text Label 3600 5150 2    50   ~ 0
+rc_in
 $EndSCHEMATC
