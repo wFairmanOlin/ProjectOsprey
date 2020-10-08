@@ -608,4 +608,12 @@ F 4 "497-13892-1-ND" H 8400 1500 50  0001 C CNN "DPN"
 	1    6450 1150
 	1    0    0    -1  
 $EndComp
+Text Notes 7100 2000 0    50   ~ 0
+Magnetometer\n40-270uA
+Text Notes 3900 1800 0    50   ~ 0
+IMU\n150uA
+Text Notes 1750 5750 0    50   ~ 0
+GPS\n<71mA, avg <26mA
+Text Notes 9150 3500 0    50   ~ 0
+barometer\n<1.4mA
 $EndSCHEMATC

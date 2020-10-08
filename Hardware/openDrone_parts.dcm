@@ -20,6 +20,14 @@ $CMP Barometer
 D Pressure Sensor 0.15PSI ~ 17.4PSI (1kPa ~ 120kPa) Absolute  24 b 8-SMD
 $ENDCMP
 #
+$CMP Buck_Converter
+F https://www.ti.com/lit/ds/symlink/tps54335a.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1602190969991
+$ENDCMP
+#
+$CMP Buck_Converter_2
+F https://www.ti.com/lit/ds/symlink/tps54335a.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1602192854825
+$ENDCMP
+#
 $CMP Buzzer
 D Buzzers Transducer, Externally Driven Piezo 1.5mA 4kHz 90dB @ 5V, 10cm Through Hole PC Pins
 K quartz resonator ceramic

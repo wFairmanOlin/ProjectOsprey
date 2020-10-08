@@ -87,7 +87,7 @@ F 5 "SM06B-GHS-TB(LF)(SN)" H 1200 2750 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 Text Notes 1000 2950 0    50   ~ 0
-TELEM1
+TELEM1\n100mA
 Text HLabel 1400 2400 2    50   Input ~ 0
 tx_telem_1
 Text HLabel 1400 2500 2    50   Input ~ 0
@@ -451,4 +451,8 @@ Text Label 1450 5150 0    50   ~ 0
 rc_in
 Text Label 3600 5150 2    50   ~ 0
 rc_in
+Text Notes 1100 4400 0    50   ~ 0
+100mA
+Text Notes 1000 5700 0    50   ~ 0
+100mA
 $EndSCHEMATC
