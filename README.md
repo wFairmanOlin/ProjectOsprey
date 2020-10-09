@@ -1,5 +1,9 @@
-# openDrone
-quarantine project
+# Open Drone
+#### Daniel Connolly and William Fairman
+
+An exploration in quadcopter design, hardware design, and firmware implementation
+
+A Fall 2020 Project
 
 ## Interfaces
 - SWD/JTAG
