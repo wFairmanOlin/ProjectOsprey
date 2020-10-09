@@ -410,7 +410,7 @@ Wire Wire Line
 	9150 4650 8300 4650
 Wire Wire Line
 	9150 4650 9150 4750
-Text HLabel 8300 4150 0    50   Input ~ 0
+Text HLabel 7250 4150 0    50   Input ~ 0
 VDD_5V
 Text Label 2700 2450 2    50   ~ 0
 VDD_3V3_SENSORS
@@ -440,7 +440,7 @@ P 3100 4600
 F 0 "U?" H 3100 4915 50  0000 C CNN
 F 1 "CAM-M8Q-0" H 3100 4824 50  0000 C CNN
 F 2 "drone_footprints:CAM_M8Q_0" H 2650 4950 50  0001 L BNN
-F 3 "UBlox" H 3000 4850 50  0001 L BNN
+F 3 "https://www.u-blox.com/sites/default/files/CAM-M8-FW3_DataSheet_%28UBX-15031574%29.pdf" H 3000 4850 50  0001 L BNN
 F 4 "672-CAM-M8Q-0CT-ND" H 3150 4850 50  0001 C CNN "DPN"
 	1    3100 4600
 	1    0    0    -1  
@@ -558,7 +558,7 @@ Text Label 3850 4900 0    50   ~ 0
 RF_SIGNALS
 Wire Wire Line
 	3850 5000 4300 5000
-Text Label 4400 4400 0    50   ~ 0
+Text Label 4600 3800 0    50   ~ 0
 VDD_3V3_SENSORS
 Wire Wire Line
 	3850 4500 4400 4500
@@ -616,4 +616,63 @@ Text Notes 1750 5750 0    50   ~ 0
 GPS\n<71mA, avg <26mA
 Text Notes 9150 3500 0    50   ~ 0
 barometer\n<1.4mA
+$Comp
+L openDrone_parts:EMI_Filter_CLC_100MHZ FL?
+U 1 1 5F9362EA
+P 4300 4100
+F 0 "FL?" V 4254 4280 50  0000 L CNN
+F 1 "EMI_Filter_CLC_100MHZ" V 4345 4280 50  0000 L CNN
+F 2 "drone_footprints:NFL21SP107X1C3D" H 4950 4600 50  0001 C CNN
+F 3 "" V 4300 4100 50  0001 C CNN
+F 4 "490-2540-1-ND" H 5200 4350 50  0001 C CNN "DPN"
+F 5 "NFL21SP107X1C3D" H 4950 4450 50  0001 C CNN "MPN"
+	1    4300 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 3800 4400 3800
+$Comp
+L power:GND #PWR?
+U 1 1 5F93AFA7
+P 4050 4100
+F 0 "#PWR?" H 4050 3850 50  0001 C CNN
+F 1 "GND" H 4055 3927 50  0000 C CNN
+F 2 "" H 4050 4100 50  0001 C CNN
+F 3 "" H 4050 4100 50  0001 C CNN
+	1    4050 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4100 4050 4100
+Text Notes 3100 4000 0    50   ~ 0
+Note for the EMI filter \nthat the GPS here is at 3.3V \nnot 5V like in the pixracer
+$Comp
+L openDrone_parts:EMI_Filter_CLC_100MHZ FL?
+U 1 1 5FA22B48
+P 7800 4250
+F 0 "FL?" H 7800 4567 50  0000 C CNN
+F 1 "EMI_Filter_CLC_100MHZ" H 7800 4476 50  0000 C CNN
+F 2 "drone_footprints:NFL21SP107X1C3D" H 8450 4750 50  0001 C CNN
+F 3 "" V 7800 4250 50  0001 C CNN
+F 4 "490-2540-1-ND" H 8700 4500 50  0001 C CNN "DPN"
+F 5 "NFL21SP107X1C3D" H 8450 4600 50  0001 C CNN "MPN"
+	1    7800 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 4150 8100 4150
+Connection ~ 8300 4150
+$Comp
+L power:GND #PWR?
+U 1 1 5FA26F34
+P 7800 4350
+F 0 "#PWR?" H 7800 4100 50  0001 C CNN
+F 1 "GND" H 7805 4177 50  0000 C CNN
+F 2 "" H 7800 4350 50  0001 C CNN
+F 3 "" H 7800 4350 50  0001 C CNN
+	1    7800 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 4150 7500 4150
 $EndSCHEMATC

@@ -175,6 +175,7 @@ $ENDCMP
 $CMP LDO_600MA
 D IC REG LINEAR 3.3V 600MA SOT25
 K REGULATOR LDO 3.3V
+F https://www.diodes.com/assets/Datasheets/products_inactive_data/AP7365.pdf
 $ENDCMP
 #
 $CMP LED_0805_Green
@@ -244,6 +245,12 @@ $CMP NMOS_BSS12375
 D MOSFET N-CH 100V 170MA SOT23-3
 K N-Channel MOSFET
 F https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf
+$ENDCMP
+#
+$CMP PMOS_20V_0.4A
+D P-MOSFET transistor, drain/gate/source
+K transistor PMOS P-MOS P-MOSFET
+F https://www.infineon.com/dgdl/Infineon-BSS223PW-DS-v01_05-en.pdf?fileId=db3a3043321e49940132481523b6245f
 $ENDCMP
 #
 $CMP PNP_20V_.4A
@@ -353,9 +360,9 @@ F https://www.onsemi.com/pub/Collateral/NUF2030XV6-D.PDF
 $ENDCMP
 #
 $CMP rpi_zero_w
-D Raspberry Pi Zero with Wifi ;)
-K connector
-F ~
+D expansion header for Raspberry Pi 2 & 3
+K raspberrypi gpio
+F https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf
 $ENDCMP
 #
 #End Doc Library
