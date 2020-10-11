@@ -205,6 +205,12 @@ K Single Output LDO Low-Noise
 F http://www.ti.com/lit/ds/symlink/lp5907.pdf
 $ENDCMP
 #
+$CMP L_15u
+D FIXED IND 15UH 3.2A 50 MOHM SMD
+K inductor choke coil reactor magnetic
+F ~
+$ENDCMP
+#
 $CMP L_55m
 D FIXED IND 56MH 50MA 135 OHM TH
 K inductor choke coil reactor magnetic
@@ -308,6 +314,10 @@ $CMP R_120
 D 120 Ohms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film
 $ENDCMP
 #
+$CMP R_143K
+D 143 ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film
+$ENDCMP
+#
 $CMP R_1K
 D 1 kOhms ±5% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric)  Thick Film
 $ENDCMP
@@ -332,8 +342,16 @@ $CMP R_220
 D 220 Ohms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric)  Thick Film
 $ENDCMP
 #
+$CMP R_220K
+D 220 ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film
+$ENDCMP
+#
 $CMP R_2K2
 D 2.2 ±5% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film
+$ENDCMP
+#
+$CMP R_43K2
+D 43.2 ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) - Thick Film
 $ENDCMP
 #
 $CMP R_470
