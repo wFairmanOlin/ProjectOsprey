@@ -690,8 +690,6 @@ Wire Wire Line
 Connection ~ 12300 5300
 Wire Wire Line
 	12300 5300 12600 5300
-Text HLabel 11650 5400 0    50   Input ~ 0
-VDD_3V3_PERIPH_EN
 Wire Wire Line
 	11650 5400 11850 5400
 Wire Wire Line
@@ -746,7 +744,7 @@ Connection ~ 13550 5300
 Wire Wire Line
 	13550 5300 14050 5300
 Text HLabel 14750 4800 2    50   Input ~ 0
-SPEKTRUM_POWER
+SPEKTRUM_POWER_CTRL
 Wire Wire Line
 	14750 4800 14500 4800
 Wire Wire Line
@@ -1089,15 +1087,7 @@ VDD_5V_USB
 Text Notes 13650 6350 0    79   ~ 0
 PERIPHERAL POWER LDO 3V3
 Wire Notes Line
-	15700 6400 15700 4400
-Wire Notes Line
-	15700 4400 10750 4400
-Wire Notes Line
 	10750 4400 10750 6400
-Wire Notes Line
-	10750 6400 15700 6400
-Text HLabel 5700 1150 2    50   Input ~ 0
-VDD_5V_BUCK
 Wire Notes Line
 	6350 750  6350 2550
 Wire Notes Line
@@ -1261,8 +1251,6 @@ Text HLabel 1750 6400 2    50   Input ~ 0
 VBAT_SENSE
 Text HLabel 2500 6400 2    50   Input ~ 0
 VDD_5V_SENSE
-Text HLabel 1350 4100 0    50   Input ~ 0
-VDD_5V_BUCK
 Text HLabel 14650 3300 2    50   Input ~ 0
 VDD_3V3_SENSORS
 Wire Wire Line
@@ -1342,4 +1330,16 @@ F 5 "0ZCK0050FF2E" H 6400 3800 50  0001 C CNN "MPN"
 	1    6050 3450
 	1    0    0    -1  
 $EndComp
+Text Label 5700 1150 0    50   ~ 0
+VDD_5V_BUCK
+Text Label 1350 4100 2    50   ~ 0
+VDD_5V_BUCK
+Wire Notes Line
+	10750 4400 15800 4400
+Wire Notes Line
+	10750 6400 15800 6400
+Wire Notes Line
+	15800 4400 15800 6400
+Text HLabel 11650 5400 0    50   Input ~ 0
+VDD_3V3_RADIO_EN
 $EndSCHEMATC

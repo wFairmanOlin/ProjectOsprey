@@ -234,10 +234,6 @@ Text HLabel 4150 1250 2    50   Input ~ 0
 SWCLK
 Text HLabel 4150 1350 2    50   Input ~ 0
 SWDIO
-Text HLabel 3650 1150 0    50   Input ~ 0
-3V3
-Text HLabel 1450 5350 2    50   Input ~ 0
-3V3
 Text Label 1400 3900 0    50   ~ 0
 tx_frsky
 Text Label 1400 4000 0    50   ~ 0
@@ -328,8 +324,6 @@ Wire Wire Line
 	4100 4000 4000 4000
 Wire Wire Line
 	4000 4000 4000 4100
-Text HLabel 4950 3700 2    50   Input ~ 0
-3V3
 Text HLabel 3900 3700 0    50   Input ~ 0
 FrSky_INV
 Wire Wire Line
@@ -383,8 +377,6 @@ Wire Wire Line
 	4050 5350 3950 5350
 Wire Wire Line
 	3950 5350 3950 5400
-Text HLabel 4900 5050 2    50   Input ~ 0
-3V3
 Text HLabel 4900 5250 2    50   Input ~ 0
 FMU_RC_OUTPUT
 Text HLabel 4900 5150 2    50   Input ~ 0
@@ -478,4 +470,12 @@ Text Notes 700  7600 0    79   ~ 0
 BATTERY = VBAT\nBUCK CONVERTER OUTPUT (VDD_5V_BRICK) = VDD_5V_BUCK\nUSB POWER (VBUS) = VDD_5V_USB\nRADIO 5V (VDD_5V_RECEIVER) = VDD_5V_RADIO\nGENERAL 5V (VDD_5V_IN) = VDD_5V_IN\nTELEM/FRSKY (VDD_5V_PERIPH)  = VDD_5V_AUX\nSTM POWER (FMU_VDD_3V3) =  VDD_3V3_STM\nSENSORS POWER (VDD_3V3_SENSORS) = VDD_3V3_SENSORS\nRADIO POWER  (VDD_3V3_SPEKTRUM) = VDD_3V3_RADIO\n
 Text HLabel 1950 3800 2    50   Input ~ 0
 VDD_5V_RADIO
+Text HLabel 1450 5350 2    50   Input ~ 0
+VDD_3V3_RADIO
+Text HLabel 4950 3700 2    50   Input ~ 0
+VDD_3V3_STM
+Text HLabel 4900 5050 2    50   Input ~ 0
+VDD_3V3_STM
+Text HLabel 3650 1150 0    50   Input ~ 0
+VDD_3V3_STM
 $EndSCHEMATC

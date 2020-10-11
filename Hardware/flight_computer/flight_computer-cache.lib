@@ -1245,26 +1245,6 @@ X ~ 2 150 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# openDrone_parts_R_2K2
-#
-DEF openDrone_parts_R_2K2 R 0 0 N Y 1 F N
-F0 "R" 0 80 50 H V C CNN
-F1 "openDrone_parts_R_2K2" 0 -100 50 H V C CNN
-F2 "Resistors_SMD:R_0805" 450 300 50 H I C CNN
-F3 "" -300 500 50 H I C CNN
-F4 "RMCF0805JT2K20CT-ND" 650 500 60 H I C CNN "DPN"
-F5 "RMCF0805JT2K20" 450 400 50 H I C CNN "MPN"
-$FPLIST
- R_*
- Resistor_*
-$ENDFPLIST
-DRAW
-S 100 -40 -100 40 0 1 10 N
-X ~ 1 -150 0 50 R 50 50 1 1 P
-X ~ 2 150 0 50 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # openDrone_parts_R_3K74
 #
 DEF openDrone_parts_R_3K74 R 0 0 N Y 1 F N
