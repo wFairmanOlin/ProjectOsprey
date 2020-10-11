@@ -172,29 +172,29 @@ ENDDEF
 # openDrone_parts_Buck_Converter_2
 #
 DEF openDrone_parts_Buck_Converter_2 U 0 -10 Y Y 1 F N
-F0 "U" -50 800 60 H V C CNN
-F1 "openDrone_parts_Buck_Converter_2" 0 700 60 H V C CNN
-F2 "drone_footprints:TPS54335ADDA" 0 -60 60 H I C CNN
+F0 "U" -50 350 60 H V C CNN
+F1 "openDrone_parts_Buck_Converter_2" -50 250 60 H V C CNN
+F2 "drone_footprints:TPS54335ADDA" 850 650 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
-F4 "TPS54335ADDA" 0 0 50 H I C CNN "MPN"
-F5 "296-44004-5-ND" 0 0 50 H I C CNN "DPN"
+F4 "TPS54335ADDA" 400 550 50 H I C CNN "MPN"
+F5 "296-44004-5-ND" 500 450 50 H I C CNN "DPN"
 $FPLIST
  DDA0008E_N
  DDA0008E_M
  DDA0008E_L
 $ENDFPLIST
 DRAW
-S -500 600 500 -600 0 1 0 f
+S -450 200 400 -350 0 1 0 f
 S 800 -800 800 -800 0 1 0 N
-X BOOT 1 700 400 200 L 59 59 1 1 W
-X VIN 2 -700 400 200 R 59 59 1 1 W
-X PH 3 700 100 200 L 59 59 1 1 W
-X GND 4 700 -300 200 L 59 59 1 1 W
-X VSENSE 5 -700 200 200 R 59 59 1 1 I
-X COMP 6 700 -100 200 L 59 59 1 1 B
-X EN 7 -700 -100 200 R 59 59 1 1 I
-X RT 8 -700 -400 200 R 59 59 1 1 I
-X PAD 9 700 -400 200 L 59 59 1 1 W
+X BOOT 1 550 100 200 L 59 59 1 1 W
+X VIN 2 -600 100 200 R 59 59 1 1 W
+X PH 3 550 0 200 L 59 59 1 1 W
+X GND 4 550 -200 200 L 59 59 1 1 W
+X VSENSE 5 -600 0 200 R 59 59 1 1 I
+X COMP 6 550 -100 200 L 59 59 1 1 B
+X EN 7 -600 -100 200 R 59 59 1 1 I
+X RT 8 -600 -200 200 R 59 59 1 1 I
+X PAD 9 0 -500 200 U 59 59 1 1 W
 ENDDRAW
 ENDDEF
 #
@@ -264,6 +264,30 @@ X VCC 9 750 100 200 L 40 40 0 0 W
 ENDDRAW
 ENDDEF
 #
+# openDrone_parts_C_0u012
+#
+DEF openDrone_parts_C_0u012 C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "openDrone_parts_C_0u012" 25 -100 50 H V L CNN
+F2 "Capacitors_SMD:C_0805" 550 50 50 H I C CNN
+F3 "" 25 100 50 H I C CNN
+F4 "490-11580-1-ND" 500 250 60 H I C CNN "DPN"
+F5 "GRM2195C1H123GA01D" 450 150 50 H I C CNN "MPN"
+$FPLIST
+ C?
+ C_????_*
+ C_????
+ SMD*_c
+ Capacitor*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # openDrone_parts_C_0u1
 #
 DEF openDrone_parts_C_0u1 C 0 10 N Y 1 F N
@@ -309,14 +333,14 @@ X 2 2 0 -150 130 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# openDrone_parts_C_10n
+# openDrone_parts_C_10u
 #
-DEF openDrone_parts_C_10n C 0 10 N Y 1 F N
+DEF openDrone_parts_C_10u C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "openDrone_parts_C_10n" 25 -100 50 H V L CNN
+F1 "openDrone_parts_C_10u" 25 -100 50 H V L CNN
 F2 "Capacitors_SMD:C_0805" 38 -150 50 H I C CNN
 F3 "" 25 100 50 H I C CNN
-F4 "399-7994-1-ND" 0 0 60 H I C CNN "DPN"
+F4 "490-16824-1-ND" 0 0 60 H I C CNN "DPN"
 $FPLIST
  C?
  C_????_*
@@ -332,14 +356,15 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# openDrone_parts_C_10u
+# openDrone_parts_C_120P
 #
-DEF openDrone_parts_C_10u C 0 10 N Y 1 F N
+DEF openDrone_parts_C_120P C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "openDrone_parts_C_10u" 25 -100 50 H V L CNN
-F2 "Capacitors_SMD:C_0805" 38 -150 50 H I C CNN
+F1 "openDrone_parts_C_120P" 25 -100 50 H V L CNN
+F2 "Capacitors_SMD:C_0805" 550 50 50 H I C CNN
 F3 "" 25 100 50 H I C CNN
-F4 "490-16824-1-ND" 0 0 60 H I C CNN "DPN"
+F4 "1276-1201-1-ND" 500 250 60 H I C CNN "DPN"
+F5 "CL21C121JDCNNNC" 450 150 50 H I C CNN "MPN"
 $FPLIST
  C?
  C_????_*
@@ -408,6 +433,30 @@ F1 "openDrone_parts_C_2u2" 25 -100 50 H V L CNN
 F2 "Capacitors_SMD:C_0805" 38 -150 50 H I C CNN
 F3 "" 25 100 50 H I C CNN
 F4 "445-13254-1-ND" 0 0 60 H I C CNN "DPN"
+$FPLIST
+ C?
+ C_????_*
+ C_????
+ SMD*_c
+ Capacitor*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# openDrone_parts_C_47u
+#
+DEF openDrone_parts_C_47u C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "openDrone_parts_C_47u" 25 -100 50 H V L CNN
+F2 "Capacitors_SMD:C_0805" 550 50 50 H I C CNN
+F3 "" 25 100 50 H I C CNN
+F4 "587-1779-1-ND" 500 250 60 H I C CNN "DPN"
+F5 "JMK212BJ476MG-T" 450 150 50 H I C CNN "MPN"
 $FPLIST
  C?
  C_????_*
@@ -856,6 +905,31 @@ X OUT 5 300 100 100 L 50 50 0 1 w
 ENDDRAW
 ENDDEF
 #
+# openDrone_parts_L_15u
+#
+DEF openDrone_parts_L_15u L 0 40 N N 1 F N
+F0 "L" -50 0 50 V V C CNN
+F1 "openDrone_parts_L_15u" 75 0 50 V V C CNN
+F2 "drone_footprints:744066150" 650 100 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "732-1077-1-ND" 450 300 50 H I C CNN "DPN"
+F5 "744066150" 400 200 50 H I C CNN "MPN"
+$FPLIST
+ Choke_*
+ *Coil*
+ Inductor_*
+ L_*
+$ENDFPLIST
+DRAW
+A 0 -75 25 -899 899 0 1 0 N 0 -100 0 -50
+A 0 -25 25 -899 899 0 1 0 N 0 -50 0 0
+A 0 25 25 -899 899 0 1 0 N 0 0 0 50
+A 0 75 25 -899 899 0 1 0 N 0 50 0 100
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # openDrone_parts_MCP131T-300E_TT
 #
 DEF openDrone_parts_MCP131T-300E_TT U 0 20 Y Y 1 F N
@@ -1073,6 +1147,45 @@ X ~ 2 150 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# openDrone_parts_R_143K
+#
+DEF openDrone_parts_R_143K R 0 0 N Y 1 F N
+F0 "R" 0 80 50 H V C CNN
+F1 "openDrone_parts_R_143K" 0 -100 50 H V C CNN
+F2 "Resistors_SMD:R_0805" -800 150 50 H I C CNN
+F3 "" -300 500 50 H I C CNN
+F4 "738-RMCF0805FT143KCT-ND" -650 250 60 H I C CNN "DPN"
+$FPLIST
+ R_*
+ Resistor_*
+$ENDFPLIST
+DRAW
+S 100 -40 -100 40 0 1 10 N
+X ~ 1 -150 0 50 R 50 50 1 1 P
+X ~ 2 150 0 50 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# openDrone_parts_R_19K1
+#
+DEF openDrone_parts_R_19K1 R 0 0 N Y 1 F N
+F0 "R" 0 80 50 H V C CNN
+F1 "openDrone_parts_R_19K1" 0 -100 50 H V C CNN
+F2 "Resistors_SMD:R_0805" -800 150 50 H I C CNN
+F3 "" -300 500 50 H I C CNN
+F4 "541-19.1KCCT-ND" -650 250 60 H I C CNN "DPN"
+F5 "CRCW080519K1FKEA" -850 50 50 H I C CNN "MPN"
+$FPLIST
+ R_*
+ Resistor_*
+$ENDFPLIST
+DRAW
+S 100 -40 -100 40 0 1 10 N
+X ~ 1 -150 0 50 R 50 50 1 1 P
+X ~ 2 150 0 50 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # openDrone_parts_R_1K
 #
 DEF openDrone_parts_R_1K R 0 0 N Y 1 F N
@@ -1120,6 +1233,45 @@ F1 "openDrone_parts_R_220" 0 -100 50 H V C CNN
 F2 "Resistors_SMD:R_0805" -800 150 50 H I C CNN
 F3 "" -300 500 50 H I C CNN
 F4 "311-220CRCT-ND" -650 250 60 H I C CNN "DPN"
+$FPLIST
+ R_*
+ Resistor_*
+$ENDFPLIST
+DRAW
+S 100 -40 -100 40 0 1 10 N
+X ~ 1 -150 0 50 R 50 50 1 1 P
+X ~ 2 150 0 50 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# openDrone_parts_R_3K74
+#
+DEF openDrone_parts_R_3K74 R 0 0 N Y 1 F N
+F0 "R" 0 80 50 H V C CNN
+F1 "openDrone_parts_R_3K74" 0 -100 50 H V C CNN
+F2 "Resistors_SMD:R_0805" -800 150 50 H I C CNN
+F3 "" -300 500 50 H I C CNN
+F4 "RMCF0805FT3K74CT-ND" -650 250 60 H I C CNN "DPN"
+F5 "RMCF0805FT3K74" -850 50 50 H I C CNN "MPN"
+$FPLIST
+ R_*
+ Resistor_*
+$ENDFPLIST
+DRAW
+S 100 -40 -100 40 0 1 10 N
+X ~ 1 -150 0 50 R 50 50 1 1 P
+X ~ 2 150 0 50 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# openDrone_parts_R_43K2
+#
+DEF openDrone_parts_R_43K2 R 0 0 N Y 1 F N
+F0 "R" 0 80 50 H V C CNN
+F1 "openDrone_parts_R_43K2" 0 -100 50 H V C CNN
+F2 "Resistors_SMD:R_0805" -800 150 50 H I C CNN
+F3 "" -300 500 50 H I C CNN
+F4 "311-43.2KCRCT-ND" -650 250 60 H I C CNN "DPN"
 $FPLIST
  R_*
  Resistor_*

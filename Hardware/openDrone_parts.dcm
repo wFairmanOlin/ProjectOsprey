@@ -43,6 +43,10 @@ $CMP CAN_Transceiver
 D 1/1 Transceiver Half CANbus SOT-23-8
 $ENDCMP
 #
+$CMP C_0u012
+D CAP CER 0.012UF 50V C0G/NP0 0805
+$ENDCMP
+#
 $CMP C_0u1
 D 0.1µF -20%, +80% 16V Ceramic Capacitor Y5V
 F https://www.digikey.com/product-detail/en/kemet/C0805C104Z4VACTU/399-9159-1-ND/3522677
@@ -66,6 +70,10 @@ $CMP C_10u
 D 10µF ±10% 25V Ceramic Capacitor X5R 0805 (2012 Metric)
 $ENDCMP
 #
+$CMP C_120P
+D ±5% 200V Ceramic Capacitor C0G, NP0 0805 (2012 Metric)
+$ENDCMP
+#
 $CMP C_1u
 D 1µF -20%, +80% 16V Ceramic Capacitor Y5V (F) 0805 (2012 Metric)
 $ENDCMP
@@ -82,6 +90,10 @@ $ENDCMP
 #
 $CMP C_2u2
 D 2.2µF ±10% 16V Ceramic Capacitor X6S 0805 (2012 Metric)
+$ENDCMP
+#
+$CMP C_47u
+D ±20% 6.3V Ceramic Capacitor X5R 0805 (2012 Metric)
 $ENDCMP
 #
 $CMP C_4u7
@@ -318,6 +330,10 @@ $CMP R_143K
 D 143 ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film
 $ENDCMP
 #
+$CMP R_19K1
+D 19.1 ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film
+$ENDCMP
+#
 $CMP R_1K
 D 1 kOhms ±5% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric)  Thick Film
 $ENDCMP
@@ -350,12 +366,20 @@ $CMP R_2K2
 D 2.2 ±5% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film
 $ENDCMP
 #
+$CMP R_3K74
+D 3.74 ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film
+$ENDCMP
+#
 $CMP R_43K2
 D 43.2 ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) - Thick Film
 $ENDCMP
 #
 $CMP R_470
 D 470 Ohms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film
+$ENDCMP
+#
+$CMP R_51.1
+D 51.1 ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film
 $ENDCMP
 #
 $CMP R_68
