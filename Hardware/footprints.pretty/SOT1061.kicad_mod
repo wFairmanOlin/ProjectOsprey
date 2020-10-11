@@ -1,9 +1,9 @@
-(module SOT1061 (layer F.Cu) (tedit 5F7A09F7)
+(module SOT1061 (layer F.Cu) (tedit 5F831BAD)
   (descr "<li><b>SOT1061</b><hr> <ul><li>HUSON3: plastic thermal enhanced ultra thin small outline package; no leads;3 terminals; body 2 x 2 x 0.65 mm<li><u>JEDEC</u>: -- <li><u>IEC</u>: -- <li><u>JEITA</u>: --</ul>")
   (fp_text reference REF** (at 4.00121 -1.000302) (layer F.SilkS)
     (effects (font (size 0.787638 0.787638) (thickness 0.015)))
   )
-  (fp_text value SOT1061 (at 5.009655 0.500965) (layer F.Fab)
+  (fp_text value SOT1061 (at 5.009655 0.500965) (layer F.Fab) hide
     (effects (font (size 0.788921 0.788921) (thickness 0.015)))
   )
   (fp_poly (pts (xy 0.85 0.35) (xy -0.85 0.35) (xy -0.85 -0.85) (xy -0.25 -0.85)

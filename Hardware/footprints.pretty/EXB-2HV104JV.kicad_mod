@@ -1,4 +1,4 @@
-(module EXB-2HV104JV (layer F.Cu) (tedit 5F66D1EE)
+(module EXB-2HV104JV (layer F.Cu) (tedit 5F831B48)
   (fp_text reference REF** (at 3.6068 -2.9464) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )

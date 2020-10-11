@@ -1,8 +1,8 @@
-(module "BM05B-GHS-TBT LFSNN" (layer F.Cu) (tedit 5F754007)
+(module "BM05B-GHS-TBT LFSNN" (layer F.Cu) (tedit 5F831B31)
   (fp_text reference REF** (at 1.4732 -4.5212) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value CONN_BM05B-GHS-TBT_JST (at 1.016 -6.1468) (layer Dwgs.User)
+  (fp_text value CONN_BM05B-GHS-TBT_JST (at 1.016 -6.1468) (layer Dwgs.User) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_circle (center -5.5118 -2.326132) (end -5.1308 -2.326132) (layer B.SilkS) (width 0.1524))

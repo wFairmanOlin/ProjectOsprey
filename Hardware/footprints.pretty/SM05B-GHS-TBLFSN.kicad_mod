@@ -1,4 +1,4 @@
-(module SM05B-GHS-TBLFSN (layer F.Cu) (tedit 5F7665BE)
+(module SM05B-GHS-TBLFSN (layer F.Cu) (tedit 5F831B90)
   (fp_text reference REF** (at -3.1496 -4.318) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )

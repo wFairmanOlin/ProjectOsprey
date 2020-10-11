@@ -1,8 +1,8 @@
-(module TSW-103-07-F-D (layer F.Cu) (tedit 5F7952A5)
+(module TSW-103-07-F-D (layer F.Cu) (tedit 5F831BCF)
   (fp_text reference REF** (at 4.9276 2.5908) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value TSW-103-07-G-D_SAI (at 5.9944 -5.4864) (layer Dwgs.User)
+  (fp_text value TSW-103-07-G-D_SAI (at 5.9944 -5.4864) (layer Dwgs.User) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_circle (center 0 0.889) (end 0.254 0.889) (layer F.Fab) (width 0.1524))

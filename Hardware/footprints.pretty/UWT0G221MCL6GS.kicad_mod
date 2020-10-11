@@ -1,8 +1,8 @@
-(module UWT0G221MCL6GS (layer F.Cu) (tedit 5F7947C6)
+(module UWT0G221MCL6GS (layer F.Cu) (tedit 5F831BD9)
   (fp_text reference REF** (at -1.7272 -4.7244) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value CAP_UCD_6P3X5P8_NCH (at 1.7272 4.4196) (layer Dwgs.User)
+  (fp_text value CAP_UCD_6P3X5P8_NCH (at 1.7272 4.4196) (layer Dwgs.User) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_circle (center -2.794 0) (end -2.794 0) (layer F.Fab) (width 0.1524))

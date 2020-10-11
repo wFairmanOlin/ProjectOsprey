@@ -1,4 +1,4 @@
-(module MIC5332-SSYMT-TR (layer F.Cu) (tedit 5F664957)
+(module MIC5332-SSYMT-TR (layer F.Cu) (tedit 5F831B63)
   (fp_text reference REF** (at 3.2512 -1.9812) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )

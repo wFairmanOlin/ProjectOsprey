@@ -1,8 +1,8 @@
-(module NFL21SP107X1C3D (layer F.Cu) (tedit 5F795979)
+(module NFL21SP107X1C3D (layer F.Cu) (tedit 5F831B71)
   (fp_text reference REF** (at -1.3716 -2.032) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value NFL21SP107X1C3D (at 9.144 -3.6576) (layer F.Fab)
+  (fp_text value NFL21SP107X1C3D (at 9.144 -3.6576) (layer F.Fab) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start -1.016 -0.635) (end 1.016 -0.635) (layer F.SilkS) (width 0.12))

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 5 4
 Title ""
 Date ""
 Rev ""
@@ -303,19 +303,6 @@ VDD_3V3_SENSORS
 Text Label 8200 2850 2    50   ~ 0
 VDD_3V3_SENSORS
 $Comp
-L openDrone_parts:Buzzer BZ?
-U 1 1 5F827564
-P 4700 3500
-F 0 "BZ?" H 4852 3529 50  0000 L CNN
-F 1 "Buzzer" H 4852 3438 50  0000 L CNN
-F 2 "drone_footprints:PT-2040PQ" H 5050 3950 50  0001 C CNN
-F 3 "~" V 4675 3600 50  0001 C CNN
-F 4 "458-1078-ND" H 5000 3750 50  0001 C CNN "DPN"
-F 5 "PT-2040PQ" H 4950 3850 50  0001 C CNN "MPN"
-	1    4700 3500
-	1    0    0    -1  
-$EndComp
-$Comp
 L openDrone_parts:CAM-M8Q-0 U?
 U 1 1 5F827FBC
 P 3100 4600
@@ -459,22 +446,15 @@ Connection ~ 4400 4600
 $Comp
 L openDrone_parts:C_4u7 C?
 U 1 1 5F87B412
-P 3800 5900
-F 0 "C?" V 3548 5900 50  0000 C CNN
-F 1 "C_4u7" V 3639 5900 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805" H 3838 5750 50  0001 C CNN
-F 3 "" H 3825 6000 50  0001 C CNN
-F 4 "490-14466-1-ND" H 3800 5900 60  0001 C CNN "DPN"
-	1    3800 5900
-	0    1    1    0   
+P 5300 4850
+F 0 "C?" V 5048 4850 50  0000 C CNN
+F 1 "C_4u7" V 5139 4850 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 5338 4700 50  0001 C CNN
+F 3 "" H 5325 4950 50  0001 C CNN
+F 4 "490-14466-1-ND" H 5300 4850 60  0001 C CNN "DPN"
+	1    5300 4850
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3350 5900 3650 5900
-Connection ~ 3350 5900
-Wire Wire Line
-	3950 5900 5300 5900
-Wire Wire Line
-	5300 5900 5300 4700
 Wire Wire Line
 	5300 4700 4400 4700
 Connection ~ 4400 4700
@@ -494,7 +474,7 @@ Text Notes 7100 2000 0    50   ~ 0
 Magnetometer\n40-270uA
 Text Notes 3900 1800 0    50   ~ 0
 IMU\n150uA
-Text Notes 1750 5750 0    50   ~ 0
+Text Notes 3550 5800 0    50   ~ 0
 GPS\n<71mA, avg <26mA
 Text Notes 9150 3500 0    50   ~ 0
 barometer\n<1.4mA
@@ -528,4 +508,62 @@ Wire Wire Line
 	4200 4100 4050 4100
 Text Notes 3100 4000 0    50   ~ 0
 Note for the EMI filter \nthat the GPS here is at 3.3V \nnot 5V like in the pixracer
+$Comp
+L power:GND #PWR?
+U 1 1 5FB16EE2
+P 5300 5000
+F 0 "#PWR?" H 5300 4750 50  0001 C CNN
+F 1 "GND" H 5305 4827 50  0000 C CNN
+F 2 "" H 5300 5000 50  0001 C CNN
+F 3 "" H 5300 5000 50  0001 C CNN
+	1    5300 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 5250 2050 5250
+Wire Wire Line
+	2350 5350 2200 5350
+$Comp
+L openDrone_parts:R_2K2 R?
+U 1 1 5FB1C59E
+P 2050 5600
+F 0 "R?" V 2050 5550 50  0000 L CNN
+F 1 "R_2K2" V 2000 5300 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 2500 5900 50  0001 C CNN
+F 3 "" H 1750 6100 50  0001 C CNN
+F 4 "RMCF0805JT2K20CT-ND" H 2700 6100 60  0001 C CNN "DPN"
+F 5 "RMCF0805JT2K20" H 2500 6000 50  0001 C CNN "MPN"
+	1    2050 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L openDrone_parts:R_2K2 R?
+U 1 1 5FB1D219
+P 2200 5600
+F 0 "R?" V 2200 5550 50  0000 L CNN
+F 1 "R_2K2" V 2150 5650 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 2650 5900 50  0001 C CNN
+F 3 "" H 1900 6100 50  0001 C CNN
+F 4 "RMCF0805JT2K20CT-ND" H 2850 6100 60  0001 C CNN "DPN"
+F 5 "RMCF0805JT2K20" H 2650 6000 50  0001 C CNN "MPN"
+	1    2200 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 5350 2200 5450
+Wire Wire Line
+	2050 5250 2050 5450
+Wire Wire Line
+	2200 5350 1900 5350
+Connection ~ 2200 5350
+Wire Wire Line
+	2050 5250 1900 5250
+Connection ~ 2050 5250
+Text HLabel 1900 5750 0    50   Input ~ 0
+VDD_3V3_SENSORS
+Wire Wire Line
+	1900 5750 2050 5750
+Connection ~ 2050 5750
+Wire Wire Line
+	2050 5750 2200 5750
 $EndSCHEMATC

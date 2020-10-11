@@ -265,6 +265,11 @@ K N-Channel MOSFET
 F https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf
 $ENDCMP
 #
+$CMP PMOS_20V_.76A
+D P-Channel 760mA (Tj) 301mW (Tj) Surface Mount SC-75, SOT-416
+K transistor PMOS P-MOS P-MOSFET
+$ENDCMP
+#
 $CMP PMOS_20V_0.4A
 D P-MOSFET transistor, drain/gate/source
 K transistor PMOS P-MOS P-MOSFET
@@ -384,6 +389,10 @@ $ENDCMP
 #
 $CMP R_68
 D 68 Ohms ±5% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film
+$ENDCMP
+#
+$CMP R_69K8
+D 69.8 ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) - Thick Film
 $ENDCMP
 #
 $CMP TVS_DIODE_14V

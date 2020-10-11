@@ -1,8 +1,8 @@
-(module TPS54335ADDA (layer F.Cu) (tedit 5F7FBAB7)
+(module TPS54335ADDA (layer F.Cu) (tedit 5F831BB1)
   (fp_text reference REF** (at -1.27 -3.81) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value DDA0008E_N (at -2.54 -5.08) (layer Dwgs.User)
+  (fp_text value DDA0008E_N (at -2.54 -5.08) (layer Dwgs.User) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start -1.199078 1.511363) (end -1.2 1.501999) (layer F.Mask) (width 0.1524))

@@ -1,8 +1,8 @@
-(module "JST_SM04B-GHS-TB(LF)(SN)-" (layer F.Cu) (tedit 5F75CD3E)
+(module "JST_SM04B-GHS-TB(LF)(SN)-" (layer F.Cu) (tedit 5F831B51)
   (fp_text reference REF** (at -1.32721 -4.71786) (layer F.SilkS)
     (effects (font (size 1.001669 1.001669) (thickness 0.015)))
   )
-  (fp_text value JST_SM04B-GHS-TB_LF__SN_- (at 11.382085 3.367085) (layer F.Fab)
+  (fp_text value JST_SM04B-GHS-TB_LF__SN_- (at 11.382085 3.367085) (layer F.Fab) hide
     (effects (font (size 1.000622 1.000622) (thickness 0.015)))
   )
   (fp_line (start 4.475 2.525) (end -4.475 2.525) (layer F.CrtYd) (width 0.05))

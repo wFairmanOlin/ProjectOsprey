@@ -1,4 +1,4 @@
-(module NUF2042XV6T1G (layer F.Cu) (tedit 5F664924)
+(module NUF2042XV6T1G (layer F.Cu) (tedit 5F831B79)
   (fp_text reference REF** (at 2.8956 -1.778) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
