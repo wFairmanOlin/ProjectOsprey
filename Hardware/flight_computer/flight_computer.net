@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\wfairman\Desktop\openDrone\Hardware\flight_computer\flight_computer.sch)
-    (date "10/11/20 17:31:00")
+    (date "10/11/2020 9:40:56 PM")
     (tool "Eeschema (5.1.5)-3")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -144,7 +144,7 @@
       (tstamp 5F850356))
     (comp (ref U2)
       (value STM32F427VITx)
-      (footprint Package_QFP:LQFP-100_14x14mm_P0.5mm)
+      (footprint drone_footprints:QFP50P1600X1600X160-100N)
       (datasheet http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00071990.pdf)
       (libsource (lib MCU_ST_STM32F4) (part STM32F427VITx) (description "ARM Cortex-M4 MCU, 2048KB flash, 192KB RAM, 180MHz, 1.8-3.6V, 82 GPIO, LQFP-100"))
       (sheetpath (names /) (tstamps /))
@@ -158,7 +158,7 @@
       (tstamp 5F812ED0))
     (comp (ref U3)
       (value MCP131T-300E_TT)
-      (footprint Package_TO_SOT_SMD:SOT-23)
+      (footprint TO_SOT_Packages_SMD:SOT-23)
       (datasheet http://ww1.microchip.com/downloads/en/DeviceDoc/11184d.pdf)
       (fields
         (field (name DPN) MCP131T-300E/TTCT-ND))
