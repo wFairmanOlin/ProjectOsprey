@@ -369,7 +369,7 @@ U 1 1 5F5EC592
 P 7850 4700
 F 0 "U2" H 7250 1950 50  0000 C CNN
 F 1 "STM32F427VITx" H 7250 2050 50  0000 C CNN
-F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 7150 2100 50  0001 R CNN
+F 2 "drone_footprints:QFP50P1600X1600X160-100N" H 7150 2100 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00071990.pdf" H 7850 4700 50  0001 C CNN
 	1    7850 4700
 	1    0    0    -1  
