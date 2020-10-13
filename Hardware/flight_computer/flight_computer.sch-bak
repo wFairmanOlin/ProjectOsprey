@@ -585,7 +585,7 @@ Wire Wire Line
 Wire Wire Line
 	8350 10650 8350 10600
 Text Label 8200 10650 2    50   ~ 0
-FMU_VDD_3V3
+VDD_3V3_STM
 Wire Wire Line
 	8350 10650 8200 10650
 Connection ~ 8350 10650

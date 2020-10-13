@@ -394,26 +394,18 @@ Wire Wire Line
 Wire Wire Line
 	4300 4200 4300 4100
 Connection ~ 4300 4100
-Wire Wire Line
-	3750 4300 4300 4300
-Wire Wire Line
-	4300 4300 4300 4200
-Connection ~ 4300 4200
 $Comp
 L openDrone_parts:C_4u7 C37
 U 1 1 5F87B412
-P 5200 4450
-F 0 "C37" V 4948 4450 50  0000 C CNN
-F 1 "C_4u7" V 5039 4450 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805" H 5238 4300 50  0001 C CNN
-F 3 "" H 5225 4550 50  0001 C CNN
-F 4 "490-14466-1-ND" H 5200 4450 60  0001 C CNN "DPN"
-	1    5200 4450
+P 2650 6150
+F 0 "C37" H 2850 6200 50  0000 C CNN
+F 1 "C_4u7" H 2850 6100 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 2688 6000 50  0001 C CNN
+F 3 "" H 2675 6250 50  0001 C CNN
+F 4 "490-14466-1-ND" H 2650 6150 60  0001 C CNN "DPN"
+	1    2650 6150
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5200 4300 4300 4300
-Connection ~ 4300 4300
 Text Notes 8650 2000 0    50   ~ 0
 Magnetometer\n40-270uA
 Text Notes 2950 1900 0    50   ~ 0
@@ -455,12 +447,12 @@ Note for the EMI filter \nthat the GPS here is at 3.3V \nnot 5V like in the pixr
 $Comp
 L power:GND #PWR053
 U 1 1 5FB16EE2
-P 5200 4600
-F 0 "#PWR053" H 5200 4350 50  0001 C CNN
-F 1 "GND" H 5205 4427 50  0000 C CNN
-F 2 "" H 5200 4600 50  0001 C CNN
-F 3 "" H 5200 4600 50  0001 C CNN
-	1    5200 4600
+P 2650 6300
+F 0 "#PWR053" H 2650 6050 50  0001 C CNN
+F 1 "GND" H 2655 6127 50  0000 C CNN
+F 2 "" H 2650 6300 50  0001 C CNN
+F 3 "" H 2650 6300 50  0001 C CNN
+	1    2650 6300
 	1    0    0    -1  
 $EndComp
 Text HLabel 4500 3400 2    50   Input ~ 0
@@ -472,14 +464,8 @@ VDD_3V3_SENSORS
 Text HLabel 7700 2200 3    50   Input ~ 0
 VDD_3V3_SENSORS
 Wire Notes Line
-	900  5800 5600 5800
-Wire Notes Line
-	5600 5800 5600 3150
-Wire Notes Line
 	5600 3150 900  3150
-Wire Notes Line
-	900  3150 900  5800
-Text Notes 4550 5700 0    98   ~ 20
+Text Notes 4550 6400 0    98   ~ 20
 GPS MODULE
 Wire Notes Line
 	900  2750 3750 2750
@@ -563,4 +549,86 @@ Wire Wire Line
 	1950 2300 1950 2550
 Text Notes 2800 2450 0    50   ~ 0
 Check VDDIO connection
+$Comp
+L openDrone_parts:R_1K R?
+U 1 1 5F866B0B
+P 2850 6000
+AR Path="/5F866B0B" Ref="R?"  Part="1" 
+AR Path="/5F84A65B/5F866B0B" Ref="R?"  Part="1" 
+AR Path="/5F5F0393/5F866B0B" Ref="R?"  Part="1" 
+F 0 "R?" H 2850 6000 50  0000 C CNN
+F 1 "R_1K" H 2900 6100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" H 2050 6150 50  0001 C CNN
+F 3 "" H 2550 6500 50  0001 C CNN
+F 4 "311-1.0KARCT-ND" H 2200 6250 60  0001 C CNN "DPN"
+	1    2850 6000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L openDrone_parts:C_220u C?
+U 1 1 5F866B13
+P 3550 6200
+AR Path="/5F866B13" Ref="C?"  Part="1" 
+AR Path="/5F84A65B/5F866B13" Ref="C?"  Part="1" 
+F 0 "C?" H 3665 6246 50  0000 L CNN
+F 1 "C_220u" H 3665 6155 50  0000 L CNN
+F 2 "drone_footprints:UWT0G221MCL6GS" H 4300 6500 50  0001 C CNN
+F 3 "~" H 3550 6200 50  0001 C CNN
+F 4 "493-9872-1-ND" H 3950 6400 50  0001 C CNN "DPN"
+F 5 "UWT0G221MCL6GS" H 4050 6300 50  0001 C CNN "MPN"
+	1    3550 6200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 6000 3550 6050
+$Comp
+L power:GND #PWR?
+U 1 1 5F866B1B
+P 3550 6350
+AR Path="/5F866B1B" Ref="#PWR?"  Part="1" 
+AR Path="/5F84A65B/5F866B1B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3550 6100 50  0001 C CNN
+F 1 "GND" H 3650 6350 50  0000 C CNN
+F 2 "" H 3550 6350 50  0001 C CNN
+F 3 "" H 3550 6350 50  0001 C CNN
+	1    3550 6350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 6000 3550 6000
+$Comp
+L openDrone_parts:D_Schottky_10V_3A D?
+U 1 1 5F866B26
+P 3150 6000
+F 0 "D?" H 3050 5950 50  0000 C CNN
+F 1 "D_Schottky_10V_3A" H 2950 5850 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-323F" H 3650 6300 50  0001 C CNN
+F 3 "~" H 3150 6000 50  0001 C CNN
+F 4 "1727-3852-1-ND" H 3550 6200 50  0001 C CNN "DPN"
+F 5 "PMEG1030EJ,115" H 3550 6100 50  0001 C CNN "MPN"
+	1    3150 6000
+	-1   0    0    1   
+$EndComp
+Text Label 3750 4300 0    50   ~ 0
+V_BCKP
+Text Label 3850 6000 0    50   ~ 0
+V_BCKP
+Wire Wire Line
+	3850 6000 3550 6000
+Connection ~ 3550 6000
+Text Label 3750 4100 0    50   ~ 0
+GPS_VCC
+Text Label 2550 6000 2    50   ~ 0
+GPS_VCC
+Wire Wire Line
+	2550 6000 2650 6000
+Wire Wire Line
+	2650 6000 2700 6000
+Connection ~ 2650 6000
+Wire Notes Line
+	5600 6650 900  6650
+Wire Notes Line
+	5600 3150 5600 6650
+Wire Notes Line
+	900  3150 900  6650
 $EndSCHEMATC
