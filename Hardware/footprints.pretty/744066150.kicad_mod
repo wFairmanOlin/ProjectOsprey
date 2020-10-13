@@ -1,4 +1,4 @@
-(module 744066150 (layer F.Cu) (tedit 5F831B2C)
+(module 744066150 (layer F.Cu) (tedit 5F85B05E)
   (fp_text reference REF** (at -3.556 -2.54) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -8,4 +8,9 @@
   (fp_circle (center 0 4.5) (end 5.425 4.5) (layer F.SilkS) (width 0.12))
   (pad 1 smd rect (at 0 0) (size 4.6 1.8) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 0 9) (size 4.6 1.8) (layers F.Cu F.Paste F.Mask))
+  (model ${DRONE_DIR}/Hardware/3D_parts/744066005_Download_STP_WE-TPC-1038_rev1.stp
+    (offset (xyz 0 -4.4 3.7))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 90))
+  )
 )

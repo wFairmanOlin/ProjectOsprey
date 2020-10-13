@@ -1,4 +1,4 @@
-(module UWT0G221MCL6GS (layer F.Cu) (tedit 5F831BD9)
+(module UWT0G221MCL6GS (layer F.Cu) (tedit 5F85AF17)
   (fp_text reference REF** (at -1.7272 -4.7244) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -41,4 +41,9 @@
   )
   (pad 2 smd rect (at 2.7051 0) (size 2.9972 1.2192) (layers F.Cu F.Paste F.Mask))
   (pad 1 smd rect (at -2.7051 0) (size 2.9972 1.2192) (layers F.Cu F.Paste F.Mask))
+  (model ${DRONE_DIR}/Hardware/3D_parts/CAP_UCD_6P3X5P8_NCH.step
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )
