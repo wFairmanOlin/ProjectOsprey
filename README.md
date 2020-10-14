@@ -4,7 +4,7 @@
 A Fall 2020 Project
 
 <p align="center">
-<img src="assets/osprey_logo.jpg" alt="Project Osprey" align="center" width="400"></img>
+<img src="assets/osprey_logo_i.jpg" alt="Project Osprey" align="center" width="400"></img>
 </p>
 <p align="center">
 This logo is a modified version of work done by <a href="https://hweishin.carbonmade.com/">Hwei-Shin Harriman</a>, a fellow Olin student.
