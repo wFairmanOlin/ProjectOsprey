@@ -4,7 +4,7 @@
 A Fall 2020 Project
 
 <p align="center">
-<img src="assets/osprey_logo.jpg" alt="Project Osprey" align="center" width="500"></img>
+<img src="assets/osprey_logo.jpg" alt="Project Osprey" align="center" width="400"></img>
 </p>
 <p align="center">
 This logo is a modified version of work done by <a href="https://hweishin.carbonmade.com/">Hwei-Shin Harriman</a>, a fellow Olin student.
@@ -18,7 +18,7 @@ We are developing a flight computer and drone as an exploration in electrical an
 
 #### Electrical
 
-Our flight computer is centered around the STM32F427VIT6 microcontroller we have selected. We have selected an IMU, barometer, GPS, and magnetometer to capture all of the necessary sensor data during flight. In addition, our board is equipped with a raspberry pi zero to which we intend to connect a small camera; the raspi communicates with the STM32 via I2C. We are also including a variety of connectors in order to ensure we can connect a remote controller and any other necessary telemetry modules. Finally, we have created a power management system based around a TI buck converter that steps down the battery voltage output by the onboard 18650 cells to the 5V that power several auxiliary components; three linear regulators step that voltage down further to the 3.3V required by the STM and several of the other sensors and ICs on the board.
+Our flight computer is centered around the STM32F427VIT6 microcontroller. We have selected an IMU, barometer, GPS, and magnetometer to capture all of the necessary sensor data during flight. In addition, our board is equipped with a raspberry pi zero to which we intend to connect a small camera; the raspi communicates with the STM32 via I2C. We are also including a variety of connectors in order to ensure we can connect a remote controller and any other necessary telemetry modules. Finally, we have created a power management system based around a TI buck converter that steps down the battery voltage (12-25V) to 5V which powers several auxiliary components; three linear regulators step that voltage down further to the 3.3V required by the STM and several of the other sensors and ICs on the board.
 
 #### Mechanical
 
