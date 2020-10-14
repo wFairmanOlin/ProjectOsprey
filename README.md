@@ -1,4 +1,4 @@
-# Open Drone
+# Project Osprey
 #### Daniel Connolly and William Fairman
 
 An exploration in quadcopter design, hardware design, and firmware implementation
