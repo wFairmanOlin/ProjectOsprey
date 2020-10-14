@@ -1,46 +1,34 @@
 # Project Osprey
 #### Daniel Connolly and William Fairman
 
-An exploration in quadcopter design, hardware design, and firmware implementation
-
 A Fall 2020 Project
 
-## Interfaces
-- SWD/JTAG
-- Power (px)
-  1. VCC_5V
-  2. VCC_5V
-  3. BATT_CURRENT
-  4. BATT_VOLTAGE
-  5. GND
-  6. GND
-- Power (4in1 ESC)
-  1. VBAT
-  2. TLM
-  2. GND
-  3. BATT_CURRENT
-  4. M1
-  5. M2
-  6. M3
-  7. M4
-- SBUS
-  1. VCC_5V
-  2. SBUS
-  3. RSSI
-  4. VCC_3V3
-  5. GND
-- Telemetry
-  1. VCC_5V
-  2. MCU_TX
-  3. MCU_RX
-  4. MCU_CTS
-  5. MCU_RTS
-- PWM
-- USB
+### Overview
 
-### Optional
-- DCMI
-- SPI
-- UART & I2C
-- CAN
-- PPM
+We are developing a flight computer and drone as an exploration in electrical and mechanical design as well as firmware implementation.
+
+### Subsystems
+
+#### Electrical
+
+Our flight computer is centered around the STM32 microcontroller we have selected. We have selected an IMU, barometer, GPS, and magnetometer to capture all of the necessary sensor data during flight. In addition, our board is equipped with a raspberry pi zero to which we intend to connect a small camera; the raspi communicates with the STM32 via I2C. We are also including a variety of connectors in order to ensure we can connect a remote controller and any other necessary telemetry modules. Finally, we have created a power management system based around a TI buck converter that steps down the battery voltage output by the onboard 18650 cells to the 5V that power several auxiliary components; three linear regulators step that voltage down further to the 3.3V required by the STM and several of the other sensors and ICs on the board. 
+
+#### Mechanical
+
+We are creating a 3-D printable chassis for our drone in AutoDesk's Fusion 360. At the moment, we are experimenting with Fusion 360's generative design features and how well these designs perform when 3-D printed as well as creating the basic chassis layout.
+
+#### Firmware / Software
+
+While we have not yet begun firmware / software development, we intend to start once we have shipped version 1 of our PCB. We expect to work in C++/C while developing for the STM32 as well as Python as we develop software on the raspberry pi.
+
+### Goals
+
+Our overarching goal for this project is to develop a drone capable of autonomous or semi-autonomous flight. In pursuit of this goal, we hope to advance our skills in the following areas:
+
+1. Electrical design & PCB layout: This entails selecting the mcu, sensors, power management systems, and all supporting hardware as well as continuing to develop our KiCad knowledge.
+
+2. Firmware development: We intend to learn C++ and advance our knowledge of firmware.
+
+3. Computer vision: We have equipped our system with a raspberry pi with the intention of connecting a camera for basic computer vision processing.
+
+4. Mechanical design: Taking high-level constraints about lift and drone layout into consideration, we intend to extend our CAD abilities.
