@@ -12,6 +12,8 @@
   (page A4)
   (layers
     (0 F.Cu signal)
+    (1 In1.Cu power)
+    (2 In2.Cu power)
     (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
@@ -617,8 +619,8 @@
       (net 1 "Net-(BZ1-Pad1)"))
   )
 
-  (module Capacitors_SMD:C_0805 (layer F.Cu) (tedit 58AA8463) (tstamp 5F838C56)
-    (at 152.77846 145.48282 270)
+  (module Capacitors_SMD:C_0805 (layer F.Cu) (tedit 58AA8463) (tstamp 5F8875CD)
+    (at 165.22446 96.71482 270)
     (descr "Capacitor SMD 0805, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0805")
     (path /5FBACA69)
@@ -798,7 +800,7 @@
   )
 
   (module Capacitors_SMD:C_0805 (layer F.Cu) (tedit 58AA8463) (tstamp 5F861792)
-    (at 153.1112 91.23502 270)
+    (at 148.7932 97.58502 270)
     (descr "Capacitor SMD 0805, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0805")
     (path /5F7A76C0)
@@ -1158,7 +1160,7 @@
   )
 
   (module Capacitors_SMD:C_0805 (layer F.Cu) (tedit 58AA8463) (tstamp 5F838D77)
-    (at 151.6159 121.37136 180)
+    (at 163.0459 131.78536 180)
     (descr "Capacitor SMD 0805, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0805")
     (path /5F7684E9/5F78595C)
@@ -2391,7 +2393,7 @@
     )
   )
 
-  (module drone_footprints:NFL21SP107X1C3D (layer F.Cu) (tedit 5F831B71) (tstamp 5F838FF3)
+  (module drone_footprints:NFL21SP107X1C3D (layer F.Cu) (tedit 5F831B71) (tstamp 5F88767F)
     (at 143.49476 152.53538 90)
     (path /5F84A65B/5F892271)
     (fp_text reference FL1 (at -1.3716 -2.032 90) (layer F.SilkS)
@@ -2433,8 +2435,8 @@
       (net 2 GND))
   )
 
-  (module Connectors_USB:USB_Micro-B_Molex_47346-0001 (layer F.Cu) (tedit 594C50D0) (tstamp 5F83BD06)
-    (at 157.9753 140.71176 90)
+  (module Connectors_USB:USB_Micro-B_Molex_47346-0001 (layer F.Cu) (tedit 594C50D0) (tstamp 5F88757F)
+    (at 170.4213 91.94376 90)
     (descr "Micro USB B receptable with flange, bottom-mount, SMD, right-angle (http://www.molex.com/pdm_docs/sd/473460001_sd.pdf)")
     (tags "Micro B USB SMD")
     (path /5FBACA50)
@@ -2784,7 +2786,7 @@
   )
 
   (module "drone_footprints:JST_SM04B-GHS-TB(LF)(SN)-" (layer F.Cu) (tedit 5F831B51) (tstamp 5F8390E2)
-    (at 156.9847 119.19966 90)
+    (at 168.4147 129.61366 90)
     (path /5F7684E9/5F77C85C)
     (fp_text reference J6 (at -1.32721 -4.71786 90) (layer F.SilkS)
       (effects (font (size 1.001669 1.001669) (thickness 0.015)))
@@ -2825,7 +2827,7 @@
   )
 
   (module drone_footprints:SM05B-GHS-TBLFSN (layer F.Cu) (tedit 5F831B90) (tstamp 5F839100)
-    (at 156.763357 103.899719 90)
+    (at 168.193357 118.631719 90)
     (path /5F7684E9/5F77DE6E)
     (fp_text reference J7 (at -3.1496 -4.318 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2873,7 +2875,7 @@
   )
 
   (module drone_footprints:TSW-103-07-F-D (layer F.Cu) (tedit 5F831BCF) (tstamp 5F83911B)
-    (at 98.77298 81.5848 90)
+    (at 129.794 91.186 90)
     (path /5F7684E9/5F7B4CC5)
     (fp_text reference J8 (at 4.9276 2.5908 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2919,7 +2921,7 @@
   )
 
   (module drone_footprints:TSW-103-07-F-D (layer F.Cu) (tedit 5F831BCF) (tstamp 5F839136)
-    (at 96.23298 67.3608 270)
+    (at 114.3 85.344 270)
     (path /5F7684E9/5FB0EBCA)
     (fp_text reference J9 (at 4.9276 2.5908 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3046,8 +3048,8 @@
       (net 83 /VDD_3V3_RADIO))
   )
 
-  (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 58E0A804) (tstamp 5F851467)
-    (at 151.25446 142.45082)
+  (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 58E0A804) (tstamp 5F887540)
+    (at 163.70046 93.68282)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
     (path /5FBACA58)
@@ -3082,8 +3084,8 @@
     )
   )
 
-  (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 58E0A804) (tstamp 5F83919F)
-    (at 151.25446 140.41882)
+  (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 58E0A804) (tstamp 5F887510)
+    (at 163.70046 91.65082)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
     (path /5FBACA60)
@@ -3407,7 +3409,7 @@
   )
 
   (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 58E0A804) (tstamp 5F839238)
-    (at 150.62966 103.90632 180)
+    (at 162.05966 118.63832 180)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
     (path /5F7684E9/5F78B25A)
@@ -3479,7 +3481,7 @@
   )
 
   (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 58E0A804) (tstamp 5F851B0F)
-    (at 151.7802 119.32666)
+    (at 163.2102 129.74066)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
     (path /5F7684E9/5F7FC1DD)
@@ -3515,7 +3517,7 @@
   )
 
   (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 58E0A804) (tstamp 5F8519E9)
-    (at 151.7421 117.16766)
+    (at 163.1721 127.58166)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
     (path /5F7684E9/5F7FCD82)
@@ -3731,7 +3733,7 @@
   )
 
   (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 58E0A804) (tstamp 5F8428E0)
-    (at 150.23846 145.43282 270)
+    (at 162.68446 96.66482 270)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
     (path /5F84A65B/5F8C11D2)
@@ -4271,7 +4273,7 @@
   )
 
   (module Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm (layer F.Cu) (tedit 58CD0CDA) (tstamp 5F862566)
-    (at 147.76706 91.98864)
+    (at 143.44906 98.33864)
     (descr "8-Lead Plastic Small Outline (SN) - Narrow, 3.90 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)")
     (tags "SOIC 1.27")
     (path /5F7A6087)
@@ -4324,7 +4326,7 @@
     )
   )
 
-  (module Housings_SSOP:TSSOP-8_3x3mm_Pitch0.65mm (layer F.Cu) (tedit 54130A77) (tstamp 5F86298F)
+  (module Housings_SSOP:TSSOP-8_3x3mm_Pitch0.65mm (layer F.Cu) (tedit 54130A77) (tstamp 5F8877F2)
     (at 120.44172 97.69602 135)
     (descr "TSSOP8: plastic thin shrink small outline package; 8 leads; body width 3 mm; (see NXP SSOP-TSSOP-VSO-REFLOW.pdf and sot505-1_po.pdf)")
     (tags "SSOP 0.65")
