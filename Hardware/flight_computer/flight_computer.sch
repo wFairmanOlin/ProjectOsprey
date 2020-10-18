@@ -464,7 +464,7 @@ GPS_USART6_TX
 Text Label 14150 3350 2    50   ~ 0
 GPS_USART6_RX
 Text Label 8750 3400 0    50   ~ 0
-OTG_FS_DM+
+OTG_FS_D_N
 Text Label 8750 3600 0    50   ~ 0
 SWDIO
 Text Label 8750 3700 0    50   ~ 0
@@ -1319,10 +1319,6 @@ Wire Wire Line
 	5200 8250 5200 8150
 Wire Wire Line
 	5200 8150 5250 8150
-Text Label 4400 8550 2    50   ~ 0
-OTG_FS_DM+
-Text Label 4400 8650 2    50   ~ 0
-OTG_FS_DP-
 Text Label 4550 8850 2    50   ~ 0
 VDD_5V_USB
 Text Label 7550 9150 2    50   ~ 0
@@ -1473,5 +1469,9 @@ NoConn ~ 6950 7100
 NoConn ~ 6950 4200
 NoConn ~ 5300 8250
 Text Label 8750 3500 0    50   ~ 0
-OTG_FS_DP-
+OTG_FS_D_P
+Text Label 4400 8650 2    50   ~ 0
+OTG_FS_D_P
+Text Label 4400 8550 2    50   ~ 0
+OTG_FS_D_N
 $EndSCHEMATC
