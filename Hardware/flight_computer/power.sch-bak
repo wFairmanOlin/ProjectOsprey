@@ -230,8 +230,6 @@ Wire Wire Line
 Wire Wire Line
 	4350 1350 4350 1650
 Connection ~ 4100 1350
-Wire Wire Line
-	3850 1150 3950 1150
 $Comp
 L openDrone_parts:C_0u1 C22
 U 1 1 5F858B47
@@ -244,13 +242,6 @@ F 4 "478-3352-1-ND" H 4150 1150 60  0001 C CNN "DPN"
 	1    4150 1150
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3850 1250 3950 1250
-Wire Wire Line
-	3950 1250 3950 1150
-Connection ~ 3950 1150
-Wire Wire Line
-	3950 1150 4000 1150
 Wire Wire Line
 	4300 1150 4400 1150
 $Comp
@@ -1342,4 +1333,11 @@ Wire Notes Line
 	15800 4400 15800 6400
 Text HLabel 11650 5400 0    50   Input ~ 0
 VDD_3V3_RADIO_EN
+Wire Wire Line
+	3850 1150 4000 1150
+Wire Wire Line
+	3850 1250 4300 1250
+Wire Wire Line
+	4300 1250 4300 1150
+Connection ~ 4300 1150
 $EndSCHEMATC

@@ -156,19 +156,11 @@ Wire Wire Line
 Wire Wire Line
 	7450 1900 7450 1800
 Wire Wire Line
-	7750 2000 7750 1850
-Wire Wire Line
 	7750 1850 7650 1850
 Wire Wire Line
 	7650 1850 7650 1800
 Wire Wire Line
-	7850 2000 7850 1800
-Wire Wire Line
-	7950 2000 7950 1800
-Wire Wire Line
 	7950 1800 8050 1800
-Wire Wire Line
-	8050 2000 8050 1850
 Wire Wire Line
 	8050 1850 8250 1850
 Wire Wire Line
@@ -363,17 +355,6 @@ Text Label 6950 6100 2    50   ~ 0
 FMU_USART2_RTS
 Text Label 6950 6200 2    50   ~ 0
 FMU_USART2_TX
-$Comp
-L MCU_ST_STM32F4:STM32F427VITx U2
-U 1 1 5F5EC592
-P 7850 4700
-F 0 "U2" H 7250 1950 50  0000 C CNN
-F 1 "STM32F427VITx" H 7250 2050 50  0000 C CNN
-F 2 "drone_footprints:QFP50P1600X1600X160-100N" H 7150 2100 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00071990.pdf" H 7850 4700 50  0001 C CNN
-	1    7850 4700
-	1    0    0    -1  
-$EndComp
 Text Label 6950 6300 2    50   ~ 0
 FMU_USART2_RX
 Text Label 1700 1550 0    50   ~ 0
@@ -483,9 +464,7 @@ GPS_USART6_TX
 Text Label 14150 3350 2    50   ~ 0
 GPS_USART6_RX
 Text Label 8750 3400 0    50   ~ 0
-OTG_FS_DM
-Text Label 8750 3500 0    50   ~ 0
-OTG_FS_DP
+OTG_FS_DM+
 Text Label 8750 3600 0    50   ~ 0
 SWDIO
 Text Label 8750 3700 0    50   ~ 0
@@ -1337,18 +1316,13 @@ F 3 "" H 5250 8150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5300 8250 5300 8150
-Wire Wire Line
-	5300 8150 5250 8150
-Wire Wire Line
 	5200 8250 5200 8150
 Wire Wire Line
 	5200 8150 5250 8150
-Connection ~ 5250 8150
 Text Label 4400 8550 2    50   ~ 0
-OTG_FS_DM
+OTG_FS_DM+
 Text Label 4400 8650 2    50   ~ 0
-OTG_FS_DP
+OTG_FS_DP-
 Text Label 4550 8850 2    50   ~ 0
 VDD_5V_USB
 Text Label 7550 9150 2    50   ~ 0
@@ -1459,4 +1433,45 @@ Text Label 1700 1200 0    50   ~ 0
 ESC_Current_Sense
 Text Label 1700 1300 0    50   ~ 0
 ESC_TLM
+Wire Wire Line
+	8050 2000 8050 1850
+Wire Wire Line
+	7950 2000 7950 1800
+Wire Wire Line
+	7850 2000 7850 1800
+Wire Wire Line
+	7750 2000 7750 1850
+$Comp
+L MCU_ST_STM32F4:STM32F427VITx U2
+U 1 1 5F5EC592
+P 7850 4700
+F 0 "U2" H 7250 1950 50  0000 C CNN
+F 1 "STM32F427VITx" H 7250 2050 50  0000 C CNN
+F 2 "drone_footprints:QFP50P1600X1600X160-100N" H 7150 2100 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00071990.pdf" H 7850 4700 50  0001 C CNN
+	1    7850 4700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8750 7200
+NoConn ~ 8750 5900
+NoConn ~ 8750 6000
+NoConn ~ 8750 6100
+NoConn ~ 8750 5100
+NoConn ~ 8750 5200
+NoConn ~ 8750 5300
+NoConn ~ 8750 4100
+NoConn ~ 8750 4200
+NoConn ~ 8750 4300
+NoConn ~ 8750 4400
+NoConn ~ 6950 6400
+NoConn ~ 6950 6500
+NoConn ~ 6950 6600
+NoConn ~ 6950 6800
+NoConn ~ 6950 6900
+NoConn ~ 6950 7000
+NoConn ~ 6950 7100
+NoConn ~ 6950 4200
+NoConn ~ 5300 8250
+Text Label 8750 3500 0    50   ~ 0
+OTG_FS_DP-
 $EndSCHEMATC
