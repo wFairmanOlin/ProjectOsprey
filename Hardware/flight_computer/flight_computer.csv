@@ -1,56 +1,55 @@
-Reference, Quantity, Value, Footprint, Datasheet, DPN, MPN, Purchasing Link
-BZ1 ,1,Buzzer,drone_footprints:PT-2040PQ,~,458-1078-ND,PT-2040PQ,
-C18 C34 C33 C27 C30 ,5,C_10u,Capacitors_SMD:C_0805,,490-16824-1-ND,,
-C19 C26 ,2,C_100u,drone_footprints:10SGV100M6.3X6.1,~,1189-2392-1-ND,10SGV100M6.3X6.1,
-C21 ,1,C_0u012,Capacitors_SMD:C_0805,,490-11580-1-ND,GRM2195C1H123GA01D,
-C23 ,1,C_120P,Capacitors_SMD:C_0805,,1276-1201-1-ND,CL21C121JDCNNNC,
-C24 C25 ,2,C_47u,Capacitors_SMD:C_0805,,587-1779-1-ND,JMK212BJ476MG-T,
-C37 ,1,C_4u7,Capacitors_SMD:C_0805,,490-14466-1-ND,,
-C38 ,1,C_1u,Capacitors_SMD:C_0805,,399-8011-1-ND,,
-C4 C2 ,2,C_8p,Capacitors_SMD:C_0805,https://www.digikey.com/product-detail/en/yageo/CC0805DRNPO9BN8R0/311-1097-1-ND/303007,311-1097-1-ND,,
-C6 C10 C11 C12 C14 C15 C13 C1 C20 C22 C31 C32 C35 C36 C40 C39 C41 ,17,C_0u1,Capacitors_SMD:C_0805,https://www.digikey.com/product-detail/en/kemet/C0805C104Z4VACTU/399-9159-1-ND/3522677,478-3352-1-ND,,
-C7 ,1,C_220u,drone_footprints:UWT0G221MCL6GS,~,493-9872-1-ND,UWT0G221MCL6GS,
-C9 C8 C3 C5 C16 C17 C29 C28 ,8,C_2u2,Capacitors_SMD:C_0805,,445-13254-1-ND,,
-D2 D1 D6 ,3,D_Schottky_10V_3A,Diodes_SMD:D_SOD-323F,~,1727-3852-1-ND,"PMEG1030EJ,115",
-D3 ,1,D_Schottky_x2_20V,drone_footprints:SOT1061,~,1727-5194-1-ND,"PMEG2020CPA,115",
-D4 ,1,TVS_DIODE_14V,Capacitors_SMD:C_0402,,PESD0402-140CT-ND,,
-D5 ,1,LED_GREEN,LEDs:LED_0603_HandSoldering,https://www.digikey.com/product-detail/en/kingbright/APTD1608CGCK/754-1545-1-ND/2514673,754-1545-1-ND,,
-F1 ,1,PTC_6V_2A,Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering,,507-1809-1-ND,0ZCJ0200FF2C,
-F2 F3 ,2,PTC_6V_1A,Resistors_SMD:R_0805_HandSoldering,,507-1813-1-ND,0ZCK0050FF2E,
-FL1 FL2 ,2,EMI_Filter_CLC_100MHZ,drone_footprints:NFL21SP107X1C3D,,490-2540-1-ND,NFL21SP107X1C3D,
-J1 ,1,Micro_USB,Connectors_USB:USB_Micro-B_Molex_47346-0001,https://www.digikey.com/products/en?keywords=WM17141CT-ND,WM17141CT-ND,,
-J2 ,1,MicroSD_molex,drone_footprints:2908-05WB-MG,https://multimedia.3m.com/mws/media/416257O/3mtm-card-connector-microsdtm-2900-series-ts2197.pdf,3M5607CT-ND,2908-05WB-MG,
-J3 ,1,rpi_zero_w,drone_footprints:rpi_zero_w,~,,,
-J4 ,1,JST_8_RA,drone_footprints:JST_SM08B-SRSS-TB(LF)(SN),,455-1808-1-ND,,
-J5 ,1,JST_GH_6_RA,drone_footprints:JST_SM06B-GHS-TB(LF)(SN),,455-1568-1-ND,SM06B-GHS-TB(LF)(SN),
-J6 ,1,JST_GH_4_RA,drone_footprints:JST_SM04B-GHS-TB(LF)(SN)-,,455-1566-1-ND,SM04B-GHS-TB(LF)(SN)-,
-J7 ,1,JST_GH_5_RA,drone_footprints:SM05B-GHS-TBLFSN,,455-1567-1-ND,SM05B-GHS-TB(LF)(SN),
-J8 J9 ,2,Conn_02x03,drone_footprints:TSW-103-07-F-D,~,,,
-L1 ,1,L_55m,drone_footprints:RLB0913-563K,~,RLB0913-563K-ND,RLB0913-563K,
-L2 ,1,L_15u,drone_footprints:744066150,~,732-1077-1-ND,744066150,
-Q2 Q1 Q3 ,3,PMOS_20V_.76A,drone_footprints:NTA4151PT1G,,NTA4151PT1GOSCT-ND,NTA4151PT1G,
-R1 R2 ,2,R_22,Resistors_SMD:R_0805,,CR0805-FX-22R0ELFCT-ND,CR0805-FX-22R0ELF,
-R10 ,1,R_120,Resistors_SMD:R_0805,,A129738CT-ND,,
-R12 R20 ,2,R_470,Resistors_SMD:R_0805,,A129745CT-ND,,
-R15 R31 R32 R27 R25 R24 R36 R33 ,8,R_220,Resistors_SMD:R_0805,,311-220CRCT-ND,,
-R16 ,1,R_43K2,Resistors_SMD:R_0805,,311-43.2KCRCT-ND,,
-R17 ,1,R_69K8,Resistors_SMD:R_0805,,311-69.8KCRCT-ND,RC0805FR-0769K8L,
-R23 ,1,R_143K,Resistors_SMD:R_0805,,738-RMCF0805FT143KCT-ND,,
-R26 ,1,R_3K74,Resistors_SMD:R_0805,,RMCF0805FT3K74CT-ND,RMCF0805FT3K74,
-R29 ,1,R_19K1,Resistors_SMD:R_0805,,541-19.1KCCT-ND,CRCW080519K1FKEA,
-R3 R13 R14 ,3,R_1K,Resistors_SMD:R_0805,,311-1.0KARCT-ND,,
-R34 R35 ,2,R_2K2,Resistors_SMD:R_0805,,RMCF0805JT2K20CT-ND,RMCF0805JT2K20,
-R4 R11 R30 R19 R22 R21 R18 ,7,R_10K,Resistors_SMD:R_0805,,311-10.0KCRCT-ND,,
-R9 R8 R7 R6 R5 R28 ,6,R_100K,Resistors_SMD:R_0805,,RMCF0805JT68R0CT-ND,,
-U1 ,1,FRAM_128K,Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm,,428-3385-ND,,
-U10 ,1,CAM-M8Q-0,drone_footprints:CAM_M8Q_0,https://www.u-blox.com/sites/default/files/CAM-M8-FW3_DataSheet_%28UBX-15031574%29.pdf,672-CAM-M8Q-0CT-ND,,
-U11 ,1,BMI088,drone_footprints:BMI088,https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMI088-DS001.pdf,828-1082-1-ND,,https://www.digikey.com/product-detail/en/bosch-sensortec/BMI088/828-1082-1-ND/8634942
-U12 ,1,LIS3MDLTR,drone_footprints:LIS3MDLTR,https://www.st.com/content/ccc/resource/technical/document/datasheet/54/2a/85/76/e3/97/42/18/DM00075867.pdf/files/DM00075867.pdf/jcr:content/translations/en.DM00075867.pdf,497-13892-1-ND,,
-U13 ,1,Barometer,drone_footprints:MS561101BA03-50,,223-1622-1-ND,MS561101BA03-50,
-U2 ,1,STM32F427VITx,Package_QFP:LQFP-100_14x14mm_P0.5mm,http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00071990.pdf,,,
-U3 ,1,MCP131T-300E_TT,Package_TO_SOT_SMD:SOT-23,http://ww1.microchip.com/downloads/en/DeviceDoc/11184d.pdf,MCP131T-300E/TTCT-ND,,
-U5 U4 ,2,Dual_XOR_GATE,Housings_SSOP:TSSOP-8_3x3mm_Pitch0.65mm,,1727-5995-1-ND,"74LVC2G86DP,125",
-U6 ,1,Buck_Converter_2,drone_footprints:TPS54335ADDA,https://www.ti.com/lit/ds/symlink/tps54335a.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1602192854825,296-44004-5-ND,TPS54335ADDA,
-U7 ,1,LDO_600MA,drone_footprints:SOT-25_DIO,,AP7365-33WG-7DICT-ND,AP7365-33WG-7,
-U9 U8 ,2,LP5907QMFX-3.3,TO_SOT_Packages_SMD:SOT-23-5,http://www.ti.com/lit/ds/symlink/lp5907.pdf,296-40365-1-ND,LP5907QMFX-3.3Q1,
-Y1 ,1,Crystal_24MHZ,drone_footprints:NX3225SA-24.000M-STD-CSR-1,~,644-1052-1-ND,NX3225SA-24.000M-STD-CSR-1,
+Reference, Quantity, Value, Footprint, Datasheet, DPN, MPN, PurchasingLink, Purchasing Link
+C18 C34 C33 C27 C30 ,5,"C_10u","Capacitors_SMD:C_0805","","490-16824-1-ND","","",""
+C19 C26 ,2,"C_100u","drone_footprints:10SGV100M6.3X6.1","~","1189-2392-1-ND","10SGV100M6.3X6.1","",""
+C21 ,1,"C_0u012","Capacitors_SMD:C_0805","","490-11580-1-ND","GRM2195C1H123GA01D","",""
+C23 ,1,"C_120P","Capacitors_SMD:C_0805","","1276-1201-1-ND","CL21C121JDCNNNC","",""
+C24 C25 ,2,"C_47u","Capacitors_SMD:C_0805","","587-1779-1-ND","JMK212BJ476MG-T","",""
+C37 ,1,"C_4u7","Capacitors_SMD:C_0805","","490-14466-1-ND","","",""
+C38 ,1,"C_1u","Capacitors_SMD:C_0805","","399-8011-1-ND","","",""
+C4 C2 ,2,"C_8p","Capacitors_SMD:C_0805","https://www.digikey.com/product-detail/en/yageo/CC0805DRNPO9BN8R0/311-1097-1-ND/303007","311-1097-1-ND","","",""
+C6 C10 C11 C12 C14 C15 C13 C1 C20 C22 C31 C32 C36 C40 C39 C41 C35 ,17,"C_0u1","Capacitors_SMD:C_0805","https://www.digikey.com/product-detail/en/kemet/C0805C104Z4VACTU/399-9159-1-ND/3522677","478-3352-1-ND","","",""
+C7 C42 ,2,"C_220u","drone_footprints:UWT0G221MCL6GS","~","493-9872-1-ND","UWT0G221MCL6GS","",""
+C9 C8 C3 C5 C16 C17 C29 C28 ,8,"C_2u2","Capacitors_SMD:C_0805","","445-13254-1-ND","","",""
+D2 D1 D6 D7 ,4,"D_Schottky_10V_3A","Diodes_SMD:D_SOD-323F","~","1727-3852-1-ND","PMEG1030EJ,115","",""
+D3 ,1,"D_Schottky_x2_20V","drone_footprints:SOT1061","~","1727-5194-1-ND","PMEG2020CPA,115","",""
+D4 ,1,"TVS_DIODE_14V","Capacitors_SMD:C_0402","","PESD0402-140CT-ND","","",""
+D8 D5 ,2,"LED_0805_Green","drone_footprints:LED_0805","http://www.osram-os.com/Graphics/XPic9/00078860_0.pdf","475-1410-1-ND","LG R971-KN-1","https://www.digikey.com/products/en?keywords=475-1410-1-ND",""
+D9 ,1,"LED_0805_Red","drone_footprints:LED_0805","https://www.digikey.com/en/products/detail/osram-opto-semiconductors-inc/LS-R976-NR-1/1227987?s=N4IgTCBcDaICwHYCsBaAjGBAOdKByAIiALoC%2BQA","475-1278-1-ND","LG R976-NR-1","https://www.digikey.com/products/en?keywords=475-1410-1-ND",""
+F1 ,1,"PTC_6V_2A","Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering","","507-1809-1-ND","0ZCJ0200FF2C","",""
+F2 F3 ,2,"PTC_6V_1A","Resistors_SMD:R_0805_HandSoldering","","507-1813-1-ND","0ZCK0050FF2E","",""
+FL1 FL2 ,2,"EMI_Filter_CLC_100MHZ","drone_footprints:NFL21SP107X1C3D","","490-2540-1-ND","NFL21SP107X1C3D","",""
+J1 ,1,"Micro_USB","Connectors_USB:USB_Micro-B_Molex_47346-0001","https://www.digikey.com/products/en?keywords=WM17141CT-ND","WM17141CT-ND","","",""
+J2 ,1,"MicroSD_molex","drone_footprints:2908-05WB-MG","https://multimedia.3m.com/mws/media/416257O/3mtm-card-connector-microsdtm-2900-series-ts2197.pdf","3M5607CT-ND","2908-05WB-MG","",""
+J3 ,1,"rpi_zero_w","drone_footprints:rpi_zero_w","~"
+J4 ,1,"JST_8_RA","drone_footprints:JST_SM08B-SRSS-TB(LF)(SN)","","455-1808-1-ND","","",""
+J5 ,1,"JST_GH_6_RA","drone_footprints:JST_SM06B-GHS-TB(LF)(SN)","","455-1568-1-ND","SM06B-GHS-TB(LF)(SN)","",""
+J6 ,1,"JST_GH_4_RA","drone_footprints:JST_SM04B-GHS-TB(LF)(SN)-","","455-1566-1-ND","SM04B-GHS-TB(LF)(SN)-","",""
+J7 ,1,"JST_GH_5_RA","drone_footprints:SM05B-GHS-TBLFSN","","455-1567-1-ND","SM05B-GHS-TB(LF)(SN)","",""
+J8 J9 ,2,"Conn_02x03","drone_footprints:TSW-103-07-F-D","~"
+L2 ,1,"L_15u","drone_footprints:744066150","~","732-1077-1-ND","744066150","",""
+Q2 ,1,"PMOS_20V_.76A","drone_footprints:NTA4151PT1G","","NTA4151PT1GOSCT-ND","NTA4151PT1G","",""
+R1 R2 ,2,"R_22","Resistors_SMD:R_0805","","CR0805-FX-22R0ELFCT-ND","CR0805-FX-22R0ELF","",""
+R10 R27 ,2,"R_51.1","Resistors_SMD:R_0805","","RMCF0805FT51R1CT-ND","RMCF0805FT51R1","",""
+R12 R20 ,2,"R_470","Resistors_SMD:R_0805","","A129745CT-ND","","",""
+R15 R31 R32 R25 R24 R36 R33 ,7,"R_220","Resistors_SMD:R_0805","","311-220CRCT-ND","","",""
+R16 ,1,"R_43K2","Resistors_SMD:R_0805","","311-43.2KCRCT-ND","","",""
+R17 ,1,"R_69K8","Resistors_SMD:R_0805","","311-69.8KCRCT-ND","RC0805FR-0769K8L","",""
+R23 ,1,"R_143K","Resistors_SMD:R_0805","","738-RMCF0805FT143KCT-ND","","",""
+R26 ,1,"R_3K74","Resistors_SMD:R_0805","","RMCF0805FT3K74CT-ND","RMCF0805FT3K74","",""
+R29 ,1,"R_19K1","Resistors_SMD:R_0805","","541-19.1KCCT-ND","CRCW080519K1FKEA","",""
+R3 R13 R14 R34 ,4,"R_1K","Resistors_SMD:R_0805","","311-1.0KARCT-ND","","",""
+R35 ,1,"R_120","Resistors_SMD:R_0805","","A129738CT-ND","","",""
+R4 R11 R30 R19 R22 R21 R18 ,7,"R_10K","Resistors_SMD:R_0805","","311-10.0KCRCT-ND","","",""
+R9 R8 R7 R6 R5 R28 ,6,"R_100K","Resistors_SMD:R_0805","","RMCF0805JT68R0CT-ND","","",""
+U1 ,1,"FRAM_128K","Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm","","428-3385-ND","","",""
+U10 ,1,"CAM-M8Q-0","drone_footprints:CAM_M8Q_0","https://www.u-blox.com/sites/default/files/CAM-M8-FW3_DataSheet_%28UBX-15031574%29.pdf","672-CAM-M8Q-0CT-ND","","",""
+U11 ,1,"BMI088","drone_footprints:BMI088","https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMI088-DS001.pdf","828-1082-1-ND","","","https://www.digikey.com/product-detail/en/bosch-sensortec/BMI088/828-1082-1-ND/8634942"
+U12 ,1,"LIS3MDLTR","drone_footprints:LIS3MDLTR","https://www.st.com/content/ccc/resource/technical/document/datasheet/54/2a/85/76/e3/97/42/18/DM00075867.pdf/files/DM00075867.pdf/jcr:content/translations/en.DM00075867.pdf","497-13892-1-ND","","",""
+U13 ,1,"Barometer","drone_footprints:MS561101BA03-50","","223-1622-1-ND","MS561101BA03-50","",""
+U2 ,1,"STM32F427VITx","drone_footprints:QFP50P1600X1600X160-100N","http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00071990.pdf"
+U3 ,1,"MCP131T-300E_TT","TO_SOT_Packages_SMD:SOT-23","http://ww1.microchip.com/downloads/en/DeviceDoc/11184d.pdf","MCP131T-300E/TTCT-ND","","",""
+U5 U4 ,2,"Dual_XOR_GATE","Housings_SSOP:TSSOP-8_3x3mm_Pitch0.65mm","","1727-5995-1-ND","74LVC2G86DP,125","",""
+U6 ,1,"Buck_Converter_2","drone_footprints:TPS54335ADDA","https://www.ti.com/lit/ds/symlink/tps54335a.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1602192854825","296-44004-5-ND","TPS54335ADDA","",""
+U7 ,1,"LDO_600MA","drone_footprints:SOT-25_DIO","","AP7365-33WG-7DICT-ND","AP7365-33WG-7","",""
+U9 U8 ,2,"LP5907QMFX-3.3","TO_SOT_Packages_SMD:SOT-23-5","http://www.ti.com/lit/ds/symlink/lp5907.pdf","296-40365-1-ND","LP5907QMFX-3.3Q1","",""
+Y1 ,1,"Crystal_24MHZ","drone_footprints:NX3225SA-24.000M-STD-CSR-1","~","644-1052-1-ND","NX3225SA-24.000M-STD-CSR-1","",""
