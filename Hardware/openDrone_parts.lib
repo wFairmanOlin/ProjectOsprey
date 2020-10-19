@@ -1002,10 +1002,10 @@ ENDDEF
 DEF LED_0805_Green D 0 40 N N 1 F N
 F0 "D" 0 -100 50 H V C CNN
 F1 "LED_0805_Green" 0 100 50 H V C CNN
-F2 "footprints:LED_0805_OEM" -100 0 50 H I C CNN
+F2 "drone_footprints:LED_0805" -700 250 50 H I C CNN
 F3 "" 0 100 50 H I C CNN
-F4 "475-1410-1-ND" 0 0 60 H I C CNN "DPN"
-F5 "LG R971-KN-1" 0 0 60 H I C CNN "MPN"
+F4 "475-1410-1-ND" -650 350 60 H I C CNN "DPN"
+F5 "LG R971-KN-1" -850 150 60 H I C CNN "MPN"
 F6 "https://www.digikey.com/products/en?keywords=475-1410-1-ND" 400 500 60 H I C CNN "PurchasingLink"
 $FPLIST
  LED*
@@ -1026,10 +1026,10 @@ ENDDEF
 DEF LED_0805_Red D 0 40 N N 1 F N
 F0 "D" 0 -100 50 H V C CNN
 F1 "LED_0805_Red" 0 100 50 H V C CNN
-F2 "footprints:LED_0805_OEM" -100 0 50 H I C CNN
+F2 "drone_footprints:LED_0805" -750 400 50 H I C CNN
 F3 "" 0 100 50 H I C CNN
-F4 "475-1278-1-ND" 0 0 60 H I C CNN "DPN"
-F5 "LG R976-NR-1" 0 0 60 H I C CNN "MPN"
+F4 "475-1278-1-ND" -850 300 60 H I C CNN "DPN"
+F5 "LG R976-NR-1" -800 200 60 H I C CNN "MPN"
 F6 "https://www.digikey.com/products/en?keywords=475-1410-1-ND" 400 500 60 H I C CNN "PurchasingLink"
 $FPLIST
  LED*

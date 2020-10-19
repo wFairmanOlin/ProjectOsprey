@@ -935,34 +935,6 @@ F 5 "10SGV100M6.3X6.1" H 5500 4150 50  0001 C CNN "MPN"
 	1    5000 4050
 	1    0    0    -1  
 $EndComp
-$Comp
-L openDrone_parts:R_220 R?
-U 1 1 5F8C121B
-P 4250 4250
-AR Path="/5F615F42/5F8C121B" Ref="R?"  Part="1" 
-AR Path="/5F84A65B/5F8C121B" Ref="R27"  Part="1" 
-F 0 "R27" V 4204 4320 50  0000 L CNN
-F 1 "R_220" V 4295 4320 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805" H 3450 4400 50  0001 C CNN
-F 3 "" H 3950 4750 50  0001 C CNN
-F 4 "311-220CRCT-ND" H 3600 4500 60  0001 C CNN "DPN"
-	1    4250 4250
-	0    1    1    0   
-$EndComp
-$Comp
-L openDrone_parts:LED_GREEN D?
-U 1 1 5F8C1214
-P 4250 3800
-AR Path="/5F615F42/5F8C1214" Ref="D?"  Part="1" 
-AR Path="/5F84A65B/5F8C1214" Ref="D5"  Part="1" 
-F 0 "D5" V 4211 3918 50  0000 L CNN
-F 1 "LED_GREEN" V 4302 3918 50  0000 L CNN
-F 2 "LEDs:LED_0603_HandSoldering" H 4300 3600 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/kingbright/APTD1608CGCK/754-1545-1-ND/2514673" H 4250 3800 50  0001 C CNN
-F 4 "754-1545-1-ND" H 4250 3550 50  0001 C CNN "DPN"
-	1    4250 3800
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3300 3300 2350 3300
 Wire Wire Line
@@ -1319,4 +1291,30 @@ Connection ~ 4300 1150
 Connection ~ 14050 5300
 Wire Wire Line
 	14050 5300 14150 5300
+$Comp
+L openDrone_parts:LED_0805_Green D5
+U 1 1 5F8E98E7
+P 4250 3800
+F 0 "D5" V 4289 3683 50  0000 R CNN
+F 1 "LED_0805_Green" V 4198 3683 50  0000 R CNN
+F 2 "drone_footprints:LED_0805" H 3550 4050 50  0001 C CNN
+F 3 "http://www.osram-os.com/Graphics/XPic9/00078860_0.pdf" H 4250 3900 50  0001 C CNN
+F 4 "475-1410-1-ND" H 3600 4150 60  0001 C CNN "DPN"
+F 5 "LG R971-KN-1" H 3400 3950 60  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/products/en?keywords=475-1410-1-ND" H 4650 4300 60  0001 C CNN "PurchasingLink"
+	1    4250 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L openDrone_parts:R_120 R35
+U 1 1 5F8EA923
+P 4250 4250
+F 0 "R35" V 4204 4320 50  0000 L CNN
+F 1 "R_120" V 4295 4320 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 3450 4400 50  0001 C CNN
+F 3 "" H 3950 4750 50  0001 C CNN
+F 4 "A129738CT-ND" H 3600 4500 60  0001 C CNN "DPN"
+	1    4250 4250
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
