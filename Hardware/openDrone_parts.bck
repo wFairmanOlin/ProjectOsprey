@@ -195,6 +195,11 @@ D LED, Green, 2.2V, 20mA, 0805
 F http://www.osram-os.com/Graphics/XPic9/00078860_0.pdf
 $ENDCMP
 #
+$CMP LED_0805_Red
+D LED, Red 2.2V, 20mA, 0805
+F https://www.digikey.com/en/products/detail/osram-opto-semiconductors-inc/LS-R976-NR-1/1227987?s=N4IgTCBcDaICwHYCsBaAjGBAOdKByAIiALoC%2BQA
+$ENDCMP
+#
 $CMP LED_AMBER
 D Light emitting diode
 K LED diode
@@ -263,6 +268,11 @@ $CMP NMOS_BSS12375
 D MOSFET N-CH 100V 170MA SOT23-3
 K N-Channel MOSFET
 F https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf
+$ENDCMP
+#
+$CMP PMOS_20V_.76A
+D P-Channel 760mA (Tj) 301mW (Tj) Surface Mount SC-75, SOT-416
+K transistor PMOS P-MOS P-MOSFET
 $ENDCMP
 #
 $CMP PMOS_20V_0.4A

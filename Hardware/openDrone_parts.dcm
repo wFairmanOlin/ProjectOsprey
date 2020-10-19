@@ -195,6 +195,11 @@ D LED, Green, 2.2V, 20mA, 0805
 F http://www.osram-os.com/Graphics/XPic9/00078860_0.pdf
 $ENDCMP
 #
+$CMP LED_0805_Red
+D LED, Red 2.2V, 20mA, 0805
+F https://www.digikey.com/en/products/detail/osram-opto-semiconductors-inc/LS-R976-NR-1/1227987?s=N4IgTCBcDaICwHYCsBaAjGBAOdKByAIiALoC%2BQA
+$ENDCMP
+#
 $CMP LED_AMBER
 D Light emitting diode
 K LED diode
