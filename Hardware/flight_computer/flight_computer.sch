@@ -373,7 +373,7 @@ Text Label 1700 2550 0    50   ~ 0
 FMU_USART8_RX
 Text Label 1700 2450 0    50   ~ 0
 FMU_USART8_TX
-Text Label 8750 5800 0    50   ~ 0
+Text Label 8750 4200 0    50   ~ 0
 RSSI_IN
 Text Label 1700 2250 0    50   ~ 0
 RSSI_IN
@@ -423,7 +423,7 @@ F29 "VDD_3V3_STM" I R 1700 2000 50
 $EndSheet
 Text Label 8750 2600 0    50   ~ 0
 IMU_GYRO_CS
-Text Label 8750 3800 0    50   ~ 0
+Text Label 8750 5900 0    50   ~ 0
 BARO_CS
 Text Label 6950 4400 2    50   ~ 0
 MAG_CS
@@ -475,12 +475,10 @@ Text Label 1700 3000 0    50   ~ 0
 SWCLK
 Text Label 8750 7100 0    50   ~ 0
 ACCEL_DRDY
-Text Label 6950 7200 2    50   ~ 0
+Text Label 8750 6000 0    50   ~ 0
 GYRO_DRDY
 Text Label 6950 5200 2    50   ~ 0
 MAG_DRDY
-Text Label 8750 7000 0    50   ~ 0
-SBUS_INV
 Text Label 1700 3850 0    50   ~ 0
 SBUS_INV
 Text Label 8750 3300 0    50   ~ 0
@@ -1270,7 +1268,7 @@ Text Label 1700 5200 0    50   ~ 0
 VDD_5V_IN
 Text Label 1700 6250 0    50   ~ 0
 VDD_USB_VALID
-Text Label 8750 5700 0    50   ~ 0
+Text Label 8750 5200 0    50   ~ 0
 VDD_USB_VALID
 Text Label 1700 6150 0    50   ~ 0
 VDD_BUCK_VALID
@@ -1350,13 +1348,13 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    0    0    -1  
 $EndComp
 NoConn ~ 8750 7200
-NoConn ~ 8750 5900
-NoConn ~ 8750 6000
+NoConn ~ 8750 3800
+NoConn ~ 6950 7200
 NoConn ~ 8750 6100
 NoConn ~ 8750 5100
-NoConn ~ 8750 5200
+NoConn ~ 8750 5700
 NoConn ~ 8750 5300
-NoConn ~ 8750 4300
+NoConn ~ 8750 7000
 NoConn ~ 8750 4400
 NoConn ~ 6950 6400
 NoConn ~ 6950 6500
@@ -1373,11 +1371,13 @@ Text Label 4400 8650 2    50   ~ 0
 OTG_FS_D_P
 Text Label 4400 8550 2    50   ~ 0
 OTG_FS_D_N
-Text Label 8750 4000 0    50   ~ 0
-DEBUG_LED_1
-Text Label 8750 4100 0    50   ~ 0
+Text Label 8750 5800 0    50   ~ 0
 DEBUG_LED_2
-Text Label 8750 4200 0    50   ~ 0
+Text Label 8750 4300 0    50   ~ 0
 RGB_LED
 NoConn ~ 6950 4500
+Text Label 8750 4100 0    50   ~ 0
+SBUS_INV
+Text Label 8750 4000 0    50   ~ 0
+DEBUG_LED_1
 $EndSCHEMATC
