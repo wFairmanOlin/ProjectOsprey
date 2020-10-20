@@ -458,11 +458,11 @@ F 3 "" H 4200 2250 50  0001 C CNN
 	1    4200 2250
 	1    0    0    -1  
 $EndComp
+Text HLabel 3700 2050 0    50   Input ~ 0
+VDD_5V_AUX
 Text HLabel 3700 2150 0    50   Input ~ 0
 VDD_5V_AUX
 Text HLabel 4200 2150 2    50   Input ~ 0
-VDD_5V_AUX
-Text HLabel 3700 2050 0    50   Input ~ 0
 SERVO_CH_1
 Text HLabel 4200 2050 2    50   Input ~ 0
 SERVO_CH_2
