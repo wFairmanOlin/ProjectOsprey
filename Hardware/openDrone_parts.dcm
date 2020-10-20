@@ -105,6 +105,10 @@ D 8pF ±0.5pF 50V Ceramic Capacitor C0G, NP0
 F https://www.digikey.com/product-detail/en/yageo/CC0805DRNPO9BN8R0/311-1097-1-ND/303007
 $ENDCMP
 #
+$CMP Conn_02x01
+F https://www.digikey.com/en/products/detail/samtec-inc/TSW-102-07-F-S/2685866
+$ENDCMP
+#
 $CMP Conn_02x03
 D Connector Header Through Hole 6 position 0.100" (2.54mm)
 K connector

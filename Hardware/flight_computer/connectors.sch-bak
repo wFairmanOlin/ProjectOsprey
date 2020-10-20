@@ -478,4 +478,29 @@ Text HLabel 4900 5050 2    50   Input ~ 0
 VDD_3V3_STM
 Text HLabel 3650 1150 0    50   Input ~ 0
 VDD_3V3_STM
+$Comp
+L openDrone_parts:Conn_02x01 J?
+U 1 1 5F91158E
+P 5750 1150
+F 0 "J?" H 6278 1153 60  0000 L CNN
+F 1 "Conn_02x01" H 6278 1047 60  0000 L CNN
+F 2 "drone_footprints:TSW-102-07-F-S" H 6050 900 60  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/samtec-inc/TSW-102-07-F-S/2685866" H 5750 1150 60  0001 C CNN
+F 4 "SAM10844-ND" H 5800 1400 50  0001 C CNN "DPN"
+	1    5750 1150
+	1    0    0    -1  
+$EndComp
+Text HLabel 5750 1150 0    50   Input ~ 0
+VBAT
+$Comp
+L power:GND #PWR?
+U 1 1 5F911EF0
+P 5750 1250
+F 0 "#PWR?" H 5750 1000 50  0001 C CNN
+F 1 "GND" H 5755 1077 50  0000 C CNN
+F 2 "" H 5750 1250 50  0001 C CNN
+F 3 "" H 5750 1250 50  0001 C CNN
+	1    5750 1250
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
