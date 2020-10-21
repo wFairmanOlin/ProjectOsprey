@@ -1,4 +1,4 @@
-59294727458914
+60898853978896
 drone_footprints
 10SGV100M6.3X6.1
 
@@ -171,6 +171,13 @@ drone_footprints
 RLB0913-563K
 
 
+0
+2
+2
+drone_footprints
+R_0805
+Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
+resistor
 0
 2
 2

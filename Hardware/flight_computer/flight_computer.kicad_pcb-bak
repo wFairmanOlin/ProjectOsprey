@@ -473,7 +473,7 @@
     (add_net "Net-(U9-Pad4)")
   )
 
-  (module drone_footprints:BMI088 (layer F.Cu) (tedit 5F8FA41B) (tstamp 5F8CB80E)
+  (module drone_footprints:BMI088 locked (layer F.Cu) (tedit 5F8FA41B) (tstamp 5F8CB80E)
     (at 117.65788 134.04342 270)
     (path /5F5F0393/5F91431C)
     (fp_text reference U11 (at -3.11658 -1.07188 180) (layer F.SilkS)
