@@ -1,8 +1,8 @@
 (export (version D)
   (design
-    (source C:\Users\wfairman\Desktop\openDrone\Hardware\flight_computer\flight_computer.sch)
-    (date "10/24/2020 1:39:26 PM")
-    (tool "Eeschema (5.1.5)-3")
+    (source C:\Users\dconnolly\Documents\openDrone\Hardware\flight_computer\flight_computer.sch)
+    (date "10/24/2020 1:43:48 PM")
+    (tool "Eeschema (5.1.6)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title)
@@ -1806,7 +1806,7 @@
       (fields
         (field (name Reference) U)
         (field (name Value) MCP131T-300E_TT)
-        (field (name Footprint) Package_TO_SOT_SMD:SOT-23)
+        (field (name Footprint) drone_footprints:SOT-23)
         (field (name DPN) MCP131T-300E/TTCT-ND))
       (pins
         (pin (num 1) (name VSS) (type power_in))
@@ -2147,7 +2147,7 @@
     (library (logical MCU_ST_STM32F4)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/MCU_ST_STM32F4.lib"))
     (library (logical openDrone_parts)
-      (uri C:\Users\wfairman\Desktop\openDrone\/Hardware/openDrone_parts.lib)))
+      (uri C:\Users\dconnolly\Documents\openDrone/Hardware/openDrone_parts.lib)))
   (nets
     (net (code 1) (name "Net-(J2-Pad12)")
       (node (ref J2) (pin 12)))
