@@ -1,9 +1,10 @@
 # PCB Checklist
 
-## Review Parts
-1. Check physical dimensions of fooptrint against datasheet (only for new parts)
+## Review Parts (for new parts)
+1. Check physical dimensions of fooptrint against datasheet 
 2. Ensure pin numbers are properly oriented
-3. Check num of pins on footprint and part-schematic (only for new parts)
+3. Check num of pins on footprint and part-schematic
+4. Ensure cathode/anode pin number is same on the datasheet, part-schematic, and footprint.
 
 ## Review Schematic
 1. Make sure all labels are connected and spelled correctly
