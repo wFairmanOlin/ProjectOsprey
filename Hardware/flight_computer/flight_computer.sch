@@ -1574,7 +1574,6 @@ NoConn ~ 13950 8150
 NoConn ~ 13950 8050
 NoConn ~ 13250 7150
 NoConn ~ 13350 7150
-NoConn ~ 14900 1650
 $Comp
 L openDrone_parts:R_10K R39
 U 1 1 5F9126BE
