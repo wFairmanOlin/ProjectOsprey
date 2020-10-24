@@ -547,8 +547,6 @@ Connection ~ 2050 2300
 Connection ~ 1950 2300
 Wire Wire Line
 	1950 2300 1950 2550
-Text Notes 2800 2450 0    50   ~ 0
-Check VDDIO connection
 $Comp
 L openDrone_parts:R_1K R?
 U 1 1 5F866B0B

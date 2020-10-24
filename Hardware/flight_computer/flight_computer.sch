@@ -516,18 +516,6 @@ Text Notes 13600 9550 0    50   ~ 0
 RPI\n<500mA
 Text Notes 8650 7500 0    50   ~ 0
 STM32\n<270mA
-$Comp
-L openDrone_parts:MCP131T-300E_TT U3
-U 1 1 5F9EB037
-P 8850 10650
-F 0 "U3" V 8700 10650 50  0000 C CNN
-F 1 "MCP131T-300E_TT" V 8600 10650 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 9500 11250 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/11184d.pdf" H 8850 10650 50  0001 C CNN
-F 4 "MCP131T-300E/TTCT-ND" H 9450 11150 50  0001 C CNN "DPN"
-	1    8850 10650
-	0    -1   -1   0   
-$EndComp
 Text Label 9250 10650 0    50   ~ 0
 ~RST
 $Comp
@@ -1636,4 +1624,16 @@ Wire Wire Line
 Wire Wire Line
 	14150 7900 13950 7900
 Connection ~ 14150 7900
+$Comp
+L openDrone_parts:MCP131T-300E_TT U3
+U 1 1 5F9EB037
+P 8850 10650
+F 0 "U3" V 8700 10650 50  0000 C CNN
+F 1 "MCP131T-300E_TT" V 8600 10650 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 9500 11250 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/11184d.pdf" H 8850 10650 50  0001 C CNN
+F 4 "MCP131T-300E/TTCT-ND" H 9450 11150 50  0001 C CNN "DPN"
+	1    8850 10650
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
