@@ -18,7 +18,8 @@
 3. Look for fill islands (unconnected fills)
 4. Make sure all text on Front/Back is visible
 5. Make sure revision num, date, and author are up to date
-6. Run DRC
+6. Run 3D viewer to verify silkscreen
+7. Run DRC
 
 ## Review Gerber
 1. Check gerber output location for older files
