@@ -1,4 +1,4 @@
-(module MOLEX_0473460001 (layer F.Cu) (tedit 5F831B68)
+(module MOLEX_0473460001 (layer F.Cu) (tedit 5F95B2DA)
   (fp_text reference REF** (at -1.326775 -1.887535) (layer F.SilkS)
     (effects (font (size 1.001346 1.001346) (thickness 0.015)))
   )
@@ -22,4 +22,9 @@
   (pad 4 smd rect (at 0.65 0) (size 0.45 1.38) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at -0.65 0) (size 0.45 1.38) (layers F.Cu F.Paste F.Mask))
   (pad 3 smd rect (at 0 0) (size 0.45 1.38) (layers F.Cu F.Paste F.Mask))
+  (model ${DRONE_DIR}/Hardware/3D_parts/473460001.stp
+    (offset (xyz 0 -2.5 1.2))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 0))
+  )
 )
