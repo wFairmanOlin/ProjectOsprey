@@ -1,0 +1,751 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Qc",
+				"QComboBox"
+			],
+			[
+				"wor",
+				"workType1"
+			],
+			[
+				"com",
+				"company_address"
+			],
+			[
+				"save",
+				"saveModel"
+			],
+			[
+				"curr",
+				"currentAsset"
+			],
+			[
+				"avg",
+				"avg_entry_price"
+			],
+			[
+				"reward",
+				"reward_threshold"
+			],
+			[
+				"decr",
+				"decryptMessage"
+			],
+			[
+				"from",
+				"from_numpy"
+			],
+			[
+				"poli",
+				"policy_history"
+			],
+			[
+				"actio",
+				"action_space"
+			],
+			[
+				"curre",
+				"currentData"
+			],
+			[
+				"shr",
+				"sharesToTrade"
+			],
+			[
+				"purchase",
+				"purchasePrice"
+			],
+			[
+				"set",
+				"setTemperature"
+			],
+			[
+				"avg_",
+				"avg_dataBase"
+			],
+			[
+				"draw",
+				"draw_artist"
+			],
+			[
+				"se",
+				"setOffset"
+			],
+			[
+				"STEP_MA",
+				"STEP_MAX_POSITION"
+			],
+			[
+				"siz",
+				"size_of_average"
+			],
+			[
+				"av",
+				"avg_vals"
+			],
+			[
+				"STEP_VEL_",
+				"STEP_VEL_MAX_URADPSEC"
+			],
+			[
+				"Step_Pos",
+				"Step_PosTarget"
+			],
+			[
+				"DB",
+				"DBG_IntSend"
+			],
+			[
+				"Step",
+				"Step_MotorState"
+			],
+			[
+				"Ste",
+				"Step_MotorState"
+			],
+			[
+				"DBG",
+				"DBG_IntSend"
+			],
+			[
+				"Step_H",
+				"Step_HalfStep"
+			],
+			[
+				"dbg",
+				"DBG_MsgSend"
+			],
+			[
+				"St",
+				"Step_MotorState"
+			],
+			[
+				"_HAL_",
+				"__HAL_RCC_TIM16_CLK_ENABLE"
+			],
+			[
+				"get_",
+				"get_account"
+			],
+			[
+				"COI",
+				"COIL_A"
+			],
+			[
+				"py",
+				"pyft4222_SPIMaster_MultiReadWrite"
+			],
+			[
+				"Uart",
+				"Uart3_Update"
+			],
+			[
+				"Sy",
+				"SysTime_Now"
+			],
+			[
+				"DBG_I",
+				"DBG_Uint32Send"
+			],
+			[
+				"SYS",
+				"SYSTIME_MS_TO_TICKS"
+			],
+			[
+				"iT",
+				"iTEMPREPLYMSG"
+			],
+			[
+				"te",
+				"temp_reply_cnt"
+			],
+			[
+				"tem",
+				"temp_reply_len"
+			],
+			[
+				"temp",
+				"temp_reply_cnt"
+			],
+			[
+				"clk",
+				"clk_250kHz"
+			],
+			[
+				"i2",
+				"i2c_sda"
+			],
+			[
+				"iC",
+				"iCLK_250KHZ"
+			],
+			[
+				"oRX",
+				"oRXMSG"
+			],
+			[
+				"bit",
+				"bitoutcnt"
+			],
+			[
+				"bi",
+				"bitoutcnt"
+			],
+			[
+				"bot",
+				"bitoutcnt"
+			],
+			[
+				"b",
+				"bitoutcnt"
+			],
+			[
+				"B",
+				"Bulb_Update"
+			],
+			[
+				"BUL",
+				"BULB_TURN_OFF"
+			],
+			[
+				"BULB",
+				"BULB_TURN_ON"
+			],
+			[
+				"dutyC",
+				"dutyCycleLen"
+			],
+			[
+				"tx",
+				"tx_bittimer"
+			],
+			[
+				"MSS",
+				"MSSP_Data"
+			],
+			[
+				"MS",
+				"MSSP_Data"
+			],
+			[
+				"time",
+				"timeValid"
+			],
+			[
+				"S",
+				"SYSTIME_MS_TO_TICKS"
+			],
+			[
+				"grou",
+				"groundSpeed"
+			],
+			[
+				"num",
+				"numSats"
+			],
+			[
+				"fil",
+				"fillTimeVariables"
+			],
+			[
+				"pos",
+				"pos_available"
+			],
+			[
+				"time_",
+				"time_available"
+			],
+			[
+				"ti",
+				"time_available"
+			],
+			[
+				"DBG_",
+				"DBG_IntSend"
+			],
+			[
+				"db",
+				"DBG_MsgSend"
+			],
+			[
+				"Spi",
+				"Spi2_TransmitAndReceiveByte"
+			],
+			[
+				"Sp",
+				"Spi2_TransmitAndReceiveByte"
+			],
+			[
+				"get",
+				"getTemperature"
+			],
+			[
+				"ftdev",
+				"ftdev_obj"
+			],
+			[
+				"ftde",
+				"ftdev_obj"
+			],
+			[
+				"state",
+				"state_prev"
+			],
+			[
+				"D",
+				"DBG_MsgSend"
+			],
+			[
+				"Pos_",
+				"Pos_Update_Values"
+			],
+			[
+				"POS",
+				"POS_STATE_RESET"
+			],
+			[
+				"PO",
+				"POS_STATE_RESET"
+			],
+			[
+				"Pos_Re",
+				"Pos_ReceiveTimer"
+			],
+			[
+				"getTestInfo_",
+				"getTestInfo_Position"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/wfairman/Desktop/openDrone/Firmware/README.md",
+			"settings":
+			{
+				"buffer_size": 279,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"veril",
+				"Set Syntax: Verilog"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"mar",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"system ",
+				"Set Syntax: SystemVerilog"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"verilo",
+				"Set Syntax: Verilog"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"git ",
+				"Git: Status"
+			],
+			[
+				"git",
+				"Package Control: Install Package"
+			],
+			[
+				"pyth",
+				"Set Syntax: Python"
+			],
+			[
+				"ch",
+				"Changelog"
+			],
+			[
+				"preview ",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"ma",
+				"Markdown Preview: Preview in Browser"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 314.0,
+		"history":
+		[
+			"main.py",
+			"main.pu",
+			"thats cool",
+			"print(state)",
+			"print state",
+			"state = 0",
+			"state = -",
+			"python"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/wfairman/Desktop/Junior Year/pumpkinPlotter.py",
+		"/C/Users/wfairman/Desktop/openDrone/stmcube_code/Makefile",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Conn_210-0002B/startup_stm32f091xc.s",
+		"/C/Users/wfairman/Desktop/testidea/tradeOnline.py",
+		"/C/Users/wfairman/Documents/openDrone/stmcube_code/Src/main.c",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Conn_210-0002B/Makefile",
+		"/C/Users/wfairman/Documents/openDrone/New Folder/Src/main.c",
+		"/C/Program Files/Ampps/www/floridapave.invalid/sitemap.xml",
+		"/C/Users/wfairman/Desktop/bluetooth.md",
+		"/C/Users/wfairman/Desktop/pumpkinPlotter.py",
+		"/C/Users/wfairman/Desktop/grimTest.py",
+		"/C/Users/wfairman/Desktop/dyson.py",
+		"/C/Users/wfairman/Desktop/solar.py",
+		"/C/Users/wfairman/Desktop/testSwitch.py",
+		"/C/Users/wfairman/Desktop/retirement_growth.py",
+		"/C/iverilog/samples/lfsr16.v",
+		"/C/Users/wfairman/Desktop/verilogPractice/test1.v",
+		"/C/Users/wfairman/Desktop/fpsTools/disclaimer.csv",
+		"/C/Users/wfairman/Desktop/fpsTools/work_blirbs.csv",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/FPGA_210-0001B/v/temperature.v",
+		"/C/Users/wfairman/Desktop/testidea/q1.py",
+		"/C/Users/wfairman/Desktop/fpsTools/fps_gui.py",
+		"/C/Users/wfairman/Desktop/~$airman_assignment_1.docx",
+		"/C/Users/wfairman/Desktop/fpsTools/company_info.csv",
+		"/C/Users/wfairman/Desktop/fps_gui.py",
+		"/C/Users/wfairman/Desktop/fps_automate.py",
+		"/C/Users/wfairman/Desktop/fps_generate.py",
+		"/C/Users/wfairman/Desktop/fps_data.csv",
+		"/C/Users/wfairman/Desktop/discreteRSA/rsa.py",
+		"/C/Users/wfairman/Desktop/discreteRSA/requirements.txt",
+		"/C/Users/wfairman/Desktop/reinforcedGaming/README.md",
+		"/C/Users/wfairman/Desktop/discreteRSA/README.md",
+		"/C/Users/wfairman/Desktop/discreteRSA/primeSolverLive.py",
+		"/C/Users/wfairman/Desktop/discreteRSA/primeSolver.py",
+		"/C/Users/wfairman/Desktop/rsa.py",
+		"/C/Users/wfairman/Desktop/primeSolverLive.py",
+		"/C/Users/wfairman/Desktop/reinforcedGaming/run_mountain.py",
+		"/C/Users/wfairman/Desktop/reinforcedGaming/gym_mountain.py",
+		"/C/Users/wfairman/Desktop/reinforcedGaming/bowling.py",
+		"/C/Users/wfairman/Desktop/exampleLiveGraph.py",
+		"/C/Users/wfairman/Desktop/reinforcedGaming/gym_medium.py",
+		"/C/Users/wfairman/Desktop/testidea/tradeOnlineNew.py",
+		"/C/Users/wfairman/Desktop/Firmware-8fbe76224335f6061372322c41a4c0d882e95456/Firmware/PythonSerial/checksumTest.py",
+		"/C/Users/wfairman/Desktop/Firmware-8fbe76224335f6061372322c41a4c0d882e95456/Firmware/PythonSerial/illuminatorSerial.py",
+		"/C/Users/wfairman/Desktop/Firmware-8fbe76224335f6061372322c41a4c0d882e95456/Firmware/PythonSerial/MSS_protocol.py",
+		"/C/Users/wfairman/Desktop/Firmware-8fbe76224335f6061372322c41a4c0d882e95456/Firmware/PythonSerial/mssp.py",
+		"/C/Users/wfairman/Desktop/Firmware-8fbe76224335f6061372322c41a4c0d882e95456/Firmware/PythonSerial/MsspTest.py",
+		"/C/Users/wfairman/Desktop/Firmware-8fbe76224335f6061372322c41a4c0d882e95456/Firmware/PythonSerial/transmit_test.py",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/PythonSerial/SBFunctionalTest.py",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/PythonSerial/CBFunctionalTest.py",
+		"/C/Users/wfairman/Desktop/reinforcedGaming/rsa.py",
+		"/C/Users/wfairman/Desktop/reinforcedGaming/gym_test.py",
+		"/C/Users/wfairman/Desktop/gym_test.py",
+		"/C/Users/wfairman/Desktop/reinforcedGaming/requirements.txt",
+		"/C/Users/wfairman/Desktop/processImages.py",
+		"/C/Users/wfairman/Desktop/webcam.py",
+		"/C/Users/wfairman/Desktop/rpsTest.py",
+		"/C/Users/wfairman/Desktop/Firmware-8fbe76224335f6061372322c41a4c0d882e95456/Firmware/PythonSerial/adc_live_graph.py",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Conn_210-0002B/Src/gps.c",
+		"/C/Users/wfairman/Desktop/testidea/tradeManual.py",
+		"/C/Users/wfairman/Desktop/camM8Q.c",
+		"/D/config.txt",
+		"/D/wpa_supplicant.conf",
+		"/D/cmdline.txt",
+		"/C/Users/wfairman/Desktop/testIdea2/tradeReal.py",
+		"/C/Program Files/Git/etc/profile",
+		"/C/Users/wfairman/Desktop/clubs/defunct/ACRONYM.md",
+		"/C/Program Files/Git/etc/profile.d/env.sh",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Conn_210-0002B/Src/pos.c",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/PythonSerial/cbTest.md",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/PythonSerial/sbTest.md",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/PythonSerial/AdcLiveGraph.py",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/pyspift/fpga4222.py",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/PythonSerial/README.md",
+		"/C/Users/wfairman/Desktop/testIdea2/positionsReal.csv",
+		"/C/Users/wfairman/Desktop/testidea/Procfile",
+		"/C/Users/wfairman/Desktop/testidea/script.py",
+		"/C/Users/wfairman/Desktop/testidea/README.md",
+		"/C/Users/wfairman/Desktop/testidea/client_secret.py",
+		"/C/Users/wfairman/Desktop/testidea/sheetFunctions.py",
+		"/C/Users/wfairman/Desktop/testidea/trade.py",
+		"/C/Users/wfairman/Desktop/testidea/positions.csv",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/FPGA_210-0001B/sensor_board_test.md",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/PythonSerial/adcLiveGraph.py",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/PythonSerial/requirements.txt",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/PythonSerial/adc_live_graph.py",
+		"/C/Users/wfairman/Desktop/testidea/positionsReal.csv",
+		"/C/Users/wfairman/Desktop/testidea/csvFunctions.py",
+		"/C/Users/wfairman/Desktop/testidea/tradeReal.py",
+		"/C/Users/wfairman/Desktop/testidea/tradeCsv.py",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/PythonSerial/calypso.py",
+		"/C/Users/wfairman/Desktop/testidea/tradeRealOld.py",
+		"/C/Users/wfairman/Desktop/testidea/sheet.py",
+		"/C/Users/wfairman/Desktop/testidea/client_secret.json",
+		"/C/Users/wfairman/Desktop/testidea/credentials.json",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/PythonSerial/delete.py",
+		"/C/Users/wfairman/AppData/Local/Temp/textbox.py",
+		"/C/Users/wfairman/Downloads/boost_1_65_1/boost/flyweight/detail/serialization_helper.hpp",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Illum_210-0003A/Src/illum.c",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Illum_210-0003A/Src/dbg.c",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Illum_210-0003A/Src/step.c",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Illum_210-0003A/Inc/version.h",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Illum_210-0003A/Src/mssp.c",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Illum_210-0003A/Inc/step.h",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Illum_210-0003A/Src/main.c",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/PythonSerial/MsspTest.py",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Conn_210-0002B/Inc/mssp.h",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Illum_210-0003A/Src/fans.c",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/FPGA_210-0001B/v/usb_ft4222.v",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Illum_210-0003A/Inc/illum.h",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Conn_210-0002B/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Illum_210-0003A/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Conn_210-0002B/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Illum_210-0003A/Src/stm32f0xx_hal_msp.c",
+		"/C/Users/wfairman/Downloads/ffsample/stm32/STM32F100.h",
+		"/C/Users/wfairman/Downloads/ffsample/stm32/startup_stm32f100.c",
+		"/C/Users/wfairman/Downloads/boost_1_65_1/libs/locale/test/test_date_time.cpp",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Illum_210-0003A/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Conn_210-0002B/Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x6.h",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/FPGA_210-0001B/ControlBoard.v",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Illum_210-0003A/Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Illum_210-0003A/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_tim.h",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Conn_210-0002B/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_tim.h",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Conn_210-0002B/Inc/fault.h",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Illum_210-0003A/Src/adc.c",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Illum_210-0003A/Inc/fault.h",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Illum_210-0003A/Src/fault.c",
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Illum_210-0003A/Src/bulb.c"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 283.0,
+		"where_history":
+		[
+			"C:\\Program Files\\Ampps\\www\\floridapave.invalid"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"stm32f0",
+			"floridapave.com",
+			"floridapave.invalid",
+			"floridapave.com",
+			".com",
+			"stepsChanged",
+			"jobInfo",
+			"Company",
+			"company",
+			")\n",
+			"closed",
+			"comboBox",
+			"qmainW",
+			"print",
+			"episode_actions",
+			"_y",
+			"dev",
+			"data",
+			"train",
+			"actions",
+			"250",
+			"max",
+			"score",
+			"print",
+			"'])",
+			"policy.par",
+			"time",
+			"seed",
+			"print",
+			"env.spec",
+			"env.spec.reward_threshold",
+			"print",
+			"policy_history",
+			"policy.policy"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"stm32f4",
+			"localhost/floridapave.invalid",
+			"floridapave.invalid",
+			"companyInfo",
+			"job",
+			"companyName",
+			"_x"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/wfairman/Desktop/openDrone/Firmware/README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 279,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 159.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "main.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\wfairman\\Desktop\\Firmware\\Firmware\\PythonSerial\\CBFunctionalTest.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 101.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 225.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

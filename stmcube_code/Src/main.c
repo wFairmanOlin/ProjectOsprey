@@ -104,11 +104,13 @@ int main(void)
   MX_UART7_Init();
   /* USER CODE BEGIN 2 */
     // CS pin should default high
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8, GPIO_PIN_SET);
+
 
   // Say something
-  uart_buf_len = sprintf(uart_buf, "SPI Test\r\n");
-  HAL_UART_Transmit(&huart2, (uint8_t *)uart_buf, uart_buf_len, 100);
+  // uart_buf_len = sprintf(uart_buf, "SPI Test\r\n");
+  // HAL_UART_Transmit(&huart2, (uint8_t *)uart_buf, uart_buf_len, 100);
 
   /* USER CODE END 2 */
 
