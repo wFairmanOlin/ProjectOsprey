@@ -329,7 +329,7 @@ D 10 Ohms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric)  Thick Film
 $ENDCMP
 #
 $CMP R_100K
-D 68 Ohms ±5% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film
+D 100 kOhms ±1% 0.125W, 1/8W Chip Resistor 0805 (2012 Metric)  Thick Film
 $ENDCMP
 #
 $CMP R_10K
