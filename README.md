@@ -55,4 +55,4 @@ Our overarching goal for this project is to develop a drone capable of autonomou
 
 4. Mechanical design: Taking high-level constraints about lift and drone layout into consideration, we intend to extend our CAD abilities.
 
-Like the logo? This logo is a modified version of work done by [Hwei-Shin Harriman]("https://hweishin.carbonmade.com/"), a fellow Olin student.
+Like the logo? This logo is a modified version of work done by [Hwei-Shin Harriman](https://hweishin.carbonmade.com/), a fellow Olin student.
