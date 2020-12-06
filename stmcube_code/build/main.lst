@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 1
+ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 1
   30:Src/main.c    **** /* USER CODE BEGIN PTD */
   31:Src/main.c    **** 
   32:Src/main.c    **** /* USER CODE END PTD */
-ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 2
+ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s 			page 2
 
 
   33:Src/main.c    **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 1
   87:Src/main.c    **** 
   88:Src/main.c    ****   /* USER CODE BEGIN Init */
   89:Src/main.c    **** 
-ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 3
+ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s 			page 3
 
 
   90:Src/main.c    ****   /* USER CODE END Init */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 1
  144:Src/main.c    ****     HAL_SPI_Transmit(&hspi1, (uint8_t *)0x13, 1, 100);
  145:Src/main.c    ****     HAL_SPI_Receive(&hspi1, &spi_buf, 1, 100);
  146:Src/main.c    ****     transmit[0] = spi_buf;
-ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 4
+ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s 			page 4
 
 
  147:Src/main.c    ****     HAL_UART_Transmit(&huart7, transmit, 4, 10);
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 1
  201:Src/main.c    ****   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
  202:Src/main.c    **** 
  203:Src/main.c    ****   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
-ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 5
+ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s 			page 5
 
 
  204:Src/main.c    ****   {
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 1
  258:Src/main.c    **** 
  259:Src/main.c    ****   /* USER CODE BEGIN UART7_Init 1 */
  260:Src/main.c    **** 
-ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 6
+ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s 			page 6
 
 
  261:Src/main.c    ****   /* USER CODE END UART7_Init 1 */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 1
  315:Src/main.c    **** /** 
  316:Src/main.c    ****   * Enable DMA controller clock
  317:Src/main.c    ****   */
-ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 7
+ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s 			page 7
 
 
  318:Src/main.c    **** static void MX_DMA_Init(void) 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 1
   58 0022 0192     		str	r2, [sp, #4]
   59 0024 019A     		ldr	r2, [sp, #4]
   60              	.LBE2:
-ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 8
+ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s 			page 8
 
 
   61              	.LBB3:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 1
  106 0078 FFF7FEFF 		bl	HAL_GPIO_WritePin
  107              	.LVL1:
  350:Src/main.c    **** 
-ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 9
+ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s 			page 9
 
 
  351:Src/main.c    ****   /*Configure GPIO pins : PA3 PA4 */
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 1
  147 00ac 00000240 		.word	1073872896
  148 00b0 000C0240 		.word	1073875968
  149              		.cfi_endproc
-ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 10
+ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s 			page 10
 
 
  150              	.LFE136:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 1
  201              		.align	2
  202              	.L7:
  203 0030 00380240 		.word	1073887232
-ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 11
+ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s 			page 11
 
 
  204              		.cfi_endproc
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 1
  249 0022 4362     		str	r3, [r0, #36]
  235:Src/main.c    ****   hspi1.Init.CRCPolynomial = 10;
  250              		.loc 1 235 0
-ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 12
+ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s 			page 12
 
 
  251 0024 8362     		str	r3, [r0, #40]
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 1
  299:Src/main.c    ****   hpcd_USB_OTG_FS.Init.Sof_enable = DISABLE;
  299              		.loc 1 299 0
  300 0016 8261     		str	r2, [r0, #24]
-ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 13
+ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s 			page 13
 
 
  300:Src/main.c    ****   hpcd_USB_OTG_FS.Init.low_power_enable = DISABLE;
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 1
  347 000c 4360     		str	r3, [r0, #4]
  264:Src/main.c    ****   huart7.Init.StopBits = UART_STOPBITS_1;
  348              		.loc 1 264 0
-ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 14
+ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s 			page 14
 
 
  349 000e 0023     		movs	r3, #0
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 1
  171:Src/main.c    ****   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
  397              		.loc 1 171 0
  398 0004 3022     		movs	r2, #48
-ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 15
+ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s 			page 15
 
 
  399 0006 0021     		movs	r1, #0
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 1
  446 005a 0C92     		str	r2, [sp, #48]
  184:Src/main.c    ****   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
  447              		.loc 1 184 0
-ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 16
+ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s 			page 16
 
 
  448 005c 0222     		movs	r2, #2
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 1
  489              	.L24:
  490              		.align	2
  491              	.L23:
-ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 17
+ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s 			page 17
 
 
  492 0090 00380240 		.word	1073887232
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 1
  107:Src/main.c    ****   HAL_Delay(100);
  540              		.loc 1 107 0
  541 0020 424D     		ldr	r5, .L28
-ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 18
+ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s 			page 18
 
 
  542 0022 0122     		movs	r2, #1
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 1
  588 0076 2046     		mov	r0, r4
  589 0078 FFF7FEFF 		bl	HAL_SPI_Transmit
  590              	.LVL25:
-ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 19
+ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s 			page 19
 
 
  118:Src/main.c    ****   HAL_SPI_Receive(&hspi1, &spi_buf, 1, 100);
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 1
  637 00cc 1221     		movs	r1, #18
  638 00ce 2846     		mov	r0, r5
  639 00d0 FFF7FEFF 		bl	HAL_SPI_Transmit
-ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 20
+ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s 			page 20
 
 
  640              	.LVL33:
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 1
  687              	.L28:
  688 012c 00000240 		.word	1073872896
  689 0130 00000000 		.word	.LC0
-ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 21
+ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s 			page 21
 
 
  690 0134 00000000 		.word	hspi1
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 1
  730              		.file 7 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h"
  731              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
  732              		.file 9 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h"
-ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 22
+ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s 			page 22
 
 
  733              		.file 10 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h"
@@ -1271,39 +1271,39 @@ ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 1
  740              		.file 17 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
  741              		.file 18 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h"
  742              		.file 19 "<built-in>"
-ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s 			page 23
+ARM GAS  C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s 			page 23
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 main.c
-C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s:18     .text.MX_GPIO_Init:00000000 $t
-C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s:24     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
-C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s:146    .text.MX_GPIO_Init:000000a8 $d
-C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s:153    .text.MX_DMA_Init:00000000 $t
-C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s:159    .text.MX_DMA_Init:00000000 MX_DMA_Init
-C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s:203    .text.MX_DMA_Init:00000030 $d
-C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s:208    .text.MX_SPI1_Init:00000000 $t
-C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s:214    .text.MX_SPI1_Init:00000000 MX_SPI1_Init
-C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s:263    .text.MX_SPI1_Init:00000030 $d
+C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s:18     .text.MX_GPIO_Init:00000000 $t
+C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s:24     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
+C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s:146    .text.MX_GPIO_Init:000000a8 $d
+C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s:153    .text.MX_DMA_Init:00000000 $t
+C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s:159    .text.MX_DMA_Init:00000000 MX_DMA_Init
+C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s:203    .text.MX_DMA_Init:00000030 $d
+C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s:208    .text.MX_SPI1_Init:00000000 $t
+C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s:214    .text.MX_SPI1_Init:00000000 MX_SPI1_Init
+C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s:263    .text.MX_SPI1_Init:00000030 $d
                             *COM*:00000058 hspi1
-C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s:269    .text.MX_USB_OTG_FS_PCD_Init:00000000 $t
-C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s:275    .text.MX_USB_OTG_FS_PCD_Init:00000000 MX_USB_OTG_FS_PCD_Init
-C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s:319    .text.MX_USB_OTG_FS_PCD_Init:00000028 $d
+C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s:269    .text.MX_USB_OTG_FS_PCD_Init:00000000 $t
+C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s:275    .text.MX_USB_OTG_FS_PCD_Init:00000000 MX_USB_OTG_FS_PCD_Init
+C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s:319    .text.MX_USB_OTG_FS_PCD_Init:00000028 $d
                             *COM*:00000408 hpcd_USB_OTG_FS
-C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s:324    .text.MX_UART7_Init:00000000 $t
-C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s:330    .text.MX_UART7_Init:00000000 MX_UART7_Init
-C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s:370    .text.MX_UART7_Init:00000024 $d
+C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s:324    .text.MX_UART7_Init:00000000 $t
+C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s:330    .text.MX_UART7_Init:00000000 MX_UART7_Init
+C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s:370    .text.MX_UART7_Init:00000024 $d
                             *COM*:00000040 huart7
-C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s:376    .text.SystemClock_Config:00000000 $t
-C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s:383    .text.SystemClock_Config:00000000 SystemClock_Config
-C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s:492    .text.SystemClock_Config:00000090 $d
-C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s:498    .text.main:00000000 $t
-C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s:505    .text.main:00000000 main
-C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s:688    .text.main:0000012c $d
-C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s:696    .text.Error_Handler:00000000 $t
-C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s:703    .text.Error_Handler:00000000 Error_Handler
+C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s:376    .text.SystemClock_Config:00000000 $t
+C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s:383    .text.SystemClock_Config:00000000 SystemClock_Config
+C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s:492    .text.SystemClock_Config:00000090 $d
+C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s:498    .text.main:00000000 $t
+C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s:505    .text.main:00000000 main
+C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s:688    .text.main:0000012c $d
+C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s:696    .text.Error_Handler:00000000 $t
+C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s:703    .text.Error_Handler:00000000 Error_Handler
                             *COM*:00000060 hdma_spi1_rx
-C:\Users\wfairman\AppData\Local\Temp\ccc6USPf.s:720    .rodata.main.str1.4:00000000 $d
+C:\Users\wfairman\AppData\Local\Temp\ccCDn8JV.s:720    .rodata.main.str1.4:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_GPIO_WritePin
