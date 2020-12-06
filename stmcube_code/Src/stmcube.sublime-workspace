@@ -335,7 +335,7 @@
 			"file": "main.c",
 			"settings":
 			{
-				"buffer_size": 11087,
+				"buffer_size": 11234,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -572,7 +572,7 @@
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 50.0
 	},
 	"find_in_files":
 	{
@@ -682,15 +682,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11087,
+						"buffer_size": 11234,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2130,
-								2130
+								3319,
+								3319
 							]
 						],
 						"settings":
@@ -698,7 +698,7 @@
 							"syntax": "Packages/C++/C.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 816.0,
+						"translation.y": 2227.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -738,7 +738,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 32.0
+		"height": 50.0
 	},
 	"input":
 	{
@@ -772,10 +772,10 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "main.sublime-project",
+	"project": "stmcube.sublime-project",
 	"replace":
 	{
-		"height": 70.0
+		"height": 96.0
 	},
 	"save_all_on_build": true,
 	"select_file":

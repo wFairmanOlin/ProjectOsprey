@@ -105,12 +105,29 @@ int main(void)
   /* USER CODE BEGIN 2 */
     // CS pin should default high
   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_SET);
-  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8, GPIO_PIN_SET);
-
+  HAL_Delay(100);
+  
+  uint8_t spi_buf = 0x00;
+		  uint8_t transmit[] = "X:\n\r";
+  //write to accel register
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_RESET);
+  HAL_SPI_Transmit(&hspi1, (uint8_t *)0x00, 1, 100);
+  HAL_SPI_Receive(&hspi1, &spi_buf, 1, 100);
+  HAL_Delay(100);
+  HAL_SPI_Transmit(&hspi1, (uint8_t *)0x7D, 1, 100);
+  HAL_SPI_Transmit(&hspi1, (uint8_t *)0x04, 1, 100);
+  HAL_SPI_Receive(&hspi1, &spi_buf, 1, 100);
+  HAL_UART_Transmit(&huart7, &spi_buf, 1, 10);
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_SET);
+  HAL_Delay(100);
+  // HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8, GPIO_PIN_SET);
+  // HAL_GPIO_WritePin(GPIOD, GPIO_PIN_9, GPIO_PIN_SET);
 
   // Say something
   // uart_buf_len = sprintf(uart_buf, "SPI Test\r\n");
-  // HAL_UART_Transmit(&huart2, (uint8_t *)uart_buf, uart_buf_len, 100);
+  // HAL_UART_Transmit(&huart7, (uint8_t *)uart_buf, uart_buf_len, 100);
+  // HAL_UART_Transmit(&huart7, (uint8_t *)uart_buf, uart_buf_len, 100);
+  // HAL_UART_Transmit(&huart7, (uint8_t *)uart_buf, uart_buf_len, 100);
 
   /* USER CODE END 2 */
 
@@ -118,6 +135,26 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+  	HAL_Delay(500);
+  	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_RESET);
+    HAL_SPI_Transmit(&hspi1, (uint8_t *)0x12, 1, 100);
+    HAL_SPI_Receive(&hspi1, &spi_buf, 1, 100);
+    transmit[0] = spi_buf;
+    HAL_UART_Transmit(&huart7, transmit, 4, 10);
+    HAL_SPI_Transmit(&hspi1, (uint8_t *)0x13, 1, 100);
+    HAL_SPI_Receive(&hspi1, &spi_buf, 1, 100);
+    transmit[0] = spi_buf;
+    HAL_UART_Transmit(&huart7, transmit, 4, 10);
+
+
+ //  	HAL_Delay(900);
+ //  	uint8_t message[] = "Hi Dan, I'm sentient\n\r";
+	// HAL_UART_Transmit(&huart7, message, sizeof(message), 10);
+	// HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8, GPIO_PIN_SET);
+	// HAL_Delay(100);
+	// HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8, GPIO_PIN_RESET);
+
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -303,9 +340,13 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOE_CLK_ENABLE();
+  __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3|GPIO_PIN_4, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8|GPIO_PIN_9, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : PA3 PA4 */
   GPIO_InitStruct.Pin = GPIO_PIN_3|GPIO_PIN_4;
@@ -313,6 +354,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : PD8 PD9 */
+  GPIO_InitStruct.Pin = GPIO_PIN_8|GPIO_PIN_9;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
 }
 

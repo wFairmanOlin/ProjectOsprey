@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=C:/Users/wfairman/Documents/openDrone/stmcube_code/Inc
+HeaderPath=C:/Users/wfairman/Desktop/openDrone/stmcube_code/Inc
 HeaderFiles=stm32f4xx_it.h;stm32f4xx_hal_conf.h;main.h;
-SourcePath=C:/Users/wfairman/Documents/openDrone/stmcube_code/Src
+SourcePath=C:/Users/wfairman/Desktop/openDrone/stmcube_code/Src
 SourceFiles=stm32f4xx_it.c;stm32f4xx_hal_msp.c;main.c;
 
 [PreviousLibFiles]
