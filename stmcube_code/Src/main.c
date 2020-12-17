@@ -20,6 +20,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include <stdio.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -43,7 +44,7 @@
 
 /* Private variables ---------------------------------------------------------*/
 SPI_HandleTypeDef hspi1;
-DMA_HandleTypeDef hdma_spi1_rx;
+SPI_HandleTypeDef hspi2;
 
 UART_HandleTypeDef huart7;
 
@@ -56,16 +57,25 @@ PCD_HandleTypeDef hpcd_USB_OTG_FS;
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
-static void MX_DMA_Init(void);
 static void MX_SPI1_Init(void);
 static void MX_USB_OTG_FS_PCD_Init(void);
 static void MX_UART7_Init(void);
+static void MX_SPI2_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+struct FRAM_RDID {
+  uint8_t id1;
+  uint8_t id2;
+  uint16_t size_kbyte;
+  uint8_t addrlen;
+};
+
+// FRAM_RDID test_rdid = {0x22, 0x08, 16, 2};
+
 
 /* USER CODE END 0 */
 
@@ -78,7 +88,6 @@ int main(void)
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
-  
 
   /* MCU Configuration--------------------------------------------------------*/
 
@@ -86,7 +95,18 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
+  struct cypress_rdid {
+      uint8_t manufacturer[6];
+      uint8_t memory;
+      uint8_t id1;
+      uint8_t id2;
+  };
 
+  struct cypress_rdid cyp;
+  // const struct cypress_rdid* extra;
+  // struct cypress_rdid* extra;
+
+  uint8_t my_rdid[sizeof(cyp)];
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -98,28 +118,32 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_DMA_Init();
   MX_SPI1_Init();
   MX_USB_OTG_FS_PCD_Init();
   MX_UART7_Init();
+  MX_SPI2_Init();
   /* USER CODE BEGIN 2 */
     // CS pin should default high
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_10, GPIO_PIN_SET);
   HAL_Delay(100);
-  
+
+  uint8_t device_id[] = {0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0xC2, 0x21, 0x08};
+  uint8_t fram_buf[10];
+  uint8_t fram_opcode = 0x9F;
   uint8_t spi_buf = 0x00;
-		  uint8_t transmit[] = "X:\n\r";
+  uint8_t transmit[] = "Still not working...\n\r";
   //write to accel register
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_RESET);
-  HAL_SPI_Transmit(&hspi1, (uint8_t *)0x00, 1, 100);
-  HAL_SPI_Receive(&hspi1, &spi_buf, 1, 100);
-  HAL_Delay(100);
-  HAL_SPI_Transmit(&hspi1, (uint8_t *)0x7D, 1, 100);
-  HAL_SPI_Transmit(&hspi1, (uint8_t *)0x04, 1, 100);
-  HAL_SPI_Receive(&hspi1, &spi_buf, 1, 100);
-  HAL_UART_Transmit(&huart7, &spi_buf, 1, 10);
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_SET);
-  HAL_Delay(100);
+  // HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, GPIO_PIN_RESET);
+  // HAL_SPI_Transmit(&hspi1, (uint8_t *)0x0F, 1, 100);
+  // HAL_SPI_Receive(&hspi1, &spi_buf, 1, 100);
+  // // HAL_Delay(100);
+  // // HAL_SPI_Transmit(&hspi1, (uint8_t *)0x7D, 1, 100);
+  // // HAL_SPI_Transmit(&hspi1, (uint8_t *)0x04, 1, 100);
+  // // HAL_SPI_Receive(&hspi1, &spi_buf, 1, 100);
+  // HAL_UART_Transmit(&huart7, &spi_buf, 1, 10);
+  // HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, GPIO_PIN_SET);
+  // HAL_Delay(100);
   // HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8, GPIO_PIN_SET);
   // HAL_GPIO_WritePin(GPIOD, GPIO_PIN_9, GPIO_PIN_SET);
 
@@ -128,7 +152,8 @@ int main(void)
   // HAL_UART_Transmit(&huart7, (uint8_t *)uart_buf, uart_buf_len, 100);
   // HAL_UART_Transmit(&huart7, (uint8_t *)uart_buf, uart_buf_len, 100);
   // HAL_UART_Transmit(&huart7, (uint8_t *)uart_buf, uart_buf_len, 100);
-
+  uint8_t who_am_i = (0x0f) | (1 << 7) | (1 << 6);
+  char temp[3];
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -136,23 +161,56 @@ int main(void)
   while (1)
   {
   	HAL_Delay(500);
-  	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_RESET);
-    HAL_SPI_Transmit(&hspi1, (uint8_t *)0x12, 1, 100);
-    HAL_SPI_Receive(&hspi1, &spi_buf, 1, 100);
-    transmit[0] = spi_buf;
-    HAL_UART_Transmit(&huart7, transmit, 4, 10);
-    HAL_SPI_Transmit(&hspi1, (uint8_t *)0x13, 1, 100);
-    HAL_SPI_Receive(&hspi1, &spi_buf, 1, 100);
-    transmit[0] = spi_buf;
-    HAL_UART_Transmit(&huart7, transmit, 4, 10);
+  	HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(GPIOD, GPIO_PIN_10, GPIO_PIN_RESET);
+    // HAL_Delay(100);
+    // HAL_SPI_Transmit(&hspi1, (uint8_t*)&who_am_i, 1, 100);
+    // HAL_SPI_Receive(&hspi1, (uint8_t*)&spi_buf, 1, 100);
+    HAL_SPI_TransmitReceive(&hspi1, (uint8_t*)&who_am_i, (uint8_t*)&spi_buf, 2, 100);
+    HAL_SPI_TransmitReceive(&hspi2, &fram_opcode, my_rdid, sizeof(my_rdid), 100);
+    HAL_GPIO_WritePin(GPIOD, GPIO_PIN_10, GPIO_PIN_SET);
+    // HAL_Delay(100);
+    HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, GPIO_PIN_SET);
+
+    const struct cypress_rdid* extra = (const struct cypress_rdid*)my_rdid;
+    if (extra->id1 == 0x22) {
+      HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8, GPIO_PIN_SET);
+      HAL_Delay(1000);
+      HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8, GPIO_PIN_RESET);
+    }
+    // else {
+      // transmit[] = "%x"
+      // HAL_UART_Transmit(&huart7, &fram_buf[0], 1, 100);
+      // HAL_UART_Transmit(&huart7, &device_id[0], 1, 100);
+      // HAL_UART_Transmit(&huart7, transmit, 22, 100);
+    // }
+    // for (int i = 0; i <= 11; i++) {
+    //   sprintf(temp, "%x%x%x%x%x%x%x%x\n\r", *device_id);
+    // }
+    // for (int i = 0; i <= 9; i++) {
+    //   sprintf(temp, "%x", *fram_buf);
+    //   HAL_UART_Transmit(&huart7, (uint8_t *)temp, 1, 10);
+    // }
+    sprintf(temp, "%x", extra->id1);
+    HAL_UART_Transmit(&huart7, (uint8_t *)temp, 1, 10);
+    sprintf(temp, "%x", extra->id2);
+    HAL_UART_Transmit(&huart7, (uint8_t *)temp, 1, 10);
+
+    // HAL_UART_Transmit(&huart7, (uint8_t *)temp, 10, 10);
+    // transmit[0] = spi_buf;
+    // HAL_UART_Transmit(&huart7, transmit, 4, 10);
+    // HAL_SPI_Transmit(&hspi1, (uint8_t *)0x29, 1, 100);
+    // HAL_SPI_Receive(&hspi1, &spi_buf, 1, 100);
+    // transmit[0] = spi_buf;
+    // HAL_UART_Transmit(&huart7, transmit, 4, 10);
 
 
- //  	HAL_Delay(900);
+  	// HAL_Delay(1000);
  //  	uint8_t message[] = "Hi Dan, I'm sentient\n\r";
 	// HAL_UART_Transmit(&huart7, message, sizeof(message), 10);
-	// HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8, GPIO_PIN_SET);
-	// HAL_Delay(100);
-	// HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8, GPIO_PIN_RESET);
+  	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_9, GPIO_PIN_SET);
+  	HAL_Delay(500);
+  	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_9, GPIO_PIN_RESET);
 
 
     /* USER CODE END WHILE */
@@ -171,11 +229,11 @@ void SystemClock_Config(void)
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
 
-  /** Configure the main internal regulator output voltage 
+  /** Configure the main internal regulator output voltage
   */
   __HAL_RCC_PWR_CLK_ENABLE();
   __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE3);
-  /** Initializes the CPU, AHB and APB busses clocks 
+  /** Initializes the CPU, AHB and APB busses clocks
   */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_HSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
@@ -191,7 +249,7 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  /** Initializes the CPU, AHB and APB busses clocks 
+  /** Initializes the CPU, AHB and APB busses clocks
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
@@ -241,6 +299,44 @@ static void MX_SPI1_Init(void)
   /* USER CODE BEGIN SPI1_Init 2 */
 
   /* USER CODE END SPI1_Init 2 */
+
+}
+
+/**
+  * @brief SPI2 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_SPI2_Init(void)
+{
+
+  /* USER CODE BEGIN SPI2_Init 0 */
+
+  /* USER CODE END SPI2_Init 0 */
+
+  /* USER CODE BEGIN SPI2_Init 1 */
+
+  /* USER CODE END SPI2_Init 1 */
+  /* SPI2 parameter configuration*/
+  hspi2.Instance = SPI2;
+  hspi2.Init.Mode = SPI_MODE_MASTER;
+  hspi2.Init.Direction = SPI_DIRECTION_2LINES;
+  hspi2.Init.DataSize = SPI_DATASIZE_8BIT;
+  hspi2.Init.CLKPolarity = SPI_POLARITY_LOW;
+  hspi2.Init.CLKPhase = SPI_PHASE_1EDGE;
+  hspi2.Init.NSS = SPI_NSS_SOFT;
+  hspi2.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2;
+  hspi2.Init.FirstBit = SPI_FIRSTBIT_MSB;
+  hspi2.Init.TIMode = SPI_TIMODE_DISABLE;
+  hspi2.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
+  hspi2.Init.CRCPolynomial = 10;
+  if (HAL_SPI_Init(&hspi2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN SPI2_Init 2 */
+
+  /* USER CODE END SPI2_Init 2 */
 
 }
 
@@ -312,21 +408,6 @@ static void MX_USB_OTG_FS_PCD_Init(void)
 
 }
 
-/** 
-  * Enable DMA controller clock
-  */
-static void MX_DMA_Init(void) 
-{
-  /* DMA controller clock enable */
-  __HAL_RCC_DMA2_CLK_ENABLE();
-
-  /* DMA interrupt init */
-  /* DMA2_Stream0_IRQn interrupt configuration */
-  HAL_NVIC_SetPriority(DMA2_Stream0_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(DMA2_Stream0_IRQn);
-
-}
-
 /**
   * @brief GPIO Initialization Function
   * @param None
@@ -337,16 +418,44 @@ static void MX_GPIO_Init(void)
   GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   /* GPIO Ports Clock Enable */
+  __HAL_RCC_GPIOE_CLK_ENABLE();
+  __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
-  __HAL_RCC_GPIOE_CLK_ENABLE();
+  __HAL_RCC_GPIOB_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_2, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3|GPIO_PIN_4, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8|GPIO_PIN_9, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8|GPIO_PIN_9|GPIO_PIN_10, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : PE4 */
+  GPIO_InitStruct.Pin = GPIO_PIN_4;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : PC14 PC3 */
+  GPIO_InitStruct.Pin = GPIO_PIN_14|GPIO_PIN_3;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : PC2 */
+  GPIO_InitStruct.Pin = GPIO_PIN_2;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PA3 PA4 */
   GPIO_InitStruct.Pin = GPIO_PIN_3|GPIO_PIN_4;
@@ -355,8 +464,14 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PD8 PD9 */
-  GPIO_InitStruct.Pin = GPIO_PIN_8|GPIO_PIN_9;
+  /*Configure GPIO pin : PE12 */
+  GPIO_InitStruct.Pin = GPIO_PIN_12;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : PD8 PD9 PD10 */
+  GPIO_InitStruct.Pin = GPIO_PIN_8|GPIO_PIN_9|GPIO_PIN_10;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -389,7 +504,7 @@ void Error_Handler(void)
   * @retval None
   */
 void assert_failed(uint8_t *file, uint32_t line)
-{ 
+{
   /* USER CODE BEGIN 6 */
   /* User can add his own implementation to report the file name and line number,
      tex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
