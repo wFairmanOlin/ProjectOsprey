@@ -32,6 +32,12 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+// struct cypress_rdid {
+//     uint8_t manufacturer[6];
+//     uint8_t memory;
+//     uint8_t id1;
+//     uint8_t id2;
+// };
 
 /* USER CODE END Includes */
 
