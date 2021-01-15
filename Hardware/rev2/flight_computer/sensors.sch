@@ -1,0 +1,652 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L openDrone_parts:BMI088 U11
+U 1 1 5F91431C
+P 2750 1250
+F 0 "U11" H 2175 1625 50  0000 C CNN
+F 1 "BMI088" H 2175 1534 50  0000 C CNN
+F 2 "drone_footprints:BMI088" H 2650 1550 50  0001 C CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMI088-DS001.pdf" H 2200 1900 50  0001 C CNN
+F 4 "https://www.digikey.com/product-detail/en/bosch-sensortec/BMI088/828-1082-1-ND/8634942" H 2150 2050 50  0001 C CNN "Purchasing Link"
+F 5 "828-1082-1-ND" H 1900 1550 50  0001 C CNN "DPN"
+	1    2750 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L openDrone_parts:C_0u1 C36
+U 1 1 5F918639
+P 2350 2550
+F 0 "C36" V 2602 2550 50  0000 C CNN
+F 1 "C_0u1" V 2511 2550 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 2388 2400 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/kemet/C0805C104Z4VACTU/399-9159-1-ND/3522677" H 2375 2650 50  0001 C CNN
+F 4 "478-3352-1-ND" H 2350 2550 60  0001 C CNN "DPN"
+	1    2350 2550
+	0    -1   -1   0   
+$EndComp
+Text HLabel 1450 1150 0    50   Input ~ 0
+IMU_SCK
+Text HLabel 1450 1250 0    50   Input ~ 0
+IMU_MOSI
+Text HLabel 3100 1600 2    50   Input ~ 0
+IMU_MISO
+Text HLabel 1450 1350 0    50   Input ~ 0
+CSB_ACCEL
+Text HLabel 1450 1450 0    50   Input ~ 0
+CSB_GYRO
+$Comp
+L power:GND #PWR047
+U 1 1 5F919457
+P 1400 1650
+F 0 "#PWR047" H 1400 1400 50  0001 C CNN
+F 1 "GND" H 1405 1477 50  0000 C CNN
+F 2 "" H 1400 1650 50  0001 C CNN
+F 3 "" H 1400 1650 50  0001 C CNN
+	1    1400 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 1550 1400 1550
+Wire Wire Line
+	1400 1550 1400 1650
+Text HLabel 2900 1100 2    50   Input ~ 0
+IMU_INT1_ACCEL
+Text HLabel 2900 1300 2    50   Input ~ 0
+INT3_GYRO
+Wire Wire Line
+	2900 1600 3000 1600
+Wire Wire Line
+	2900 1500 3000 1500
+Wire Wire Line
+	3000 1500 3000 1600
+Connection ~ 3000 1600
+Wire Wire Line
+	3000 1600 3100 1600
+$Comp
+L power:GND #PWR049
+U 1 1 5F920805
+P 2450 1950
+F 0 "#PWR049" H 2450 1700 50  0001 C CNN
+F 1 "GND" V 2455 1822 50  0000 R CNN
+F 2 "" H 2450 1950 50  0001 C CNN
+F 3 "" H 2450 1950 50  0001 C CNN
+	1    2450 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2450 1950 2350 1950
+Wire Wire Line
+	2250 1950 2250 1900
+Wire Wire Line
+	2350 1900 2350 1950
+Connection ~ 2350 1950
+Wire Wire Line
+	2350 1950 2250 1950
+Wire Wire Line
+	1950 2550 2200 2550
+$Comp
+L power:GND #PWR051
+U 1 1 5F92B1B3
+P 2500 2550
+F 0 "#PWR051" H 2500 2300 50  0001 C CNN
+F 1 "GND" V 2505 2422 50  0000 R CNN
+F 2 "" H 2500 2550 50  0001 C CNN
+F 3 "" H 2500 2550 50  0001 C CNN
+	1    2500 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1750 2550 1950 2550
+Connection ~ 1950 2550
+$Comp
+L power:GND #PWR054
+U 1 1 5F9483AF
+P 7400 2250
+F 0 "#PWR054" H 7400 2000 50  0001 C CNN
+F 1 "GND" H 7405 2077 50  0000 C CNN
+F 2 "" H 7400 2250 50  0001 C CNN
+F 3 "" H 7400 2250 50  0001 C CNN
+	1    7400 2250
+	1    0    0    -1  
+$EndComp
+Text HLabel 9900 1450 2    50   Input ~ 0
+MAG_SDO_SA1
+Text HLabel 9900 1550 2    50   Input ~ 0
+MAG_DRDY
+Text HLabel 9900 1350 2    50   Input ~ 0
+MAG_CS
+Text HLabel 9900 1250 2    50   Input ~ 0
+MAG_SDA_SDI_SDO
+Text HLabel 8000 1150 0    50   Input ~ 0
+MAG_SCL
+$Comp
+L openDrone_parts:C_0u1 C40
+U 1 1 5F949212
+P 7850 1450
+F 0 "C40" V 7598 1450 50  0000 C CNN
+F 1 "C_0u1" V 7689 1450 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 7888 1300 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/kemet/C0805C104Z4VACTU/399-9159-1-ND/3522677" H 7875 1550 50  0001 C CNN
+F 4 "478-3352-1-ND" H 7850 1450 60  0001 C CNN "DPN"
+	1    7850 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L openDrone_parts:C_0u1 C39
+U 1 1 5F94A2A0
+P 7550 2100
+F 0 "C39" V 7298 2100 50  0000 C CNN
+F 1 "C_0u1" V 7389 2100 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 7588 1950 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/kemet/C0805C104Z4VACTU/399-9159-1-ND/3522677" H 7575 2200 50  0001 C CNN
+F 4 "478-3352-1-ND" H 7550 2100 60  0001 C CNN "DPN"
+	1    7550 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L openDrone_parts:C_1u C38
+U 1 1 5F94ABD0
+P 7550 1750
+F 0 "C38" V 7298 1750 50  0000 C CNN
+F 1 "C_1u" V 7389 1750 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 7588 1600 50  0001 C CNN
+F 3 "" H 7575 1850 50  0001 C CNN
+F 4 "399-8011-1-ND" H 7550 1750 60  0001 C CNN "DPN"
+	1    7550 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8000 1550 7700 1550
+Wire Wire Line
+	7700 1550 7700 1750
+Connection ~ 7700 2100
+Wire Wire Line
+	7700 2100 7700 2200
+Connection ~ 7700 1750
+Wire Wire Line
+	7700 1750 7700 2100
+Wire Wire Line
+	7400 2250 7400 2100
+Wire Wire Line
+	7400 2100 7400 1750
+Connection ~ 7400 2100
+Wire Wire Line
+	7400 1750 7400 1450
+Wire Wire Line
+	7400 1450 7700 1450
+Connection ~ 7400 1750
+Wire Wire Line
+	7400 1450 7400 1350
+Wire Wire Line
+	7400 1350 8000 1350
+Connection ~ 7400 1450
+Wire Wire Line
+	7400 1350 7400 1250
+Wire Wire Line
+	7400 1250 8000 1250
+Connection ~ 7400 1350
+$Comp
+L openDrone_parts:Barometer U13
+U 1 1 5F94F59C
+P 9450 3900
+F 0 "U13" H 9550 4165 50  0000 C CNN
+F 1 "Barometer" H 9550 4074 50  0000 C CNN
+F 2 "drone_footprints:MS561101BA03-50" H 9850 4250 50  0001 C CNN
+F 3 "" H 9850 4250 50  0001 C CNN
+F 4 "223-1622-1-ND" H 9550 4350 50  0001 C CNN "DPN"
+F 5 "MS561101BA03-50" H 9500 4250 50  0001 C CNN "MPN"
+	1    9450 3900
+	1    0    0    -1  
+$EndComp
+Text HLabel 10050 3900 2    50   Input ~ 0
+BARO_CS
+Text HLabel 10050 4000 2    50   Input ~ 0
+BARO_MISO
+Text HLabel 10050 4100 2    50   Input ~ 0
+BARO_MOSI
+Text HLabel 10050 4200 2    50   Input ~ 0
+BARO_SCK
+$Comp
+L power:GND #PWR055
+U 1 1 5F95039A
+P 8900 4300
+F 0 "#PWR055" H 8900 4050 50  0001 C CNN
+F 1 "GND" H 8905 4127 50  0000 C CNN
+F 2 "" H 8900 4300 50  0001 C CNN
+F 3 "" H 8900 4300 50  0001 C CNN
+	1    8900 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L openDrone_parts:C_0u1 C41
+U 1 1 5F950BFE
+P 8550 3950
+F 0 "C41" H 8665 3996 50  0000 L CNN
+F 1 "C_0u1" H 8665 3905 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 8588 3800 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/kemet/C0805C104Z4VACTU/399-9159-1-ND/3522677" H 8575 4050 50  0001 C CNN
+F 4 "478-3352-1-ND" H 8550 3950 60  0001 C CNN "DPN"
+	1    8550 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 4100 8900 4100
+Wire Wire Line
+	9050 4000 8900 4000
+Wire Wire Line
+	8900 4000 8900 4100
+Connection ~ 8900 4100
+Wire Wire Line
+	8900 4100 8550 4100
+Wire Wire Line
+	8900 4100 8900 4300
+Wire Wire Line
+	9050 3900 8950 3900
+Wire Wire Line
+	8950 3900 8950 3800
+Wire Wire Line
+	8950 3800 8550 3800
+$Comp
+L openDrone_parts:CAM-M8Q-0 U10
+U 1 1 5F827FBC
+P 3000 4200
+F 0 "U10" H 3000 4515 50  0000 C CNN
+F 1 "CAM-M8Q-0" H 3000 4424 50  0000 C CNN
+F 2 "drone_footprints:CAM_M8Q_0" H 2550 4550 50  0001 L BNN
+F 3 "https://www.u-blox.com/sites/default/files/CAM-M8-FW3_DataSheet_%28UBX-15031574%29.pdf" H 2900 4450 50  0001 L BNN
+F 4 "672-CAM-M8Q-0CT-ND" H 3050 4450 50  0001 C CNN "DPN"
+	1    3000 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L openDrone_parts:R_220 R36
+U 1 1 5F82A212
+P 4350 4600
+F 0 "R36" H 4350 4807 50  0000 C CNN
+F 1 "R_220" H 4350 4716 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" H 3550 4750 50  0001 C CNN
+F 3 "" H 4050 5100 50  0001 C CNN
+F 4 "311-220CRCT-ND" H 3700 4850 60  0001 C CNN "DPN"
+	1    4350 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L openDrone_parts:R_220 R33
+U 1 1 5F82B7EB
+P 1650 4450
+F 0 "R33" H 1650 4657 50  0000 C CNN
+F 1 "R_220" H 1650 4566 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" H 850 4600 50  0001 C CNN
+F 3 "" H 1350 4950 50  0001 C CNN
+F 4 "311-220CRCT-ND" H 1000 4700 60  0001 C CNN "DPN"
+	1    1650 4450
+	1    0    0    -1  
+$EndComp
+Text HLabel 4500 4600 2    50   Input ~ 0
+GPS_UART_TX
+Text HLabel 1500 4450 0    50   Input ~ 0
+GPS_UART_RX
+$Comp
+L power:GND #PWR048
+U 1 1 5F857A76
+P 2950 5500
+F 0 "#PWR048" H 2950 5250 50  0001 C CNN
+F 1 "GND" H 2955 5327 50  0000 C CNN
+F 2 "" H 2950 5500 50  0001 C CNN
+F 3 "" H 2950 5500 50  0001 C CNN
+	1    2950 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 5350 2600 5500
+Wire Wire Line
+	2600 5500 2650 5500
+Wire Wire Line
+	3250 5350 3250 5500
+Wire Wire Line
+	3250 5500 3200 5500
+Connection ~ 2950 5500
+Wire Wire Line
+	3200 5350 3200 5500
+Connection ~ 3200 5500
+Wire Wire Line
+	3200 5500 3150 5500
+Wire Wire Line
+	3150 5350 3150 5500
+Connection ~ 3150 5500
+Wire Wire Line
+	3150 5500 3100 5500
+Wire Wire Line
+	3100 5350 3100 5500
+Connection ~ 3100 5500
+Wire Wire Line
+	3100 5500 3050 5500
+Wire Wire Line
+	3050 5350 3050 5500
+Connection ~ 3050 5500
+Wire Wire Line
+	3050 5500 3000 5500
+Wire Wire Line
+	3000 5350 3000 5500
+Connection ~ 3000 5500
+Wire Wire Line
+	3000 5500 2950 5500
+Wire Wire Line
+	2950 5350 2950 5500
+Wire Wire Line
+	2900 5350 2900 5500
+Connection ~ 2900 5500
+Wire Wire Line
+	2900 5500 2950 5500
+Wire Wire Line
+	2850 5350 2850 5500
+Connection ~ 2850 5500
+Wire Wire Line
+	2850 5500 2900 5500
+Wire Wire Line
+	2800 5350 2800 5500
+Connection ~ 2800 5500
+Wire Wire Line
+	2800 5500 2850 5500
+Wire Wire Line
+	2750 5350 2750 5500
+Connection ~ 2750 5500
+Wire Wire Line
+	2750 5500 2800 5500
+Wire Wire Line
+	2700 5350 2700 5500
+Connection ~ 2700 5500
+Wire Wire Line
+	2700 5500 2750 5500
+Wire Wire Line
+	2650 5350 2650 5500
+Connection ~ 2650 5500
+Wire Wire Line
+	2650 5500 2700 5500
+Text Label 2250 4350 2    50   ~ 0
+RF_SIGNALS
+Wire Wire Line
+	1800 4450 2250 4450
+Text Label 3750 4500 0    50   ~ 0
+RF_SIGNALS
+Wire Wire Line
+	3750 4600 4200 4600
+Wire Wire Line
+	3750 4100 4300 4100
+Wire Wire Line
+	4300 4100 4300 4000
+Wire Wire Line
+	3750 4200 4300 4200
+Wire Wire Line
+	4300 4200 4300 4100
+Connection ~ 4300 4100
+$Comp
+L openDrone_parts:C_4u7 C37
+U 1 1 5F87B412
+P 2650 6150
+F 0 "C37" H 2850 6200 50  0000 C CNN
+F 1 "C_4u7" H 2850 6100 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 2688 6000 50  0001 C CNN
+F 3 "" H 2675 6250 50  0001 C CNN
+F 4 "490-14466-1-ND" H 2650 6150 60  0001 C CNN "DPN"
+	1    2650 6150
+	-1   0    0    1   
+$EndComp
+Text Notes 8650 2000 0    50   ~ 0
+Magnetometer\n40-270uA
+Text Notes 2950 1900 0    50   ~ 0
+IMU\n150uA
+Text Notes 3450 5400 0    50   ~ 0
+GPS\n<71mA, avg <26mA
+Text Notes 9500 4450 0    50   ~ 0
+barometer\n<1.4mA
+$Comp
+L openDrone_parts:EMI_Filter_CLC_100MHZ FL2
+U 1 1 5F9362EA
+P 4200 3700
+F 0 "FL2" V 4154 3880 50  0000 L CNN
+F 1 "EMI_Filter_CLC_100MHZ" V 4245 3880 50  0000 L CNN
+F 2 "drone_footprints:NFL21SP107X1C3D" H 4850 4200 50  0001 C CNN
+F 3 "" V 4200 3700 50  0001 C CNN
+F 4 "490-2540-1-ND" H 5100 3950 50  0001 C CNN "DPN"
+F 5 "NFL21SP107X1C3D" H 4850 4050 50  0001 C CNN "MPN"
+	1    4200 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 3400 4300 3400
+$Comp
+L power:GND #PWR052
+U 1 1 5F93AFA7
+P 3950 3700
+F 0 "#PWR052" H 3950 3450 50  0001 C CNN
+F 1 "GND" H 3955 3527 50  0000 C CNN
+F 2 "" H 3950 3700 50  0001 C CNN
+F 3 "" H 3950 3700 50  0001 C CNN
+	1    3950 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3700 3950 3700
+Text Notes 3000 3600 0    50   ~ 0
+Note for the EMI filter \nthat the GPS here is at 3.3V \nnot 5V like in the pixracer
+$Comp
+L power:GND #PWR053
+U 1 1 5FB16EE2
+P 2650 6300
+F 0 "#PWR053" H 2650 6050 50  0001 C CNN
+F 1 "GND" H 2655 6127 50  0000 C CNN
+F 2 "" H 2650 6300 50  0001 C CNN
+F 3 "" H 2650 6300 50  0001 C CNN
+	1    2650 6300
+	1    0    0    -1  
+$EndComp
+Text HLabel 4500 3400 2    50   Input ~ 0
+VDD_3V3_SENSORS
+Text HLabel 1750 2550 0    50   Input ~ 0
+VDD_3V3_SENSORS
+Text HLabel 8550 3800 0    50   Input ~ 0
+VDD_3V3_SENSORS
+Text HLabel 7700 2200 3    50   Input ~ 0
+VDD_3V3_SENSORS
+Wire Notes Line
+	5600 3150 900  3150
+Text Notes 4550 6400 0    98   ~ 20
+GPS MODULE
+Wire Notes Line
+	900  2750 3750 2750
+Wire Notes Line
+	3750 2750 3750 750 
+Wire Notes Line
+	3750 750  900  750 
+Wire Notes Line
+	900  750  900  2750
+Text Notes 3400 2700 0    98   ~ 20
+IMU
+Wire Notes Line
+	7200 3100 10750 3100
+Wire Notes Line
+	10750 3100 10750 700 
+Wire Notes Line
+	10750 700  7200 700 
+Wire Notes Line
+	7200 700  7200 3100
+Text Notes 9550 3050 0    98   ~ 20
+MAGNETOMETER
+Wire Notes Line
+	7700 4700 10750 4700
+Wire Notes Line
+	10750 4700 10750 3350
+Wire Notes Line
+	10750 3350 7700 3350
+Wire Notes Line
+	7700 3350 7700 4700
+Text Notes 9850 4650 0    98   ~ 20
+BAROMETER
+$Comp
+L openDrone_parts:LIS3MDLTR U12
+U 1 1 5F9477A8
+P 8000 1150
+F 0 "U12" H 8950 1437 60  0000 C CNN
+F 1 "LIS3MDLTR" H 8950 1331 60  0000 C CNN
+F 2 "drone_footprints:LIS3MDLTR" H 9200 1390 60  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/54/2a/85/76/e3/97/42/18/DM00075867.pdf/files/DM00075867.pdf/jcr:content/translations/en.DM00075867.pdf" H 8000 1150 60  0001 C CNN
+F 4 "497-13892-1-ND" H 9950 1500 50  0001 C CNN "DPN"
+	1    8000 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 1650 8000 1550
+Connection ~ 8000 1550
+Wire Wire Line
+	1950 1900 1950 2300
+Wire Wire Line
+	2050 1900 2050 2300
+Wire Wire Line
+	2050 2300 2200 2300
+$Comp
+L openDrone_parts:C_0u1 C35
+U 1 1 5F915123
+P 2350 2300
+F 0 "C35" V 2098 2300 50  0000 C CNN
+F 1 "C_0u1" V 2189 2300 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 2388 2150 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/kemet/C0805C104Z4VACTU/399-9159-1-ND/3522677" H 2375 2400 50  0001 C CNN
+F 4 "478-3352-1-ND" H 2350 2300 60  0001 C CNN "DPN"
+	1    2350 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR050
+U 1 1 5F92AF4D
+P 2500 2300
+F 0 "#PWR050" H 2500 2050 50  0001 C CNN
+F 1 "GND" V 2505 2172 50  0000 R CNN
+F 2 "" H 2500 2300 50  0001 C CNN
+F 3 "" H 2500 2300 50  0001 C CNN
+	1    2500 2300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2050 2300 1950 2300
+Connection ~ 2050 2300
+Connection ~ 1950 2300
+Wire Wire Line
+	1950 2300 1950 2550
+$Comp
+L openDrone_parts:R_1K R?
+U 1 1 5F866B0B
+P 2850 6000
+AR Path="/5F866B0B" Ref="R?"  Part="1" 
+AR Path="/5F84A65B/5F866B0B" Ref="R?"  Part="1" 
+AR Path="/5F5F0393/5F866B0B" Ref="R34"  Part="1" 
+F 0 "R34" H 2850 6000 50  0000 C CNN
+F 1 "R_1K" H 2900 6100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" H 2050 6150 50  0001 C CNN
+F 3 "" H 2550 6500 50  0001 C CNN
+F 4 "311-1.0KARCT-ND" H 2200 6250 60  0001 C CNN "DPN"
+	1    2850 6000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L openDrone_parts:C_220u C?
+U 1 1 5F866B13
+P 3550 6200
+AR Path="/5F866B13" Ref="C?"  Part="1" 
+AR Path="/5F84A65B/5F866B13" Ref="C?"  Part="1" 
+AR Path="/5F5F0393/5F866B13" Ref="C42"  Part="1" 
+F 0 "C42" H 3665 6246 50  0000 L CNN
+F 1 "C_220u" H 3665 6155 50  0000 L CNN
+F 2 "drone_footprints:UWT0G221MCL6GS" H 4300 6500 50  0001 C CNN
+F 3 "~" H 3550 6200 50  0001 C CNN
+F 4 "493-9872-1-ND" H 3950 6400 50  0001 C CNN "DPN"
+F 5 "UWT0G221MCL6GS" H 4050 6300 50  0001 C CNN "MPN"
+	1    3550 6200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 6000 3550 6050
+$Comp
+L power:GND #PWR?
+U 1 1 5F866B1B
+P 3550 6350
+AR Path="/5F866B1B" Ref="#PWR?"  Part="1" 
+AR Path="/5F84A65B/5F866B1B" Ref="#PWR?"  Part="1" 
+AR Path="/5F5F0393/5F866B1B" Ref="#PWR056"  Part="1" 
+F 0 "#PWR056" H 3550 6100 50  0001 C CNN
+F 1 "GND" H 3650 6350 50  0000 C CNN
+F 2 "" H 3550 6350 50  0001 C CNN
+F 3 "" H 3550 6350 50  0001 C CNN
+	1    3550 6350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 6000 3550 6000
+$Comp
+L openDrone_parts:D_Schottky_10V_3A D?
+U 1 1 5F866B26
+P 3150 6000
+AR Path="/5F866B26" Ref="D?"  Part="1" 
+AR Path="/5F5F0393/5F866B26" Ref="D7"  Part="1" 
+F 0 "D7" H 3050 5950 50  0000 C CNN
+F 1 "D_Schottky_10V_3A" H 2950 5850 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-323F" H 3650 6300 50  0001 C CNN
+F 3 "~" H 3150 6000 50  0001 C CNN
+F 4 "1727-3852-1-ND" H 3550 6200 50  0001 C CNN "DPN"
+F 5 "PMEG1030EJ,115" H 3550 6100 50  0001 C CNN "MPN"
+	1    3150 6000
+	-1   0    0    1   
+$EndComp
+Text Label 3750 4300 0    50   ~ 0
+V_BCKP
+Text Label 3850 6000 0    50   ~ 0
+V_BCKP
+Wire Wire Line
+	3850 6000 3550 6000
+Connection ~ 3550 6000
+Text Label 3750 4100 0    50   ~ 0
+GPS_VCC
+Text Label 2550 6000 2    50   ~ 0
+GPS_VCC
+Wire Wire Line
+	2550 6000 2650 6000
+Wire Wire Line
+	2650 6000 2700 6000
+Connection ~ 2650 6000
+Wire Notes Line
+	5600 6650 900  6650
+Wire Notes Line
+	5600 3150 5600 6650
+Wire Notes Line
+	900  3150 900  6650
+NoConn ~ 3750 4900
+NoConn ~ 3750 5000
+NoConn ~ 3750 5100
+NoConn ~ 3750 4700
+NoConn ~ 2250 4250
+NoConn ~ 2250 4550
+NoConn ~ 2250 4650
+NoConn ~ 2250 4750
+NoConn ~ 2250 4850
+NoConn ~ 2250 4950
+NoConn ~ 9900 1150
+NoConn ~ 9900 1650
+NoConn ~ 2900 1400
+NoConn ~ 2900 1200
+NoConn ~ 1850 1900
+NoConn ~ 9050 4200
+$EndSCHEMATC
