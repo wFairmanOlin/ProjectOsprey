@@ -1500,21 +1500,21 @@ LOAD c:/gnutoolsarmembedded/7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/t
                 0x0000043c       0x22 c:/gnutoolsarmembedded/7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
 OUTPUT(build/stmcube_code.elf elf32-littlearm)
 
-.debug_info     0x00000000     0xe290
- .debug_info    0x00000000     0x1b7e build/main.o
- .debug_info    0x00001b7e      0x525 build/stm32f4xx_it.o
- .debug_info    0x000020a3     0x13dc build/stm32f4xx_hal_msp.o
- .debug_info    0x0000347f     0x1d82 build/stm32f4xx_hal_spi.o
- .debug_info    0x00005201     0x189d build/stm32f4xx_hal_uart.o
- .debug_info    0x00006a9e     0x195a build/stm32f4xx_hal_pcd.o
- .debug_info    0x000083f8     0x1d39 build/stm32f4xx_ll_usb.o
- .debug_info    0x0000a131      0xb97 build/stm32f4xx_hal_rcc.o
- .debug_info    0x0000acc8      0x884 build/stm32f4xx_hal_gpio.o
- .debug_info    0x0000b54c      0xb46 build/stm32f4xx_hal_dma.o
- .debug_info    0x0000c092     0x109c build/stm32f4xx_hal_cortex.o
- .debug_info    0x0000d12e      0xb48 build/stm32f4xx_hal.o
- .debug_info    0x0000dc76      0x5f8 build/system_stm32f4xx.o
- .debug_info    0x0000e26e       0x22 build/startup_stm32f427xx.o
+.debug_info     0x00000000     0xe291
+ .debug_info    0x00000000     0x1b7f build/main.o
+ .debug_info    0x00001b7f      0x525 build/stm32f4xx_it.o
+ .debug_info    0x000020a4     0x13dc build/stm32f4xx_hal_msp.o
+ .debug_info    0x00003480     0x1d82 build/stm32f4xx_hal_spi.o
+ .debug_info    0x00005202     0x189d build/stm32f4xx_hal_uart.o
+ .debug_info    0x00006a9f     0x195a build/stm32f4xx_hal_pcd.o
+ .debug_info    0x000083f9     0x1d39 build/stm32f4xx_ll_usb.o
+ .debug_info    0x0000a132      0xb97 build/stm32f4xx_hal_rcc.o
+ .debug_info    0x0000acc9      0x884 build/stm32f4xx_hal_gpio.o
+ .debug_info    0x0000b54d      0xb46 build/stm32f4xx_hal_dma.o
+ .debug_info    0x0000c093     0x109c build/stm32f4xx_hal_cortex.o
+ .debug_info    0x0000d12f      0xb48 build/stm32f4xx_hal.o
+ .debug_info    0x0000dc77      0x5f8 build/system_stm32f4xx.o
+ .debug_info    0x0000e26f       0x22 build/startup_stm32f427xx.o
 
 .debug_abbrev   0x00000000     0x1ea3
  .debug_abbrev  0x00000000      0x26a build/main.o

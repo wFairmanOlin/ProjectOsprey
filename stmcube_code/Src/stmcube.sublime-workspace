@@ -341,6 +341,59 @@
 			}
 		},
 		{
+			"file": "/C/Users/wfairman/Desktop/PDR_feedback.md",
+			"settings":
+			{
+				"buffer_size": 3156,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "### Thoughts"
+			}
+		},
+		{
+			"file": "/C/Users/wfairman/Desktop/kicad_parts/personal.lib",
+			"settings":
+			{
+				"buffer_size": 60901,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/rpi_zero_standoff v2_0.15mm_PLA_MINI_3h50m.gcode",
+			"settings":
+			{
+				"buffer_size": 6457934,
+				"encoding": "Western (Windows 1252)",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/wfairman/Desktop/kicad_parts/personal.bck",
+			"settings":
+			{
+				"buffer_size": 132,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/wfairman/Desktop/kicad_parts/personal.dcm",
+			"settings":
+			{
+				"buffer_size": 895,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/wfairman/Desktop/openDrone/stmcube_code/make.bat",
+			"settings":
+			{
+				"buffer_size": 160,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "/C/Users/wfairman/Desktop/Firmware/Firmware/Conn_210-0002B/Makefile",
 			"settings":
 			{
@@ -369,16 +422,16 @@
 		"selected_items":
 		[
 			[
-				"veril",
-				"Set Syntax: Verilog"
+				"mar",
+				"Markdown Preview: Preview in Browser"
 			],
 			[
 				"mark",
 				"Markdown Preview: Preview in Browser"
 			],
 			[
-				"mar",
-				"Markdown Preview: Preview in Browser"
+				"veril",
+				"Set Syntax: Verilog"
 			],
 			[
 				"system ",
@@ -449,6 +502,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/wfairman/Desktop/openDrone/stmcube_code/make.bat",
 		"/C/Users/wfairman/Desktop/openDrone/stmcube_code/putty.log",
 		"/C/Users/wfairman/Desktop/openDrone/stmcube_code/Makefile",
 		"/C/Users/wfairman/Desktop/openDrone/stmcube_code/Src/main.c",
@@ -575,8 +629,7 @@
 		"/C/Users/wfairman/Desktop/Firmware/Firmware/Illum_210-0003A/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_tim.h",
 		"/C/Users/wfairman/Desktop/Firmware/Firmware/Conn_210-0002B/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_tim.h",
 		"/C/Users/wfairman/Desktop/Firmware/Firmware/Conn_210-0002B/Inc/fault.h",
-		"/C/Users/wfairman/Desktop/Firmware/Firmware/Illum_210-0003A/Src/adc.c",
-		"/C/Users/wfairman/Desktop/Firmware/Firmware/Illum_210-0003A/Inc/fault.h"
+		"/C/Users/wfairman/Desktop/Firmware/Firmware/Illum_210-0003A/Src/adc.c"
 	],
 	"find":
 	{
@@ -654,7 +707,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -682,7 +735,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -698,23 +751,196 @@
 						"selection":
 						[
 							[
-								3319,
-								3319
+								3434,
+								3434
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C.sublime-syntax"
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 2227.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/wfairman/Desktop/PDR_feedback.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3156,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3156,
+								3156
+							]
+						],
+						"settings":
+						{
+							"auto_name": "### Thoughts",
+							"parser": "github",
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"target": "disk"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/wfairman/Desktop/kicad_parts/personal.lib",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 60901,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 4,
+					"file": "/D/rpi_zero_standoff v2_0.15mm_PLA_MINI_3h50m.gcode",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6457934,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1732513.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/wfairman/Desktop/kicad_parts/personal.bck",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 132,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/Users/wfairman/Desktop/kicad_parts/personal.dcm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 895,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/Users/wfairman/Desktop/openDrone/stmcube_code/make.bat",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 160,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								160,
+								160
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Batch File/Batch File.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
 					"file": "/C/Users/wfairman/Desktop/Firmware/Firmware/Conn_210-0002B/Makefile",
 					"semi_transient": false,
 					"settings":
@@ -738,11 +964,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 9,
 					"file": "/C/Users/wfairman/Desktop/openDrone/stmcube_code/Makefile",
 					"semi_transient": false,
 					"settings":
@@ -767,7 +993,7 @@
 						"translation.y": 1225.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 8,
 					"type": "text"
 				}
 			]

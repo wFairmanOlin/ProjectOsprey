@@ -119,7 +119,7 @@ int main(void)
   HAL_SPI_Receive(&hspi1, &spi_buf, 1, 100);
   HAL_UART_Transmit(&huart7, &spi_buf, 1, 10);
   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_SET);
-  HAL_Delay(100);
+  HAL_Delay(300);
   // HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8, GPIO_PIN_SET);
   // HAL_GPIO_WritePin(GPIOD, GPIO_PIN_9, GPIO_PIN_SET);
 
