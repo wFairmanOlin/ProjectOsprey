@@ -20,6 +20,11 @@ $CMP Barometer
 D Pressure Sensor 0.15PSI ~ 17.4PSI (1kPa ~ 120kPa) Absolute  24 b 8-SMD
 $ENDCMP
 #
+$CMP Barometer_MS5607
+D Pressure Sensor 0.15PSI ~ 17.4PSI (1kPa ~ 120kPa) Absolute  24 b 8-SMD
+F https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS5607-02BA03&DocType=Data+Sheet&DocLang=English
+$ENDCMP
+#
 $CMP Buck_Converter
 F https://www.ti.com/lit/ds/symlink/tps54335a.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1602190969991
 $ENDCMP

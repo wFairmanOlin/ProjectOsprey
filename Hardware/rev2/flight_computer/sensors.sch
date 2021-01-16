@@ -199,19 +199,6 @@ Wire Wire Line
 Wire Wire Line
 	7400 1250 8000 1250
 Connection ~ 7400 1350
-$Comp
-L openDrone_parts:Barometer U13
-U 1 1 5F94F59C
-P 9450 3900
-F 0 "U13" H 9550 4165 50  0000 C CNN
-F 1 "Barometer" H 9550 4074 50  0000 C CNN
-F 2 "drone_footprints:MS561101BA03-50" H 9850 4250 50  0001 C CNN
-F 3 "" H 9850 4250 50  0001 C CNN
-F 4 "223-1622-1-ND" H 9550 4350 50  0001 C CNN "DPN"
-F 5 "MS561101BA03-50" H 9500 4250 50  0001 C CNN "MPN"
-	1    9450 3900
-	1    0    0    -1  
-$EndComp
 Text HLabel 10050 3900 2    50   Input ~ 0
 BARO_CS
 Text HLabel 10050 4000 2    50   Input ~ 0
@@ -649,4 +636,17 @@ NoConn ~ 2900 1400
 NoConn ~ 2900 1200
 NoConn ~ 1850 1900
 NoConn ~ 9050 4200
+$Comp
+L openDrone_parts:Barometer_MS5607 U?
+U 1 1 600B9BDB
+P 9450 3900
+F 0 "U?" H 9550 4165 50  0000 C CNN
+F 1 "Barometer_MS5607" H 9550 4074 50  0000 C CNN
+F 2 "drone_footprints:MS561101BA03-50" H 9850 4250 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS5607-02BA03&DocType=Data+Sheet&DocLang=English" H 9850 4250 50  0001 C CNN
+F 4 "223-1198-1-ND" H 9550 4350 50  0001 C CNN "DPN"
+F 5 " MS560702BA03-50 " H 9500 4250 50  0001 C CNN "MPN"
+	1    9450 3900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

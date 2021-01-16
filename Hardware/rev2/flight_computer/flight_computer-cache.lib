@@ -147,15 +147,15 @@ X SDx 9 -1300 0 200 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# openDrone_parts_Barometer
+# openDrone_parts_Barometer_MS5607
 #
-DEF openDrone_parts_Barometer U 0 40 Y Y 1 F N
+DEF openDrone_parts_Barometer_MS5607 U 0 40 Y Y 1 F N
 F0 "U" 100 50 50 H V C CNN
-F1 "openDrone_parts_Barometer" 100 -450 50 H V C CNN
+F1 "openDrone_parts_Barometer_MS5607" 100 -450 50 H V C CNN
 F2 "drone_footprints:MS561101BA03-50" 400 350 50 H I C CNN
 F3 "" 400 350 50 H I C CNN
-F4 "223-1622-1-ND" 100 450 50 H I C CNN "DPN"
-F5 "MS561101BA03-50" 50 350 50 H I C CNN "MPN"
+F4 "223-1198-1-ND" 100 450 50 H I C CNN "DPN"
+F5 " MS560702BA03-50 " 50 350 50 H I C CNN "MPN"
 DRAW
 S -200 100 400 -400 0 1 0 f
 X VDD 1 -400 0 200 R 50 50 1 1 I
