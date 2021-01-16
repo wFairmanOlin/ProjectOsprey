@@ -424,9 +424,9 @@ FRAM_SCK
 Text Label 6900 10500 0    50   ~ 0
 FRAM_MOSI
 Text Label 8750 6300 0    50   ~ 0
-GPS_USART6_TX
+STM_TX_GPS_RX_USART6
 Text Label 8750 6400 0    50   ~ 0
-GPS_USART6_RX
+STM_RX_GPS_TX_USART6
 Text Label 6950 5900 2    50   ~ 0
 SDIO_CMD
 Text Label 8750 6900 0    50   ~ 0
@@ -439,10 +439,6 @@ Text Label 8750 6600 0    50   ~ 0
 SDIO_D1
 Text Label 8750 6500 0    50   ~ 0
 SDIO_D0
-Text Label 14150 3250 2    50   ~ 0
-GPS_USART6_TX
-Text Label 14150 3350 2    50   ~ 0
-GPS_USART6_RX
 Text Label 8750 3400 0    50   ~ 0
 OTG_FS_D_N
 Text Label 8750 3600 0    50   ~ 0
@@ -1589,4 +1585,8 @@ Wire Wire Line
 Wire Wire Line
 	8600 10650 8450 10650
 Connection ~ 8600 10650
+Text Label 14150 3350 2    50   ~ 0
+STM_TX_GPS_RX_USART6
+Text Label 14150 3250 2    50   ~ 0
+STM_RX_GPS_TX_USART6
 $EndSCHEMATC
