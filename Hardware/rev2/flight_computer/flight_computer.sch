@@ -1236,9 +1236,9 @@ Text Label 6950 5700 2    50   ~ 0
 SERVO_CH1_GPIO
 Text Label 6950 5800 2    50   ~ 0
 SERVO_CH2_GPIO
-Text Label 6950 5000 2    50   ~ 0
+Text Label 8750 4000 0    50   ~ 0
 ESC_TLM
-Text Label 6950 5500 2    50   ~ 0
+Text Label 8750 4100 0    50   ~ 0
 ESC_Current_Sense
 Text Label 1700 1200 0    50   ~ 0
 ESC_Current_Sense
@@ -1272,7 +1272,7 @@ NoConn ~ 8750 5700
 NoConn ~ 8750 5300
 NoConn ~ 8750 7000
 NoConn ~ 8750 4400
-NoConn ~ 8750 4000
+NoConn ~ 6950 5000
 NoConn ~ 8750 5800
 NoConn ~ 6950 6800
 NoConn ~ 6950 6900
@@ -1589,7 +1589,7 @@ Text Label 6950 6200 2    50   ~ 0
 STM_TX_TELEM_RX_USART2
 Text Label 6950 6300 2    50   ~ 0
 STM_RX_TELEM_TX_USART2
-NoConn ~ 8750 4100
+NoConn ~ 6950 5500
 NoConn ~ 8750 4200
 NoConn ~ 8750 3300
 NoConn ~ 6950 4100
